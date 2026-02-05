@@ -51,7 +51,7 @@ Bienvenido a mi portafolio de Ciencia de Datos. Este repositorio contiene los pr
 |--------|----------|-------------|-------|--------|
 | 1 | *Sin proyecto* | Orientación y Metodología | 12h | ✅ Completo |
 | 2 | [Sistema de Gestión de Contactos](./Module_2_Contact_System/) | Sistema CRUD con POO y encapsulación | 21h | ✅ Completo |
-| 3 | Análisis de Datos con Pandas | *Próximamente* | 21h | 🔄 En progreso |
+| 3 | Análisis de Datos con Pandas | *Próximamente* | 21h | ✅ Completo |
 | 4 | Análisis Exploratorio de Datos | *Próximamente* | 24h | ⏳ Pendiente |
 | 5 | Inferencia Estadística | *Próximamente* | 24h | ⏳ Pendiente |
 | 6 | Machine Learning Supervisado | *Próximamente* | 33h | ⏳ Pendiente |
