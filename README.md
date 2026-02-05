@@ -22,6 +22,8 @@ Welcome to my Data Science portfolio! This repository contains projects develope
 | 10 | *No project* | Portfolio Development | 12h | ⏳ |
 | 11 | *No project* | Employability Development | 9h | ⏳ |
 
+> **Note:** Hours shown are class hours. Additional self-study and project development time not included.
+> 
 ## Skills
 
 - **Programming**: Python, SQL
@@ -61,6 +63,8 @@ Bienvenido a mi portafolio de Ciencia de Datos. Este repositorio contiene los pr
 | 10 | *Sin proyecto* | Desarrollo de Portafolio | 12h | ⏳ |
 | 11 | *Sin proyecto* | Desarrollo de Empleabilidad | 9h | ⏳ |
 
+> **Nota:** Las horas mostradas son horas de clase. No incluyen tiempo adicional de estudio y desarrollo de proyectos.
+> 
 ## Habilidades
 
 - **Programación**: Python, SQL
