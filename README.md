@@ -12,7 +12,7 @@ Welcome to my Data Science portfolio! This repository contains projects develope
 |--------|---------|-------------|-------|--------|
 | 1 | *No project* | Orientation and Methodology | 12h | ✅ Complete |
 | 2 | [Contact Management System](./Module_2_Contact_System/) | CRUD system with OOP and encapsulation | 21h | ✅ Complete |
-| 3 | Data Analysis with Pandas | *Coming soon* | 21h | 🔄 In progress |
+| 3 | Data Analysis with Pandas | *Coming soon* | 21h | ✅ Complete |
 | 4 | Exploratory Data Analysis | *Coming soon* | 24h | ⏳ Pending |
 | 5 | Statistical Inference | *Coming soon* | 24h | ⏳ Pending |
 | 6 | Supervised Machine Learning | *Coming soon* | 33h | ⏳ Pending |
