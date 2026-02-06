@@ -24,6 +24,33 @@ Welcome to my Data Science portfolio! This repository contains projects develope
 
 > **Note:** Hours shown are class hours. Additional self-study and project development time not included.
 > 
+
+## Framework Choice & Limitations
+
+Although the bootcamp itself does not strictly follow a single formal framework,
+a structured analytical approach was intentionally adopted to ensure consistency,
+clarity, and business alignment across all projects.
+
+This approach is primarily inspired by CRISP-DM principles (business understanding,
+data understanding, modeling, and evaluation), complemented with Lean thinking to
+prioritize simplicity, fast iteration, and value generation over excessive complexity.
+
+The framework is applied pragmatically rather than rigidly. Depending on data
+availability, project scope, or learning objectives, certain phases may be revisited,
+merged, or explored in greater depth than others.
+
+### Limitations
+
+- Projects are educational in nature and focus on analytical reasoning rather than
+  production-ready deployment.
+- Business constraints, real-time experimentation, and organizational dynamics
+  are simplified or simulated.
+- Framework choices are adapted to maximize learning and transferability across
+  industries, rather than to optimize a single real-world implementation.
+
+Overall, the goal is to demonstrate a repeatable analytical mindset that can be
+applied flexibly across different business contexts and problem domains.
+
 ## Skills
 
 - **Programming**: Python, SQL
@@ -65,6 +92,33 @@ Bienvenido a mi portafolio de Ciencia de Datos. Este repositorio contiene los pr
 
 > **Nota:** Las horas mostradas son horas de clase. No incluyen tiempo adicional de estudio y desarrollo de proyectos.
 > 
+
+Framework Choice & Limitations
+
+Este portafolio adopta CRISP-DM como marco principal de trabajo debido a su claridad, trazabilidad y fuerte alineación con la toma de decisiones de negocio. CRISP-DM permite estructurar los proyectos de forma consistente, desde la comprensión del problema hasta la preparación de los datos y la generación de insights accionables.
+
+De manera complementaria, el enfoque incorpora principios de LEAN y mejora continua, priorizando:
+
+Iteraciones cortas y progresivas
+
+Entregables con valor temprano para el negocio
+
+Ajuste del alcance a medida que se obtiene mayor entendimiento de los datos
+
+Este enfoque híbrido (CRISP-DM + LEAN) busca reflejar cómo se desarrollan los proyectos de datos en contextos reales, donde los requerimientos evolucionan y las decisiones deben balancear rigor analítico con velocidad y pragmatismo.
+
+Limitaciones y Flexibilidad
+
+El uso de CRISP-DM no se plantea como un marco rígido. Dependiendo del contexto, la industria o el tipo de problema, los proyectos pueden:
+
+Detenerse en fases tempranas (por ejemplo, análisis descriptivo o preparación de datos)
+
+Profundizar en etapas específicas (modelado, evaluación o despliegue)
+
+Adaptar la metodología a otros enfoques cuando el problema lo requiera
+
+El objetivo de este portafolio no es demostrar adhesión a una metodología específica, sino evidenciar pensamiento estructurado, criterio analítico y capacidad de adaptación a distintos contextos de negocio e industria.
+
 ## Habilidades
 
 - **Programación**: Python, SQL
