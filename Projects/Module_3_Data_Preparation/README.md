@@ -124,7 +124,7 @@ Fragmented data across multiple platforms prevented PequeShop from understanding
 
 ---
 
-## Pricing Insights
+## Pricing Insights (Conceptual Extension)
 
 ### Price Elasticity Model
 
@@ -146,7 +146,8 @@ Where β represents price elasticity of demand directly.
 
 **Key Insight:**
 
-> "High NPS customers show lower price sensitivity (β = -0.6), enabling targeted price optimization without sacrificing loyalty."
+> "In a hypothetical scenario (e.g., β ≈ -0.6), high NPS customers may exhibit lower price sensitivity, opening the door for future price optimization analysis without sacrificing customer loyalty.
+"       
 
 ---
 
