@@ -1,501 +1,501 @@
 customer_id,registration_date,region,acquisition_channel,nps_score,nps_category,total_transactions,total_revenue,avg_ticket,first_purchase,last_purchase,days_since_last_purchase,tenure_days,retargeting_segment,is_high_value,priority_winback
-1,2023-05-21,Araucania,organic,5.0,Detractor,9.0,268360.0,29817.777777777777,2023-05-09,2024-11-26,65.0,567.0,Active,True,False
-2,2024-12-31,Valparaiso,facebook_ads,,No Response,5.0,164575.0,32915.0,2023-02-26,2024-10-21,101.0,603.0,At Risk,True,False
-3,2024-01-31,Metropolitana,instagram_ads,,No Response,12.0,283010.0,23584.166666666668,2023-03-11,2025-01-19,11.0,680.0,Active,True,False
-4,2023-10-01,Maule,facebook_ads,9.0,Promoter,3.0,82302.0,27434.0,2023-03-16,2023-07-25,555.0,131.0,Dormant,False,False
+1,2023-05-21,Araucania,organic,7.0,Passive,6.0,178400.0,29733.33333333333,2023-05-09,2024-08-21,162.0,470.0,At Risk,True,False
+2,2024-12-31,Valparaiso,facebook_ads,10.0,Promoter,4.0,147085.0,36771.25,2023-02-26,2023-10-05,483.0,221.0,Dormant,True,True
+3,2024-01-31,Metropolitana,instagram_ads,,No Response,10.0,235050.0,23505.0,2023-03-11,2024-12-03,58.0,633.0,Active,True,False
+4,2023-10-01,Maule,facebook_ads,10.0,Promoter,3.0,82302.0,27434.0,2023-03-16,2023-07-25,555.0,131.0,Dormant,False,False
 5,2023-02-20,Araucania,google_ads,,No Response,7.0,200509.0,28644.14285714286,2023-06-11,2024-08-12,171.0,428.0,At Risk,True,False
-6,2023-02-20,Metropolitana,mercadolibre_ads,,No Response,2.0,32720.0,16360.0,2023-11-08,2024-02-28,337.0,112.0,Dormant,False,False
-7,2023-01-18,Los Lagos,mercadolibre_ads,9.0,Promoter,9.0,350895.0,38988.333333333336,2023-02-06,2024-10-03,119.0,605.0,At Risk,True,False
-8,2024-08-26,OHiggins,instagram_ads,,No Response,8.0,214542.0,26817.75,2023-03-10,2025-01-18,12.0,680.0,Active,True,False
-9,2023-10-03,Los Lagos,mercadolibre_ads,3.0,Detractor,5.0,209425.0,41885.0,2023-01-14,2024-07-22,192.0,555.0,Dormant,True,True
+6,2023-02-20,Metropolitana,mercadolibre_ads,7.0,Passive,1.0,19250.0,19250.0,2023-11-08,2023-11-08,449.0,0.0,Dormant,False,False
+7,2023-01-18,Los Lagos,mercadolibre_ads,10.0,Promoter,8.0,335415.0,41926.875,2023-02-06,2024-10-03,119.0,605.0,At Risk,True,False
+8,2024-08-26,OHiggins,instagram_ads,,No Response,7.0,198072.0,28296.0,2023-03-10,2024-12-23,38.0,654.0,Active,True,False
+9,2023-10-03,Los Lagos,mercadolibre_ads,9.0,Promoter,4.0,184935.0,46233.75,2023-01-14,2024-07-22,192.0,555.0,Dormant,True,True
 10,2024-01-05,Araucania,facebook_ads,,No Response,8.0,280106.0,35013.25,2023-02-11,2024-08-31,152.0,567.0,At Risk,True,False
 11,2023-01-07,Biobio,mercadolibre_ads,,No Response,6.0,260619.0,43436.5,2023-01-31,2024-09-25,127.0,603.0,At Risk,True,False
-12,2024-12-31,Valparaiso,instagram_ads,9.0,Promoter,6.0,143182.0,23863.666666666668,2023-04-15,2024-04-20,285.0,371.0,Dormant,True,True
+12,2024-12-31,Valparaiso,instagram_ads,9.0,Promoter,5.0,126692.0,25338.4,2023-04-15,2024-04-20,285.0,371.0,Dormant,True,True
 13,2024-06-19,Los Lagos,instagram_ads,,No Response,5.0,140031.0,28006.2,2023-03-20,2024-08-18,165.0,517.0,At Risk,True,False
-14,2023-03-13,OHiggins,organic,9.0,Promoter,6.0,197137.0,32856.166666666664,2023-05-01,2024-02-25,340.0,300.0,Dormant,True,True
-15,2023-03-02,Metropolitana,google_ads,2.0,Detractor,7.0,312864.0,44694.857142857145,2023-01-14,2023-10-21,467.0,280.0,Dormant,True,True
-16,2023-03-02,Metropolitana,facebook_ads,2.0,Detractor,8.0,199481.0,24935.125,2023-04-27,2024-11-09,82.0,562.0,Active,True,False
+14,2023-03-13,OHiggins,organic,10.0,Promoter,6.0,197137.0,32856.166666666664,2023-05-01,2024-02-25,340.0,300.0,Dormant,True,True
+15,2023-03-02,Metropolitana,google_ads,4.0,Detractor,7.0,312864.0,44694.857142857145,2023-01-14,2023-10-21,467.0,280.0,Dormant,True,True
+16,2023-03-02,Metropolitana,facebook_ads,10.0,Promoter,7.0,176991.0,25284.42857142857,2023-04-27,2024-11-09,82.0,562.0,Active,True,False
 17,2023-04-19,Metropolitana,organic,,No Response,7.0,279375.0,39910.71428571428,2023-03-17,2024-08-23,160.0,525.0,At Risk,True,False
-18,2023-08-12,Maule,google_ads,7.0,Passive,6.0,229725.0,38287.5,2023-01-03,2024-08-31,152.0,606.0,At Risk,True,False
-19,2023-06-19,Coquimbo,facebook_ads,10.0,Promoter,9.0,301640.0,33515.555555555555,2023-02-24,2024-06-26,218.0,488.0,Dormant,True,True
-20,2023-04-14,Metropolitana,organic,10.0,Promoter,6.0,241272.0,40212.0,2023-01-16,2024-10-29,93.0,652.0,At Risk,True,False
-21,2023-10-11,Biobio,facebook_ads,,No Response,13.0,402964.0,30997.23076923077,2023-04-05,2024-12-30,31.0,635.0,Active,True,False
-22,2023-02-15,Metropolitana,mercadolibre_ads,5.0,Detractor,9.0,198744.0,22082.666666666668,2023-02-25,2024-12-20,41.0,664.0,Active,True,False
-23,2023-04-14,Coquimbo,facebook_ads,10.0,Promoter,8.0,300825.0,37603.125,2023-04-29,2024-05-03,272.0,370.0,Dormant,True,True
-24,2023-05-17,OHiggins,instagram_ads,10.0,Promoter,7.0,319727.0,45675.28571428572,2023-03-23,2024-08-12,171.0,508.0,At Risk,True,False
-25,2023-07-02,OHiggins,instagram_ads,9.0,Promoter,8.0,334684.0,41835.5,2023-08-13,2024-12-15,46.0,490.0,Active,True,False
-26,2024-04-06,Valparaiso,facebook_ads,,No Response,6.0,123988.0,20664.666666666668,2023-03-20,2025-01-12,18.0,664.0,Active,False,False
-27,2023-03-08,Valparaiso,facebook_ads,,No Response,6.0,248465.0,41410.833333333336,2023-09-17,2024-12-20,41.0,460.0,Active,True,False
-28,2023-08-05,Metropolitana,facebook_ads,5.0,Detractor,5.0,50472.0,10094.4,2023-12-10,2024-12-21,40.0,377.0,Active,False,False
-29,2023-09-27,Metropolitana,mercadolibre_ads,7.0,Passive,3.0,99210.0,33070.0,2023-08-15,2023-11-11,446.0,88.0,Dormant,False,False
-30,2023-01-15,OHiggins,google_ads,9.0,Promoter,8.0,331146.0,41393.25,2023-01-01,2024-08-08,175.0,585.0,At Risk,True,False
-31,2023-10-08,Maule,organic,,No Response,3.0,103899.0,34633.0,2023-06-03,2023-12-09,418.0,189.0,Dormant,False,False
-32,2023-02-26,Coquimbo,mercadolibre_ads,4.0,Detractor,9.0,308752.0,34305.77777777778,2023-01-09,2024-11-10,81.0,671.0,Active,True,False
-33,2023-01-21,Coquimbo,mercadolibre_ads,,No Response,5.0,237981.0,47596.2,2023-12-16,2024-09-26,126.0,285.0,At Risk,True,False
-34,2024-12-31,Biobio,mercadolibre_ads,10.0,Promoter,7.0,235565.0,33652.142857142855,2023-03-23,2024-11-18,73.0,606.0,Active,True,False
-35,2024-12-31,Maule,organic,,No Response,10.0,268321.0,26832.1,2023-02-27,2024-12-06,55.0,648.0,Active,True,False
+18,2023-08-12,Maule,google_ads,6.0,Detractor,6.0,229725.0,38287.5,2023-01-03,2024-08-31,152.0,606.0,At Risk,True,False
+19,2023-06-19,Coquimbo,facebook_ads,7.0,Passive,8.0,291150.0,36393.75,2023-02-24,2024-06-26,218.0,488.0,Dormant,True,True
+20,2023-04-14,Metropolitana,organic,,No Response,6.0,241272.0,40212.0,2023-01-16,2024-10-29,93.0,652.0,At Risk,True,False
+21,2023-10-11,Biobio,facebook_ads,,No Response,12.0,368494.0,30707.83333333333,2023-04-05,2024-12-30,31.0,635.0,Active,True,False
+22,2023-02-15,Metropolitana,mercadolibre_ads,4.0,Detractor,9.0,198744.0,22082.666666666668,2023-02-25,2024-12-20,41.0,664.0,Active,True,False
+23,2023-04-14,Coquimbo,facebook_ads,2.0,Detractor,8.0,300825.0,37603.125,2023-04-29,2024-05-03,272.0,370.0,Dormant,True,True
+24,2023-05-17,OHiggins,instagram_ads,,No Response,7.0,319727.0,45675.28571428572,2023-03-23,2024-08-12,171.0,508.0,At Risk,True,False
+25,2023-07-02,OHiggins,instagram_ads,,No Response,7.0,245214.0,35030.57142857143,2023-08-13,2024-12-15,46.0,490.0,Active,True,False
+26,2024-04-06,Valparaiso,facebook_ads,,No Response,5.0,106498.0,21299.6,2023-03-20,2024-06-29,215.0,467.0,Dormant,False,False
+27,2023-03-08,Valparaiso,facebook_ads,10.0,Promoter,5.0,236975.0,47395.0,2023-09-17,2024-12-20,41.0,460.0,Active,True,False
+28,2023-08-05,Metropolitana,facebook_ads,1.0,Detractor,2.0,23012.0,11506.0,2023-12-10,2024-07-03,211.0,206.0,Dormant,False,False
+29,2023-09-27,Metropolitana,mercadolibre_ads,10.0,Promoter,3.0,99210.0,33070.0,2023-08-15,2023-11-11,446.0,88.0,Dormant,False,False
+30,2023-01-15,OHiggins,google_ads,4.0,Detractor,8.0,331146.0,41393.25,2023-01-01,2024-08-08,175.0,585.0,At Risk,True,False
+31,2023-10-08,Maule,organic,5.0,Detractor,3.0,103899.0,34633.0,2023-06-03,2023-12-09,418.0,189.0,Dormant,False,False
+32,2023-02-26,Coquimbo,mercadolibre_ads,10.0,Promoter,7.0,237282.0,33897.42857142857,2023-01-09,2024-11-10,81.0,671.0,Active,True,False
+33,2023-01-21,Coquimbo,mercadolibre_ads,9.0,Promoter,5.0,237981.0,47596.2,2023-12-16,2024-09-26,126.0,285.0,At Risk,True,False
+34,2024-12-31,Biobio,mercadolibre_ads,9.0,Promoter,4.0,157115.0,39278.75,2023-03-23,2023-12-21,406.0,273.0,Dormant,True,True
+35,2024-12-31,Maule,organic,,No Response,8.0,179361.0,22420.125,2023-02-27,2024-11-14,77.0,626.0,Active,True,False
 36,2024-05-10,Los Lagos,facebook_ads,,No Response,6.0,175976.0,29329.33333333333,2023-04-07,2024-09-01,151.0,513.0,At Risk,True,False
-37,2023-04-19,OHiggins,mercadolibre_ads,,No Response,7.0,216861.0,30980.14285714286,2023-02-14,2024-08-05,178.0,538.0,At Risk,True,False
+37,2023-04-19,OHiggins,mercadolibre_ads,9.0,Promoter,5.0,156891.0,31378.2,2023-02-14,2024-08-05,178.0,538.0,At Risk,True,False
 38,2023-01-31,Metropolitana,google_ads,9.0,Promoter,4.0,103561.0,25890.25,2023-03-26,2023-06-10,600.0,76.0,Dormant,False,False
-39,2023-12-12,Valparaiso,organic,,No Response,8.0,285227.0,35653.375,2023-02-15,2025-01-28,2.0,713.0,Active,True,False
-40,2023-06-24,Metropolitana,mercadolibre_ads,,No Response,5.0,110950.0,22190.0,2023-01-27,2024-12-07,54.0,680.0,Active,False,False
+39,2023-12-12,Valparaiso,organic,,No Response,6.0,230247.0,38374.5,2023-02-15,2023-11-10,447.0,268.0,Dormant,True,True
+40,2023-06-24,Metropolitana,mercadolibre_ads,,No Response,3.0,58990.0,19663.33333333333,2023-01-27,2023-11-15,442.0,292.0,Dormant,False,False
 41,2023-02-09,Coquimbo,mercadolibre_ads,,No Response,5.0,204591.0,40918.2,2023-02-11,2024-09-27,125.0,594.0,At Risk,True,False
 42,2023-07-25,Biobio,facebook_ads,,No Response,9.0,317111.0,35234.555555555555,2023-02-08,2024-07-01,213.0,509.0,Dormant,True,True
-43,2023-01-11,Metropolitana,mercadolibre_ads,3.0,Detractor,6.0,147461.0,24576.83333333333,2023-07-26,2024-10-20,102.0,452.0,At Risk,True,False
+43,2023-01-11,Metropolitana,mercadolibre_ads,10.0,Promoter,5.0,132471.0,26494.2,2023-07-26,2024-09-01,151.0,403.0,At Risk,True,False
 44,2024-12-21,Araucania,facebook_ads,,No Response,7.0,383847.0,54835.28571428572,2023-02-17,2023-12-21,406.0,307.0,Dormant,True,True
-45,2023-03-31,Biobio,facebook_ads,,No Response,7.0,227278.0,32468.285714285717,2023-04-04,2024-09-13,139.0,528.0,At Risk,True,False
-46,2023-11-22,Metropolitana,google_ads,,No Response,6.0,121812.0,20302.0,2023-05-24,2024-10-24,98.0,519.0,At Risk,False,False
-47,2023-04-23,Metropolitana,mercadolibre_ads,0.0,Detractor,7.0,176873.0,25267.571428571428,2023-03-09,2024-10-05,117.0,576.0,At Risk,True,False
-48,2023-08-09,Araucania,organic,9.0,Promoter,4.0,113682.0,28420.5,2023-02-04,2024-08-03,180.0,546.0,At Risk,False,False
-49,2023-08-26,Valparaiso,instagram_ads,,No Response,7.0,261461.0,37351.57142857143,2023-03-23,2024-06-05,239.0,440.0,Dormant,True,True
+45,2023-03-31,Biobio,facebook_ads,7.0,Passive,7.0,227278.0,32468.285714285717,2023-04-04,2024-09-13,139.0,528.0,At Risk,True,False
+46,2023-11-22,Metropolitana,google_ads,,No Response,6.0,121812.0,20302.0,2023-05-24,2024-10-24,98.0,519.0,At Risk,True,False
+47,2023-04-23,Metropolitana,mercadolibre_ads,3.0,Detractor,7.0,176873.0,25267.571428571428,2023-03-09,2024-10-05,117.0,576.0,At Risk,True,False
+48,2023-08-09,Araucania,organic,10.0,Promoter,3.0,76712.0,25570.666666666668,2023-02-04,2023-06-27,583.0,143.0,Dormant,False,False
+49,2023-08-26,Valparaiso,instagram_ads,9.0,Promoter,7.0,261461.0,37351.57142857143,2023-03-23,2024-06-05,239.0,440.0,Dormant,True,True
 50,2023-03-03,Maule,organic,,No Response,6.0,160046.0,26674.33333333333,2023-02-04,2024-07-13,201.0,525.0,Dormant,True,True
-51,2024-12-31,Valparaiso,instagram_ads,0.0,Detractor,4.0,101513.0,25378.25,2023-01-17,2024-11-26,65.0,679.0,Active,False,False
-52,2024-03-23,OHiggins,facebook_ads,2.0,Detractor,6.0,261097.0,43516.16666666666,2023-02-21,2024-12-31,30.0,679.0,Active,True,False
+51,2024-12-31,Valparaiso,instagram_ads,8.0,Passive,3.0,40033.0,13344.333333333334,2023-01-17,2024-11-26,65.0,679.0,Active,False,False
+52,2024-03-23,OHiggins,facebook_ads,7.0,Passive,4.0,213627.0,53406.75,2023-02-21,2024-05-17,258.0,451.0,Dormant,True,True
 53,2024-12-31,Biobio,instagram_ads,,No Response,3.0,75172.0,25057.33333333333,2023-01-20,2024-10-25,97.0,644.0,At Risk,False,False
-54,2024-11-06,Biobio,instagram_ads,,No Response,5.0,178711.0,35742.2,2023-01-01,2023-09-05,513.0,247.0,Dormant,True,True
-55,2023-10-01,OHiggins,instagram_ads,7.0,Passive,4.0,73673.0,18418.25,2023-02-27,2023-08-07,542.0,161.0,Dormant,False,False
-56,2024-12-31,Valparaiso,google_ads,10.0,Promoter,4.0,85954.0,21488.5,2023-11-01,2024-09-07,145.0,311.0,At Risk,False,False
-57,2023-01-28,Metropolitana,google_ads,,No Response,4.0,75783.0,18945.75,2023-01-01,2024-05-09,266.0,494.0,Dormant,False,False
-58,2023-03-07,Metropolitana,mercadolibre_ads,9.0,Promoter,8.0,190845.0,23855.625,2023-02-26,2023-11-06,451.0,253.0,Dormant,True,True
-59,2023-01-14,Maule,mercadolibre_ads,8.0,Passive,1.0,14380.0,14380.0,2023-11-03,2023-11-03,454.0,0.0,Dormant,False,False
-60,2023-04-29,Biobio,mercadolibre_ads,10.0,Promoter,10.0,378766.0,37876.6,2023-02-11,2024-12-21,40.0,679.0,Active,True,False
+54,2024-11-06,Biobio,instagram_ads,8.0,Passive,5.0,178711.0,35742.2,2023-01-01,2023-09-05,513.0,247.0,Dormant,True,True
+55,2023-10-01,OHiggins,instagram_ads,8.0,Passive,4.0,73673.0,18418.25,2023-02-27,2023-08-07,542.0,161.0,Dormant,False,False
+56,2024-12-31,Valparaiso,google_ads,8.0,Passive,3.0,67464.0,22488.0,2023-11-01,2024-06-29,215.0,241.0,Dormant,False,False
+57,2023-01-28,Metropolitana,google_ads,,No Response,3.0,47803.0,15934.333333333334,2023-01-01,2023-07-19,561.0,199.0,Dormant,False,False
+58,2023-03-07,Metropolitana,mercadolibre_ads,5.0,Detractor,8.0,190845.0,23855.625,2023-02-26,2023-11-06,451.0,253.0,Dormant,True,True
+59,2023-01-14,Maule,mercadolibre_ads,7.0,Passive,1.0,14380.0,14380.0,2023-11-03,2023-11-03,454.0,0.0,Dormant,False,False
+60,2023-04-29,Biobio,mercadolibre_ads,10.0,Promoter,8.0,346796.0,43349.5,2023-02-11,2023-12-04,423.0,296.0,Dormant,True,True
 61,2023-05-28,Araucania,facebook_ads,,No Response,2.0,46052.0,23026.0,2023-07-18,2023-12-11,416.0,146.0,Dormant,False,False
 62,2023-04-05,Metropolitana,instagram_ads,,No Response,5.0,149479.0,29895.8,2023-04-22,2024-11-16,75.0,574.0,Active,True,False
-63,2024-06-13,Metropolitana,instagram_ads,9.0,Promoter,10.0,328426.0,32842.6,2023-02-12,2024-04-22,283.0,435.0,Dormant,True,True
+63,2024-06-13,Metropolitana,instagram_ads,8.0,Passive,9.0,313456.0,34828.444444444445,2023-02-12,2024-04-22,283.0,435.0,Dormant,True,True
 64,2023-05-13,Metropolitana,mercadolibre_ads,,No Response,6.0,183599.0,30599.83333333333,2023-01-10,2024-11-23,68.0,683.0,Active,True,False
-65,2023-04-09,Metropolitana,mercadolibre_ads,,No Response,5.0,124885.0,24977.0,2023-09-26,2024-06-12,232.0,260.0,Dormant,False,False
-66,2023-08-23,Biobio,facebook_ads,,No Response,5.0,114502.0,22900.4,2023-01-16,2024-11-20,71.0,674.0,Active,False,False
-67,2023-02-15,Metropolitana,mercadolibre_ads,,No Response,2.0,78991.0,39495.5,2023-08-23,2024-01-19,377.0,149.0,Dormant,False,False
-68,2024-05-01,Valparaiso,mercadolibre_ads,,No Response,11.0,358940.0,32630.90909090909,2023-03-11,2024-11-08,83.0,608.0,Active,True,False
-69,2023-01-24,Los Lagos,mercadolibre_ads,9.0,Promoter,7.0,338920.02,48417.14571428571,2023-01-19,2025-01-01,29.0,713.0,Active,True,False
+65,2023-04-09,Metropolitana,mercadolibre_ads,,No Response,5.0,124885.0,24977.0,2023-09-26,2024-06-12,232.0,260.0,Dormant,True,True
+66,2023-08-23,Biobio,facebook_ads,8.0,Passive,3.0,69532.0,23177.33333333333,2023-01-16,2023-02-19,711.0,34.0,Dormant,False,False
+67,2023-02-15,Metropolitana,mercadolibre_ads,3.0,Detractor,2.0,78991.0,39495.5,2023-08-23,2024-01-19,377.0,149.0,Dormant,False,False
+68,2024-05-01,Valparaiso,mercadolibre_ads,,No Response,9.0,320980.0,35664.444444444445,2023-03-11,2024-03-13,323.0,368.0,Dormant,True,True
+69,2023-01-24,Los Lagos,mercadolibre_ads,4.0,Detractor,5.0,244227.0,48845.4,2023-01-19,2024-10-29,93.0,649.0,At Risk,True,False
 70,2024-12-31,Metropolitana,google_ads,,No Response,6.0,153762.0,25627.0,2023-06-04,2024-07-07,207.0,399.0,Dormant,True,True
-71,2024-03-19,Valparaiso,google_ads,,No Response,2.0,56572.0,28286.0,2023-01-22,2024-05-29,246.0,493.0,Dormant,False,False
-72,2023-03-08,Maule,mercadolibre_ads,,No Response,4.0,67883.0,16970.75,2023-01-10,2024-04-25,280.0,471.0,Dormant,False,False
-73,2023-01-02,Metropolitana,organic,7.0,Passive,9.0,352306.0,39145.11111111111,2023-02-02,2024-07-07,207.0,521.0,Dormant,True,True
-74,2024-05-21,Biobio,organic,6.0,Detractor,4.0,107039.0,26759.75,2023-03-28,2024-07-18,196.0,478.0,Dormant,False,False
-75,2024-01-04,OHiggins,instagram_ads,8.0,Passive,9.0,371388.0,41265.333333333336,2023-01-04,2024-09-25,127.0,630.0,At Risk,True,False
-76,2024-01-27,Los Lagos,google_ads,7.0,Passive,4.0,69566.0,17391.5,2023-03-10,2023-09-30,488.0,204.0,Dormant,False,False
-77,2024-03-18,Metropolitana,google_ads,7.0,Passive,4.0,120418.0,30104.5,2023-01-05,2024-10-28,94.0,662.0,At Risk,False,False
-78,2023-01-24,Los Lagos,mercadolibre_ads,7.0,Passive,4.0,114390.0,28597.5,2023-02-25,2024-10-18,104.0,601.0,At Risk,False,False
-79,2023-05-14,Valparaiso,mercadolibre_ads,0.0,Detractor,6.0,159634.0,26605.666666666668,2023-02-21,2024-05-31,244.0,465.0,Dormant,True,True
+71,2024-03-19,Valparaiso,google_ads,,No Response,1.0,43092.0,43092.0,2023-01-22,2023-01-22,739.0,0.0,Dormant,False,False
+72,2023-03-08,Maule,mercadolibre_ads,,No Response,3.0,57903.0,19301.0,2023-01-10,2023-10-02,486.0,265.0,Dormant,False,False
+73,2023-01-02,Metropolitana,organic,7.0,Passive,8.0,320826.0,40103.25,2023-02-02,2024-07-07,207.0,521.0,Dormant,True,True
+74,2024-05-21,Biobio,organic,10.0,Promoter,4.0,107039.0,26759.75,2023-03-28,2024-07-18,196.0,478.0,Dormant,False,False
+75,2024-01-04,OHiggins,instagram_ads,10.0,Promoter,9.0,371388.0,41265.333333333336,2023-01-04,2024-09-25,127.0,630.0,At Risk,True,False
+76,2024-01-27,Los Lagos,google_ads,9.0,Promoter,4.0,69566.0,17391.5,2023-03-10,2023-09-30,488.0,204.0,Dormant,False,False
+77,2024-03-18,Metropolitana,google_ads,,No Response,4.0,120418.0,30104.5,2023-01-05,2024-10-28,94.0,662.0,At Risk,True,False
+78,2023-01-24,Los Lagos,mercadolibre_ads,10.0,Promoter,4.0,114390.0,28597.5,2023-02-25,2024-10-18,104.0,601.0,At Risk,False,False
+79,2023-05-14,Valparaiso,mercadolibre_ads,2.0,Detractor,6.0,159634.0,26605.666666666668,2023-02-21,2024-05-31,244.0,465.0,Dormant,True,True
 80,2023-02-06,Metropolitana,facebook_ads,10.0,Promoter,6.0,196503.0,32750.5,2023-01-04,2024-12-28,33.0,724.0,Active,True,False
-81,2024-08-19,Valparaiso,instagram_ads,9.0,Promoter,5.0,105317.0,21063.4,2023-07-01,2024-04-09,296.0,283.0,Dormant,False,False
-82,2023-10-20,Coquimbo,organic,8.0,Passive,7.0,196017.0,28002.42857142857,2023-01-07,2024-11-01,90.0,664.0,Active,True,False
-83,2023-05-01,Valparaiso,mercadolibre_ads,8.0,Passive,4.0,130188.0,32547.0,2023-02-15,2024-09-01,151.0,564.0,At Risk,True,False
-84,2023-01-20,Metropolitana,facebook_ads,7.0,Passive,7.0,333302.0,47614.57142857143,2023-01-15,2024-09-22,130.0,616.0,At Risk,True,False
-85,2023-04-22,Biobio,facebook_ads,8.0,Passive,9.0,389927.0,43325.22222222222,2023-01-25,2023-11-19,438.0,298.0,Dormant,True,True
-86,2023-04-28,Metropolitana,mercadolibre_ads,,No Response,12.0,389433.0,32452.75,2023-01-09,2024-01-15,381.0,371.0,Dormant,True,True
-87,2024-01-28,Metropolitana,facebook_ads,8.0,Passive,4.0,109106.0,27276.5,2023-01-07,2024-11-17,74.0,680.0,Active,False,False
+81,2024-08-19,Valparaiso,instagram_ads,9.0,Promoter,4.0,77837.0,19459.25,2023-07-01,2023-12-13,414.0,165.0,Dormant,False,False
+82,2023-10-20,Coquimbo,organic,,No Response,5.0,152557.0,30511.4,2023-01-07,2023-08-05,544.0,210.0,Dormant,True,True
+83,2023-05-01,Valparaiso,mercadolibre_ads,10.0,Promoter,4.0,130188.0,32547.0,2023-02-15,2024-09-01,151.0,564.0,At Risk,True,False
+84,2023-01-20,Metropolitana,facebook_ads,7.0,Passive,6.0,289822.0,48303.66666666666,2023-01-15,2024-07-01,213.0,533.0,Dormant,True,True
+85,2023-04-22,Biobio,facebook_ads,9.0,Promoter,9.0,389927.0,43325.22222222222,2023-01-25,2023-11-19,438.0,298.0,Dormant,True,True
+86,2023-04-28,Metropolitana,mercadolibre_ads,,No Response,11.0,374943.0,34085.72727272727,2023-01-09,2024-01-02,394.0,358.0,Dormant,True,True
+87,2024-01-28,Metropolitana,facebook_ads,10.0,Promoter,4.0,109106.0,27276.5,2023-01-07,2024-11-17,74.0,680.0,Active,False,False
 88,2023-11-01,Metropolitana,mercadolibre_ads,,No Response,5.0,229761.0,45952.2,2023-03-25,2024-04-11,294.0,383.0,Dormant,True,True
-89,2024-10-16,Metropolitana,instagram_ads,,No Response,7.0,240318.0,34331.142857142855,2023-03-10,2024-09-26,126.0,566.0,At Risk,True,False
-90,2023-07-11,Metropolitana,mercadolibre_ads,8.0,Passive,4.0,155064.0,38766.0,2023-02-08,2024-10-22,100.0,622.0,At Risk,True,False
-91,2023-02-08,Metropolitana,facebook_ads,,No Response,3.0,73673.0,24557.666666666668,2023-01-14,2024-03-30,306.0,441.0,Dormant,False,False
+89,2024-10-16,Metropolitana,instagram_ads,,No Response,5.0,148848.0,29769.6,2023-03-10,2023-10-16,472.0,220.0,Dormant,True,True
+90,2023-07-11,Metropolitana,mercadolibre_ads,0.0,Detractor,4.0,155064.0,38766.0,2023-02-08,2024-10-22,100.0,622.0,At Risk,True,False
+91,2023-02-08,Metropolitana,facebook_ads,2.0,Detractor,3.0,73673.0,24557.666666666668,2023-01-14,2024-03-30,306.0,441.0,Dormant,False,False
 92,2024-01-10,Biobio,facebook_ads,,No Response,6.0,150377.0,25062.83333333333,2023-02-21,2023-08-17,532.0,177.0,Dormant,True,True
 93,2024-03-05,Metropolitana,facebook_ads,,No Response,4.0,56505.0,14126.25,2023-08-07,2024-05-30,245.0,297.0,Dormant,False,False
-94,2023-09-05,Metropolitana,google_ads,4.0,Detractor,3.0,83075.0,27691.666666666668,2023-01-13,2023-08-19,530.0,218.0,Dormant,False,False
-95,2024-03-18,Los Lagos,google_ads,10.0,Promoter,5.0,234034.0,46806.8,2023-03-18,2024-09-02,150.0,534.0,At Risk,True,False
-96,2023-07-24,Valparaiso,mercadolibre_ads,,No Response,6.0,114014.0,19002.33333333333,2023-04-27,2024-10-08,114.0,530.0,At Risk,False,False
+94,2023-09-05,Metropolitana,google_ads,10.0,Promoter,3.0,83075.0,27691.666666666668,2023-01-13,2023-08-19,530.0,218.0,Dormant,False,False
+95,2024-03-18,Los Lagos,google_ads,9.0,Promoter,5.0,234034.0,46806.8,2023-03-18,2024-09-02,150.0,534.0,At Risk,True,False
+96,2023-07-24,Valparaiso,mercadolibre_ads,,No Response,4.0,85534.0,21383.5,2023-04-27,2023-11-23,434.0,210.0,Dormant,False,False
 97,2023-08-10,Biobio,mercadolibre_ads,,No Response,8.0,188487.0,23560.875,2023-02-18,2024-03-14,322.0,390.0,Dormant,True,True
-98,2023-06-17,Metropolitana,organic,9.0,Promoter,7.0,172494.0,24642.0,2023-01-17,2024-11-04,87.0,657.0,Active,True,False
-99,2023-01-08,Metropolitana,google_ads,7.0,Passive,8.0,210636.0,26329.5,2023-07-30,2024-08-13,170.0,380.0,At Risk,True,False
-100,2023-02-04,Metropolitana,mercadolibre_ads,8.0,Passive,5.0,187817.0,37563.4,2023-03-22,2023-09-30,488.0,192.0,Dormant,True,True
+98,2023-06-17,Metropolitana,organic,8.0,Passive,6.0,164504.0,27417.33333333333,2023-01-17,2024-11-04,87.0,657.0,Active,True,False
+99,2023-01-08,Metropolitana,google_ads,9.0,Promoter,8.0,210636.0,26329.5,2023-07-30,2024-08-13,170.0,380.0,At Risk,True,False
+100,2023-02-04,Metropolitana,mercadolibre_ads,5.0,Detractor,5.0,187817.0,37563.4,2023-03-22,2023-09-30,488.0,192.0,Dormant,True,True
 101,2023-01-10,Metropolitana,organic,,No Response,,,,,,,,,False,False
 102,2023-10-31,Metropolitana,instagram_ads,,No Response,,,,,,,,,False,False
-103,2023-04-24,Metropolitana,facebook_ads,8.0,Passive,3.0,137914.0,45971.333333333336,2023-07-19,2024-10-18,104.0,457.0,At Risk,True,False
-104,2023-08-02,Metropolitana,instagram_ads,3.0,Detractor,2.0,54600.0,27300.0,2024-08-10,2024-09-11,141.0,32.0,At Risk,False,False
-105,2024-12-15,Metropolitana,instagram_ads,2.0,Detractor,2.0,53030.0,26515.0,2023-06-14,2024-11-30,61.0,535.0,Active,False,False
-106,2023-03-28,Valparaiso,organic,9.0,Promoter,2.0,30364.0,15182.0,2024-02-23,2024-03-06,330.0,12.0,Dormant,False,False
+103,2023-04-24,Metropolitana,facebook_ads,9.0,Promoter,2.0,114424.0,57212.0,2023-07-19,2024-06-01,243.0,318.0,Dormant,False,False
+104,2023-08-02,Metropolitana,instagram_ads,,No Response,1.0,26620.0,26620.0,2024-08-10,2024-08-10,173.0,0.0,At Risk,False,False
+105,2024-12-15,Metropolitana,instagram_ads,5.0,Detractor,2.0,53030.0,26515.0,2023-06-14,2024-11-30,61.0,535.0,Active,False,False
+106,2023-03-28,Valparaiso,organic,,No Response,1.0,19874.0,19874.0,2024-02-23,2024-02-23,342.0,0.0,Dormant,False,False
 107,2023-06-08,Metropolitana,mercadolibre_ads,,No Response,2.0,72940.0,36470.0,2023-07-08,2023-07-08,572.0,0.0,Dormant,False,False
-108,2024-02-27,Metropolitana,instagram_ads,,No Response,3.0,109274.0,36424.66666666666,2023-01-18,2024-02-02,363.0,380.0,Dormant,False,False
-109,2023-03-19,Valparaiso,mercadolibre_ads,,No Response,1.0,14990.0,14990.0,2025-01-23,2025-01-23,7.0,0.0,Active,False,False
-110,2023-01-25,Araucania,organic,9.0,Promoter,2.0,40480.0,20240.0,2024-09-02,2025-01-24,6.0,144.0,Active,False,False
+108,2024-02-27,Metropolitana,instagram_ads,9.0,Promoter,3.0,109274.0,36424.66666666666,2023-01-18,2024-02-02,363.0,380.0,Dormant,False,False
+109,2023-03-19,Valparaiso,mercadolibre_ads,,No Response,,,,,,,,,False,False
+110,2023-01-25,Araucania,organic,,No Response,,,,,,,,,False,False
 111,2023-04-13,Metropolitana,google_ads,10.0,Promoter,1.0,13013.0,13013.0,2023-11-08,2023-11-08,449.0,0.0,Dormant,False,False
-112,2023-02-22,Maule,mercadolibre_ads,9.0,Promoter,2.0,60744.0,30372.0,2023-05-02,2024-01-19,377.0,262.0,Dormant,False,False
-113,2024-12-31,Biobio,google_ads,7.0,Passive,4.0,155192.0,38798.0,2023-03-07,2024-06-10,234.0,461.0,Dormant,True,True
+112,2023-02-22,Maule,mercadolibre_ads,8.0,Passive,1.0,32754.0,32754.0,2023-05-02,2023-05-02,639.0,0.0,Dormant,False,False
+113,2024-12-31,Biobio,google_ads,10.0,Promoter,3.0,138702.0,46234.0,2023-03-07,2023-12-04,423.0,272.0,Dormant,True,True
 114,2024-05-10,Metropolitana,facebook_ads,,No Response,,,,,,,,,False,False
 115,2023-10-29,OHiggins,google_ads,,No Response,,,,,,,,,False,False
 116,2024-09-07,Los Lagos,facebook_ads,,No Response,,,,,,,,,False,False
-117,2024-05-03,Metropolitana,organic,9.0,Promoter,3.0,103259.0,34419.666666666664,2023-04-02,2023-10-22,466.0,203.0,Dormant,False,False
+117,2024-05-03,Metropolitana,organic,2.0,Detractor,3.0,103259.0,34419.666666666664,2023-04-02,2023-10-22,466.0,203.0,Dormant,False,False
 118,2023-03-03,Metropolitana,facebook_ads,,No Response,,,,,,,,,False,False
-119,2024-10-31,Maule,google_ads,8.0,Passive,3.0,67532.0,22510.666666666668,2024-05-27,2024-09-19,133.0,115.0,At Risk,False,False
-120,2023-08-21,Araucania,organic,10.0,Promoter,1.0,16990.0,16990.0,2024-08-27,2024-08-27,156.0,0.0,At Risk,False,False
-121,2024-05-09,Metropolitana,instagram_ads,10.0,Promoter,3.0,76268.0,25422.666666666668,2023-01-19,2024-11-19,72.0,670.0,Active,False,False
-122,2024-11-10,Metropolitana,instagram_ads,7.0,Passive,3.0,135943.0,45314.333333333336,2023-08-29,2024-12-26,35.0,485.0,Active,True,False
+119,2024-10-31,Maule,google_ads,7.0,Passive,1.0,40562.0,40562.0,2024-05-27,2024-05-27,248.0,0.0,Dormant,False,False
+120,2023-08-21,Araucania,organic,,No Response,,,,,,,,,False,False
+121,2024-05-09,Metropolitana,instagram_ads,10.0,Promoter,1.0,17798.0,17798.0,2023-01-19,2023-01-19,742.0,0.0,Dormant,False,False
+122,2024-11-10,Metropolitana,instagram_ads,9.0,Promoter,2.0,106453.0,53226.5,2023-08-29,2024-12-26,35.0,485.0,Active,False,False
 123,2023-04-25,Metropolitana,facebook_ads,,No Response,,,,,,,,,False,False
-124,2023-02-04,Valparaiso,google_ads,10.0,Promoter,4.0,142784.0,35696.0,2023-10-14,2024-04-13,292.0,182.0,Dormant,True,True
+124,2023-02-04,Valparaiso,google_ads,2.0,Detractor,2.0,59824.0,29912.0,2023-10-14,2023-11-30,427.0,47.0,Dormant,False,False
 125,2023-03-19,Biobio,mercadolibre_ads,9.0,Promoter,1.0,61440.0,61440.0,2023-05-08,2023-05-08,633.0,0.0,Dormant,False,False
-126,2023-06-17,Metropolitana,mercadolibre_ads,,No Response,1.0,15490.0,15490.0,2024-12-12,2024-12-12,49.0,0.0,Active,False,False
-127,2024-05-26,Valparaiso,organic,,No Response,5.0,160033.0,32006.6,2023-11-22,2024-12-23,38.0,397.0,Active,True,False
-128,2024-08-14,Araucania,google_ads,7.0,Passive,2.0,108798.0,54399.0,2023-04-27,2023-06-29,581.0,63.0,Dormant,False,False
+126,2023-06-17,Metropolitana,mercadolibre_ads,,No Response,,,,,,,,,False,False
+127,2024-05-26,Valparaiso,organic,,No Response,1.0,43113.0,43113.0,2023-11-22,2023-11-22,435.0,0.0,Dormant,False,False
+128,2024-08-14,Araucania,google_ads,8.0,Passive,2.0,108798.0,54399.0,2023-04-27,2023-06-29,581.0,63.0,Dormant,False,False
 129,2023-01-03,Metropolitana,mercadolibre_ads,,No Response,,,,,,,,,False,False
-130,2023-08-03,Metropolitana,mercadolibre_ads,7.0,Passive,5.0,125814.0,25162.8,2023-01-08,2024-12-06,55.0,698.0,Active,False,False
-131,2023-06-12,Araucania,google_ads,,No Response,2.0,53078.0,26539.0,2023-03-02,2024-11-14,77.0,623.0,Active,False,False
-132,2023-03-17,Los Lagos,mercadolibre_ads,8.0,Passive,1.0,7323.0,7323.0,2023-09-25,2023-09-25,493.0,0.0,Dormant,False,False
-133,2023-02-08,Valparaiso,organic,8.0,Passive,2.0,38460.0,19230.0,2023-10-10,2024-04-06,299.0,179.0,Dormant,False,False
+130,2023-08-03,Metropolitana,mercadolibre_ads,7.0,Passive,3.0,84844.0,28281.33333333333,2023-01-08,2024-08-06,177.0,576.0,At Risk,False,False
+131,2023-06-12,Araucania,google_ads,,No Response,1.0,14598.0,14598.0,2023-03-02,2023-03-02,700.0,0.0,Dormant,False,False
+132,2023-03-17,Los Lagos,mercadolibre_ads,9.0,Promoter,1.0,7323.0,7323.0,2023-09-25,2023-09-25,493.0,0.0,Dormant,False,False
+133,2023-02-08,Valparaiso,organic,9.0,Promoter,1.0,24980.0,24980.0,2023-10-10,2023-10-10,478.0,0.0,Dormant,False,False
 134,2023-05-04,Valparaiso,mercadolibre_ads,,No Response,,,,,,,,,False,False
 135,2024-12-31,Metropolitana,facebook_ads,10.0,Promoter,1.0,25487.0,25487.0,2023-06-12,2023-06-12,598.0,0.0,Dormant,False,False
 136,2023-04-28,Valparaiso,organic,,No Response,,,,,,,,,False,False
-137,2023-08-08,Valparaiso,instagram_ads,,No Response,1.0,29480.0,29480.0,2024-10-05,2024-10-05,117.0,0.0,At Risk,False,False
+137,2023-08-08,Valparaiso,instagram_ads,,No Response,,,,,,,,,False,False
 138,2023-12-31,Metropolitana,google_ads,,No Response,,,,,,,,,False,False
-139,2023-05-16,Metropolitana,mercadolibre_ads,10.0,Promoter,2.0,97614.0,48807.0,2023-07-16,2024-12-25,36.0,528.0,Active,False,False
+139,2023-05-16,Metropolitana,mercadolibre_ads,10.0,Promoter,1.0,13644.0,13644.0,2023-07-16,2023-07-16,564.0,0.0,Dormant,False,False
 140,2024-12-31,Metropolitana,facebook_ads,,No Response,,,,,,,,,False,False
-141,2024-12-31,Metropolitana,instagram_ads,9.0,Promoter,3.0,161175.0,53725.0,2023-09-23,2024-06-17,227.0,268.0,Dormant,True,True
-142,2023-03-29,Metropolitana,mercadolibre_ads,,No Response,2.0,291488.0,145744.0,2024-05-26,2024-08-10,173.0,76.0,At Risk,True,False
-143,2023-07-26,Metropolitana,facebook_ads,,No Response,2.0,76470.0,38235.0,2024-07-14,2025-01-17,13.0,187.0,Active,False,False
+141,2024-12-31,Metropolitana,instagram_ads,1.0,Detractor,2.0,99695.0,49847.5,2023-09-23,2023-11-03,454.0,41.0,Dormant,False,False
+142,2023-03-29,Metropolitana,mercadolibre_ads,0.0,Detractor,1.0,41988.0,41988.0,2024-08-10,2024-08-10,173.0,0.0,At Risk,False,False
+143,2023-07-26,Metropolitana,facebook_ads,,No Response,,,,,,,,,False,False
 144,2023-04-18,Metropolitana,mercadolibre_ads,10.0,Promoter,1.0,20578.0,20578.0,2023-05-12,2023-05-12,629.0,0.0,Dormant,False,False
 145,2023-04-11,Metropolitana,mercadolibre_ads,,No Response,2.0,59672.0,29836.0,2023-05-03,2024-05-07,268.0,370.0,Dormant,False,False
-146,2023-01-12,Los Lagos,facebook_ads,4.0,Detractor,2.0,37046.0,18523.0,2023-01-19,2023-07-15,565.0,177.0,Dormant,False,False
+146,2023-01-12,Los Lagos,facebook_ads,9.0,Promoter,2.0,37046.0,18523.0,2023-01-19,2023-07-15,565.0,177.0,Dormant,False,False
 147,2023-10-10,Biobio,facebook_ads,,No Response,,,,,,,,,False,False
 148,2023-07-29,Araucania,facebook_ads,,No Response,,,,,,,,,False,False
-149,2023-01-16,Maule,facebook_ads,,No Response,4.0,96420.0,24105.0,2023-10-25,2024-06-04,240.0,223.0,Dormant,False,False
+149,2023-01-16,Maule,facebook_ads,,No Response,3.0,73930.0,24643.33333333333,2023-10-25,2024-06-04,240.0,223.0,Dormant,False,False
 150,2023-04-08,Valparaiso,facebook_ads,,No Response,,,,,,,,,False,False
-151,2024-12-17,Metropolitana,facebook_ads,0.0,Detractor,2.0,50795.0,25397.5,2023-02-06,2024-03-07,329.0,395.0,Dormant,False,False
-152,2023-03-24,Valparaiso,google_ads,,No Response,1.0,21990.0,21990.0,2025-01-29,2025-01-29,1.0,0.0,Active,False,False
-153,2023-02-16,Biobio,mercadolibre_ads,9.0,Promoter,3.0,91009.0,30336.33333333333,2023-02-20,2024-08-07,176.0,534.0,At Risk,False,False
-154,2023-07-21,Araucania,facebook_ads,4.0,Detractor,4.0,68530.0,17132.5,2023-05-13,2025-01-07,23.0,605.0,Active,False,False
+151,2024-12-17,Metropolitana,facebook_ads,8.0,Passive,2.0,50795.0,25397.5,2023-02-06,2024-03-07,329.0,395.0,Dormant,False,False
+152,2023-03-24,Valparaiso,google_ads,,No Response,,,,,,,,,False,False
+153,2023-02-16,Biobio,mercadolibre_ads,9.0,Promoter,2.0,51039.0,25519.5,2023-02-20,2024-02-24,341.0,369.0,Dormant,False,False
+154,2023-07-21,Araucania,facebook_ads,9.0,Promoter,2.0,42050.0,21025.0,2023-05-13,2023-11-30,427.0,201.0,Dormant,False,False
 155,2024-12-31,Valparaiso,facebook_ads,,No Response,,,,,,,,,False,False
-156,2023-03-25,Metropolitana,google_ads,10.0,Promoter,2.0,68796.0,34398.0,2023-09-09,2024-08-02,181.0,328.0,Dormant,False,False
-157,2023-12-01,Metropolitana,mercadolibre_ads,,No Response,2.0,79970.0,39985.0,2024-09-16,2024-11-03,88.0,48.0,Active,False,False
-158,2024-03-06,Metropolitana,instagram_ads,,No Response,1.0,59480.0,59480.0,2024-10-10,2024-10-10,112.0,0.0,At Risk,False,False
-159,2023-03-23,Biobio,facebook_ads,3.0,Detractor,1.0,8407.0,8407.0,2024-01-19,2024-01-19,377.0,0.0,Dormant,False,False
-160,2024-01-26,Biobio,organic,2.0,Detractor,1.0,15490.0,15490.0,2024-09-28,2024-09-28,124.0,0.0,At Risk,False,False
+156,2023-03-25,Metropolitana,google_ads,7.0,Passive,1.0,48806.0,48806.0,2023-09-09,2023-09-09,509.0,0.0,Dormant,False,False
+157,2023-12-01,Metropolitana,mercadolibre_ads,,No Response,,,,,,,,,False,False
+158,2024-03-06,Metropolitana,instagram_ads,,No Response,,,,,,,,,False,False
+159,2023-03-23,Biobio,facebook_ads,,No Response,1.0,8407.0,8407.0,2024-01-19,2024-01-19,377.0,0.0,Dormant,False,False
+160,2024-01-26,Biobio,organic,,No Response,,,,,,,,,False,False
 161,2023-05-18,Metropolitana,google_ads,,No Response,,,,,,,,,False,False
-162,2023-10-28,Coquimbo,organic,7.0,Passive,2.0,78970.0,39485.0,2024-07-02,2024-07-24,190.0,22.0,Dormant,False,False
-163,2023-10-29,Biobio,mercadolibre_ads,7.0,Passive,3.0,97272.0,32424.0,2023-06-02,2025-01-20,10.0,598.0,Active,False,False
+162,2023-10-28,Coquimbo,organic,,No Response,,,,,,,,,False,False
+163,2023-10-29,Biobio,mercadolibre_ads,9.0,Promoter,2.0,85282.0,42641.0,2023-06-02,2023-08-14,535.0,73.0,Dormant,False,False
 164,2023-08-19,Metropolitana,facebook_ads,,No Response,1.0,15875.0,15875.0,2023-09-23,2023-09-23,495.0,0.0,Dormant,False,False
 165,2023-01-29,Metropolitana,organic,,No Response,,,,,,,,,False,False
-166,2024-06-25,Metropolitana,instagram_ads,1.0,Detractor,3.0,72130.0,24043.33333333333,2023-12-21,2024-11-20,71.0,335.0,Active,False,False
-167,2023-04-27,Metropolitana,google_ads,,No Response,6.0,205067.0,34177.833333333336,2023-03-09,2024-06-29,215.0,478.0,Dormant,True,True
+166,2024-06-25,Metropolitana,instagram_ads,9.0,Promoter,1.0,31150.0,31150.0,2023-12-21,2023-12-21,406.0,0.0,Dormant,False,False
+167,2023-04-27,Metropolitana,google_ads,,No Response,2.0,59627.0,29813.5,2023-03-09,2024-02-25,340.0,353.0,Dormant,False,False
 168,2023-03-03,Metropolitana,mercadolibre_ads,,No Response,,,,,,,,,False,False
 169,2023-01-13,Metropolitana,organic,,No Response,,,,,,,,,False,False
-170,2023-09-26,Metropolitana,mercadolibre_ads,,No Response,2.0,22902.0,11451.0,2023-03-14,2024-01-28,368.0,320.0,Dormant,False,False
-171,2023-12-06,Metropolitana,google_ads,,No Response,1.0,27480.0,27480.0,2024-07-17,2024-07-17,197.0,0.0,Dormant,False,False
+170,2023-09-26,Metropolitana,mercadolibre_ads,8.0,Passive,1.0,7412.0,7412.0,2023-03-14,2023-03-14,688.0,0.0,Dormant,False,False
+171,2023-12-06,Metropolitana,google_ads,,No Response,,,,,,,,,False,False
 172,2023-01-06,Los Lagos,instagram_ads,9.0,Promoter,1.0,65142.0,65142.0,2023-08-25,2023-08-25,524.0,0.0,Dormant,False,False
 173,2023-08-04,Metropolitana,google_ads,,No Response,,,,,,,,,False,False
-174,2023-03-19,Valparaiso,mercadolibre_ads,9.0,Promoter,1.0,104384.0,104384.0,2023-07-25,2023-07-25,555.0,0.0,Dormant,False,False
+174,2023-03-19,Valparaiso,mercadolibre_ads,,No Response,1.0,104384.0,104384.0,2023-07-25,2023-07-25,555.0,0.0,Dormant,False,False
 175,2023-11-07,Valparaiso,google_ads,9.0,Promoter,2.0,39472.0,19736.0,2023-11-05,2024-07-28,186.0,266.0,Dormant,False,False
-176,2023-02-27,Coquimbo,mercadolibre_ads,1.0,Detractor,1.0,16882.0,16882.0,2023-06-06,2023-06-06,604.0,0.0,Dormant,False,False
+176,2023-02-27,Coquimbo,mercadolibre_ads,8.0,Passive,1.0,16882.0,16882.0,2023-06-06,2023-06-06,604.0,0.0,Dormant,False,False
 177,2023-12-19,Metropolitana,facebook_ads,,No Response,,,,,,,,,False,False
-178,2023-05-27,Metropolitana,organic,5.0,Detractor,3.0,92259.0,30753.0,2024-05-02,2024-10-14,108.0,165.0,At Risk,False,False
-179,2024-12-31,Coquimbo,instagram_ads,8.0,Passive,3.0,119472.0,39824.0,2024-10-05,2024-12-26,35.0,82.0,Active,False,False
+178,2023-05-27,Metropolitana,organic,,No Response,1.0,20799.0,20799.0,2024-10-14,2024-10-14,108.0,0.0,At Risk,False,False
+179,2024-12-31,Coquimbo,instagram_ads,9.0,Promoter,1.0,51502.0,51502.0,2024-10-24,2024-10-24,98.0,0.0,At Risk,False,False
 180,2023-02-14,OHiggins,mercadolibre_ads,,No Response,,,,,,,,,False,False
-181,2023-05-06,Maule,instagram_ads,,No Response,2.0,47470.0,23735.0,2024-08-21,2024-09-14,138.0,24.0,At Risk,False,False
-182,2023-02-06,Metropolitana,mercadolibre_ads,,No Response,4.0,113146.0,28286.5,2023-11-20,2025-01-15,15.0,422.0,Active,False,False
+181,2023-05-06,Maule,instagram_ads,,No Response,,,,,,,,,False,False
+182,2023-02-06,Metropolitana,mercadolibre_ads,10.0,Promoter,2.0,34686.0,17343.0,2023-11-20,2024-09-11,141.0,296.0,At Risk,False,False
 183,2024-12-31,Metropolitana,facebook_ads,,No Response,,,,,,,,,False,False
-184,2024-09-21,Biobio,instagram_ads,8.0,Passive,3.0,36878.0,12292.666666666666,2023-09-29,2024-12-19,42.0,447.0,Active,False,False
+184,2024-09-21,Biobio,instagram_ads,8.0,Passive,1.0,10398.0,10398.0,2023-09-29,2023-09-29,489.0,0.0,Dormant,False,False
 185,2023-03-31,Los Lagos,organic,,No Response,,,,,,,,,False,False
-186,2023-11-20,Biobio,instagram_ads,10.0,Promoter,2.0,67764.0,33882.0,2023-05-26,2024-11-30,61.0,554.0,Active,False,False
-187,2024-05-24,Biobio,facebook_ads,9.0,Promoter,2.0,62120.0,31060.0,2023-03-05,2023-11-11,446.0,251.0,Dormant,False,False
+186,2023-11-20,Biobio,instagram_ads,8.0,Passive,1.0,49794.0,49794.0,2023-05-26,2023-05-26,615.0,0.0,Dormant,False,False
+187,2024-05-24,Biobio,facebook_ads,,No Response,2.0,62120.0,31060.0,2023-03-05,2023-11-11,446.0,251.0,Dormant,False,False
 188,2023-09-01,Metropolitana,organic,,No Response,,,,,,,,,False,False
 189,2023-08-15,Maule,mercadolibre_ads,,No Response,,,,,,,,,False,False
-190,2023-03-25,Metropolitana,google_ads,10.0,Promoter,3.0,70958.0,23652.666666666668,2023-01-13,2024-12-23,38.0,710.0,Active,False,False
+190,2023-03-25,Metropolitana,google_ads,4.0,Detractor,3.0,70958.0,23652.666666666668,2023-01-13,2024-12-23,38.0,710.0,Active,False,False
 191,2023-01-30,Metropolitana,organic,,No Response,,,,,,,,,False,False
 192,2024-11-13,Valparaiso,facebook_ads,,No Response,,,,,,,,,False,False
-193,2024-11-23,Valparaiso,google_ads,8.0,Passive,2.0,55356.0,27678.0,2023-08-09,2023-12-06,421.0,119.0,Dormant,False,False
+193,2024-11-23,Valparaiso,google_ads,10.0,Promoter,2.0,55356.0,27678.0,2023-08-09,2023-12-06,421.0,119.0,Dormant,False,False
 194,2023-10-28,Metropolitana,google_ads,10.0,Promoter,1.0,40491.0,40491.0,2023-12-23,2023-12-23,404.0,0.0,Dormant,False,False
 195,2023-05-05,Metropolitana,organic,,No Response,,,,,,,,,False,False
 196,2023-05-09,Biobio,facebook_ads,,No Response,1.0,27637.0,27637.0,2024-06-27,2024-06-27,217.0,0.0,Dormant,False,False
 197,2024-01-24,Metropolitana,instagram_ads,,No Response,,,,,,,,,False,False
-198,2024-11-13,Biobio,instagram_ads,9.0,Promoter,1.0,46370.0,46370.0,2023-08-08,2023-08-08,541.0,0.0,Dormant,False,False
+198,2024-11-13,Biobio,instagram_ads,3.0,Detractor,1.0,46370.0,46370.0,2023-08-08,2023-08-08,541.0,0.0,Dormant,False,False
 199,2024-10-16,Metropolitana,facebook_ads,,No Response,1.0,30474.0,30474.0,2023-01-01,2023-01-01,760.0,0.0,Dormant,False,False
-200,2024-03-30,Valparaiso,mercadolibre_ads,,No Response,1.0,29490.0,29490.0,2024-08-10,2024-08-10,173.0,0.0,At Risk,False,False
-201,2023-11-05,Valparaiso,facebook_ads,7.0,Passive,2.0,144626.0,72313.0,2023-03-10,2024-03-01,335.0,357.0,Dormant,True,True
+200,2024-03-30,Valparaiso,mercadolibre_ads,,No Response,,,,,,,,,False,False
+201,2023-11-05,Valparaiso,facebook_ads,9.0,Promoter,1.0,99156.0,99156.0,2023-03-10,2023-03-10,692.0,0.0,Dormant,False,False
 202,2023-01-27,Metropolitana,organic,,No Response,2.0,43620.0,21810.0,2023-04-24,2023-07-19,561.0,86.0,Dormant,False,False
-203,2023-02-22,Metropolitana,organic,9.0,Promoter,1.0,40470.0,40470.0,2024-05-10,2024-05-10,265.0,0.0,Dormant,False,False
-204,2024-11-17,Metropolitana,google_ads,,No Response,3.0,63860.0,21286.666666666668,2023-04-30,2023-12-23,404.0,237.0,Dormant,False,False
-205,2023-10-07,Metropolitana,google_ads,9.0,Promoter,1.0,48924.0,48924.0,2024-08-03,2024-08-03,180.0,0.0,At Risk,False,False
+203,2023-02-22,Metropolitana,organic,,No Response,,,,,,,,,False,False
+204,2024-11-17,Metropolitana,google_ads,5.0,Detractor,3.0,63860.0,21286.666666666668,2023-04-30,2023-12-23,404.0,237.0,Dormant,False,False
+205,2023-10-07,Metropolitana,google_ads,,No Response,1.0,48924.0,48924.0,2024-08-03,2024-08-03,180.0,0.0,At Risk,False,False
 206,2023-01-03,Coquimbo,google_ads,,No Response,,,,,,,,,False,False
-207,2023-02-02,Metropolitana,mercadolibre_ads,9.0,Promoter,1.0,14970.0,14970.0,2023-07-23,2023-07-23,557.0,0.0,Dormant,False,False
-208,2023-11-23,Maule,google_ads,10.0,Promoter,3.0,94454.0,31484.666666666668,2023-12-14,2024-11-17,74.0,339.0,Active,False,False
-209,2023-01-02,Metropolitana,mercadolibre_ads,9.0,Promoter,4.0,190831.0,47707.75,2023-01-20,2024-06-23,221.0,520.0,Dormant,True,True
-210,2023-02-22,Araucania,instagram_ads,,No Response,1.0,61970.0,61970.0,2024-04-06,2024-04-06,299.0,0.0,Dormant,False,False
-211,2023-08-27,Maule,google_ads,7.0,Passive,2.0,64524.0,32262.0,2024-04-08,2024-08-04,179.0,118.0,At Risk,False,False
-212,2023-12-20,Biobio,google_ads,10.0,Promoter,1.0,44980.0,44980.0,2024-05-19,2024-05-19,256.0,0.0,Dormant,False,False
+207,2023-02-02,Metropolitana,mercadolibre_ads,10.0,Promoter,1.0,14970.0,14970.0,2023-07-23,2023-07-23,557.0,0.0,Dormant,False,False
+208,2023-11-23,Maule,google_ads,9.0,Promoter,1.0,46004.0,46004.0,2023-12-14,2023-12-14,413.0,0.0,Dormant,False,False
+209,2023-01-02,Metropolitana,mercadolibre_ads,7.0,Passive,4.0,190831.0,47707.75,2023-01-20,2024-06-23,221.0,520.0,Dormant,True,True
+210,2023-02-22,Araucania,instagram_ads,,No Response,,,,,,,,,False,False
+211,2023-08-27,Maule,google_ads,,No Response,1.0,47034.0,47034.0,2024-08-04,2024-08-04,179.0,0.0,At Risk,False,False
+212,2023-12-20,Biobio,google_ads,,No Response,,,,,,,,,False,False
 213,2023-11-13,Valparaiso,mercadolibre_ads,,No Response,,,,,,,,,False,False
 214,2023-03-18,Valparaiso,google_ads,,No Response,,,,,,,,,False,False
 215,2024-01-09,Metropolitana,facebook_ads,,No Response,,,,,,,,,False,False
 216,2023-03-23,Los Lagos,mercadolibre_ads,,No Response,,,,,,,,,False,False
 217,2023-04-29,OHiggins,organic,,No Response,,,,,,,,,False,False
-218,2024-02-16,Coquimbo,facebook_ads,1.0,Detractor,3.0,73353.0,24451.0,2023-05-15,2024-04-02,303.0,323.0,Dormant,False,False
-219,2023-11-11,Metropolitana,facebook_ads,8.0,Passive,1.0,8885.0,8885.0,2023-01-10,2023-01-10,751.0,0.0,Dormant,False,False
-220,2024-07-21,Araucania,google_ads,2.0,Detractor,2.0,103522.0,51761.0,2023-02-01,2024-01-26,370.0,359.0,Dormant,False,False
+218,2024-02-16,Coquimbo,facebook_ads,9.0,Promoter,2.0,58863.0,29431.5,2023-05-15,2023-09-10,508.0,118.0,Dormant,False,False
+219,2023-11-11,Metropolitana,facebook_ads,10.0,Promoter,1.0,8885.0,8885.0,2023-01-10,2023-01-10,751.0,0.0,Dormant,False,False
+220,2024-07-21,Araucania,google_ads,10.0,Promoter,1.0,87032.0,87032.0,2023-02-01,2023-02-01,729.0,0.0,Dormant,False,False
 221,2023-11-18,Los Lagos,instagram_ads,,No Response,,,,,,,,,False,False
-222,2023-09-10,Metropolitana,mercadolibre_ads,,No Response,2.0,38112.0,19056.0,2023-04-13,2023-11-20,437.0,221.0,Dormant,False,False
+222,2023-09-10,Metropolitana,mercadolibre_ads,9.0,Promoter,2.0,38112.0,19056.0,2023-04-13,2023-11-20,437.0,221.0,Dormant,False,False
 223,2023-01-30,Metropolitana,mercadolibre_ads,,No Response,,,,,,,,,False,False
-224,2023-05-18,Araucania,facebook_ads,8.0,Passive,1.0,26927.0,26927.0,2024-08-06,2024-08-06,177.0,0.0,At Risk,False,False
+224,2023-05-18,Araucania,facebook_ads,,No Response,1.0,26927.0,26927.0,2024-08-06,2024-08-06,177.0,0.0,At Risk,False,False
 225,2023-04-03,Biobio,mercadolibre_ads,,No Response,,,,,,,,,False,False
-226,2023-03-25,OHiggins,mercadolibre_ads,,No Response,5.0,84492.0,16898.4,2023-06-20,2024-12-23,38.0,552.0,Active,False,False
-227,2024-12-31,Metropolitana,google_ads,,No Response,4.0,72463.0,18115.75,2023-07-17,2024-11-26,65.0,498.0,Active,False,False
-228,2023-05-30,Maule,mercadolibre_ads,8.0,Passive,2.0,57460.0,28730.0,2024-04-16,2024-06-23,221.0,68.0,Dormant,False,False
+226,2023-03-25,OHiggins,mercadolibre_ads,,No Response,2.0,35022.0,17511.0,2023-06-20,2023-07-11,569.0,21.0,Dormant,False,False
+227,2024-12-31,Metropolitana,google_ads,,No Response,2.0,44483.0,22241.5,2023-07-17,2024-10-21,101.0,462.0,At Risk,False,False
+228,2023-05-30,Maule,mercadolibre_ads,,No Response,,,,,,,,,False,False
 229,2024-10-29,Metropolitana,instagram_ads,,No Response,,,,,,,,,False,False
 230,2023-10-27,Metropolitana,google_ads,,No Response,,,,,,,,,False,False
 231,2024-04-20,Metropolitana,instagram_ads,,No Response,,,,,,,,,False,False
 232,2023-07-29,Maule,mercadolibre_ads,,No Response,1.0,39012.0,39012.0,2023-04-16,2023-04-16,655.0,0.0,Dormant,False,False
-233,2023-09-16,Biobio,mercadolibre_ads,,No Response,1.0,15490.0,15490.0,2024-01-04,2024-01-04,392.0,0.0,Dormant,False,False
-234,2023-07-23,Valparaiso,organic,7.0,Passive,2.0,62149.0,31074.5,2023-08-25,2023-10-29,459.0,65.0,Dormant,False,False
-235,2023-03-07,Metropolitana,mercadolibre_ads,6.0,Detractor,1.0,38234.0,38234.0,2024-06-02,2024-06-02,242.0,0.0,Dormant,False,False
-236,2024-01-20,OHiggins,google_ads,,No Response,2.0,86264.0,43132.0,2023-05-17,2024-04-26,279.0,345.0,Dormant,False,False
-237,2023-04-09,Metropolitana,facebook_ads,10.0,Promoter,1.0,23980.0,23980.0,2024-10-28,2024-10-28,94.0,0.0,At Risk,False,False
-238,2023-01-08,Maule,mercadolibre_ads,9.0,Promoter,1.0,24283.0,24283.0,2023-04-27,2023-04-27,644.0,0.0,Dormant,False,False
-239,2023-11-08,Valparaiso,instagram_ads,,No Response,2.0,70864.0,35432.0,2023-10-04,2024-01-05,391.0,93.0,Dormant,False,False
-240,2023-02-28,Metropolitana,organic,10.0,Promoter,1.0,64053.0,64053.0,2023-04-18,2023-04-18,653.0,0.0,Dormant,False,False
-241,2024-12-31,Valparaiso,instagram_ads,2.0,Detractor,1.0,26480.0,26480.0,2024-01-17,2024-01-17,379.0,0.0,Dormant,False,False
+233,2023-09-16,Biobio,mercadolibre_ads,,No Response,,,,,,,,,False,False
+234,2023-07-23,Valparaiso,organic,5.0,Detractor,2.0,62149.0,31074.5,2023-08-25,2023-10-29,459.0,65.0,Dormant,False,False
+235,2023-03-07,Metropolitana,mercadolibre_ads,10.0,Promoter,1.0,38234.0,38234.0,2024-06-02,2024-06-02,242.0,0.0,Dormant,False,False
+236,2024-01-20,OHiggins,google_ads,,No Response,1.0,46794.0,46794.0,2023-05-17,2023-05-17,624.0,0.0,Dormant,False,False
+237,2023-04-09,Metropolitana,facebook_ads,,No Response,,,,,,,,,False,False
+238,2023-01-08,Maule,mercadolibre_ads,1.0,Detractor,1.0,24283.0,24283.0,2023-04-27,2023-04-27,644.0,0.0,Dormant,False,False
+239,2023-11-08,Valparaiso,instagram_ads,7.0,Passive,1.0,55384.0,55384.0,2023-10-04,2023-10-04,484.0,0.0,Dormant,False,False
+240,2023-02-28,Metropolitana,organic,,No Response,1.0,64053.0,64053.0,2023-04-18,2023-04-18,653.0,0.0,Dormant,False,False
+241,2024-12-31,Valparaiso,instagram_ads,,No Response,,,,,,,,,False,False
 242,2024-12-31,Metropolitana,instagram_ads,,No Response,,,,,,,,,False,False
-243,2024-12-31,Araucania,instagram_ads,9.0,Promoter,1.0,8758.0,8758.0,2023-01-16,2023-01-16,745.0,0.0,Dormant,False,False
+243,2024-12-31,Araucania,instagram_ads,8.0,Passive,1.0,8758.0,8758.0,2023-01-16,2023-01-16,745.0,0.0,Dormant,False,False
 244,2023-05-19,Valparaiso,google_ads,,No Response,,,,,,,,,False,False
-245,2023-01-05,Metropolitana,google_ads,10.0,Promoter,3.0,59766.0,19922.0,2023-01-14,2024-12-25,36.0,711.0,Active,False,False
-246,2024-12-31,Los Lagos,facebook_ads,,No Response,3.0,62798.0,20932.666666666668,2023-07-28,2024-12-20,41.0,511.0,Active,False,False
-247,2023-06-17,Metropolitana,organic,5.0,Detractor,3.0,72742.0,24247.33333333333,2023-03-20,2023-10-21,467.0,215.0,Dormant,False,False
-248,2024-12-31,Valparaiso,organic,6.0,Detractor,1.0,57220.0,57220.0,2024-04-21,2024-04-21,284.0,0.0,Dormant,False,False
+245,2023-01-05,Metropolitana,google_ads,10.0,Promoter,2.0,41796.0,20898.0,2023-01-14,2023-11-30,427.0,320.0,Dormant,False,False
+246,2024-12-31,Los Lagos,facebook_ads,,No Response,1.0,31318.0,31318.0,2023-07-28,2023-07-28,552.0,0.0,Dormant,False,False
+247,2023-06-17,Metropolitana,organic,,No Response,3.0,72742.0,24247.33333333333,2023-03-20,2023-10-21,467.0,215.0,Dormant,False,False
+248,2024-12-31,Valparaiso,organic,8.0,Passive,1.0,57220.0,57220.0,2024-04-21,2024-04-21,284.0,0.0,Dormant,False,False
 249,2024-12-31,Los Lagos,instagram_ads,,No Response,,,,,,,,,False,False
-250,2024-07-29,Biobio,facebook_ads,,No Response,1.0,45470.0,45470.0,2024-04-21,2024-04-21,284.0,0.0,Dormant,False,False
-251,2023-04-15,Metropolitana,google_ads,,No Response,2.0,43470.0,21735.0,2024-02-15,2024-08-31,152.0,198.0,At Risk,False,False
-252,2023-05-26,Los Lagos,mercadolibre_ads,,No Response,3.0,164456.0,54818.66666666666,2023-10-11,2024-06-02,242.0,235.0,Dormant,True,True
+250,2024-07-29,Biobio,facebook_ads,,No Response,,,,,,,,,False,False
+251,2023-04-15,Metropolitana,google_ads,,No Response,,,,,,,,,False,False
+252,2023-05-26,Los Lagos,mercadolibre_ads,,No Response,1.0,62496.0,62496.0,2023-10-11,2023-10-11,477.0,0.0,Dormant,False,False
 253,2024-07-25,Biobio,mercadolibre_ads,,No Response,,,,,,,,,False,False
-254,2023-04-25,Metropolitana,organic,10.0,Promoter,2.0,51008.0,25504.0,2023-04-18,2024-04-30,275.0,378.0,Dormant,False,False
+254,2023-04-25,Metropolitana,organic,,No Response,2.0,51008.0,25504.0,2023-04-18,2024-04-30,275.0,378.0,Dormant,False,False
 255,2023-02-25,Metropolitana,mercadolibre_ads,,No Response,,,,,,,,,False,False
-256,2023-09-02,Maule,google_ads,10.0,Promoter,3.0,133232.0,44410.66666666666,2023-05-21,2025-01-26,4.0,616.0,Active,True,False
-257,2024-12-31,Biobio,google_ads,,No Response,3.0,49887.0,16629.0,2023-02-28,2024-08-13,170.0,532.0,At Risk,False,False
+256,2023-09-02,Maule,google_ads,6.0,Detractor,1.0,60282.0,60282.0,2023-05-21,2023-05-21,620.0,0.0,Dormant,False,False
+257,2024-12-31,Biobio,google_ads,,No Response,2.0,19897.0,9948.5,2023-02-28,2023-11-02,455.0,247.0,Dormant,False,False
 258,2023-12-24,Valparaiso,google_ads,,No Response,,,,,,,,,False,False
-259,2023-09-11,Los Lagos,organic,7.0,Passive,1.0,37416.0,37416.0,2023-07-20,2023-07-20,560.0,0.0,Dormant,False,False
+259,2023-09-11,Los Lagos,organic,8.0,Passive,1.0,37416.0,37416.0,2023-07-20,2023-07-20,560.0,0.0,Dormant,False,False
 260,2023-01-31,Maule,mercadolibre_ads,,No Response,1.0,32471.0,32471.0,2023-03-22,2023-03-22,680.0,0.0,Dormant,False,False
-261,2023-10-14,Metropolitana,mercadolibre_ads,7.0,Passive,2.0,57646.0,28823.0,2023-05-30,2023-07-28,552.0,59.0,Dormant,False,False
-262,2024-12-31,Metropolitana,instagram_ads,9.0,Promoter,4.0,125523.0,31380.75,2023-05-06,2024-05-30,245.0,390.0,Dormant,False,False
+261,2023-10-14,Metropolitana,mercadolibre_ads,1.0,Detractor,2.0,57646.0,28823.0,2023-05-30,2023-07-28,552.0,59.0,Dormant,False,False
+262,2024-12-31,Metropolitana,instagram_ads,7.0,Passive,4.0,125523.0,31380.75,2023-05-06,2024-05-30,245.0,390.0,Dormant,True,True
 263,2023-02-15,Metropolitana,mercadolibre_ads,,No Response,,,,,,,,,False,False
-264,2023-08-08,Araucania,google_ads,10.0,Promoter,1.0,13637.0,13637.0,2023-12-10,2023-12-10,417.0,0.0,Dormant,False,False
+264,2023-08-08,Araucania,google_ads,3.0,Detractor,1.0,13637.0,13637.0,2023-12-10,2023-12-10,417.0,0.0,Dormant,False,False
 265,2024-09-21,Metropolitana,organic,,No Response,2.0,136833.0,68416.5,2023-05-05,2024-01-02,394.0,242.0,Dormant,True,True
-266,2024-02-10,Biobio,organic,10.0,Promoter,3.0,103371.0,34457.0,2023-01-13,2024-12-08,53.0,695.0,Active,False,False
+266,2024-02-10,Biobio,organic,9.0,Promoter,1.0,56391.0,56391.0,2023-01-13,2023-01-13,748.0,0.0,Dormant,False,False
 267,2023-12-25,Maule,mercadolibre_ads,,No Response,,,,,,,,,False,False
-268,2023-12-30,OHiggins,google_ads,,No Response,1.0,15490.0,15490.0,2024-03-18,2024-03-18,318.0,0.0,Dormant,False,False
-269,2023-05-14,Metropolitana,mercadolibre_ads,10.0,Promoter,1.0,9990.0,9990.0,2024-03-02,2024-03-02,334.0,0.0,Dormant,False,False
-270,2023-04-15,OHiggins,mercadolibre_ads,9.0,Promoter,2.0,141622.0,70811.0,2023-12-22,2024-12-09,52.0,353.0,Active,True,False
+268,2023-12-30,OHiggins,google_ads,,No Response,,,,,,,,,False,False
+269,2023-05-14,Metropolitana,mercadolibre_ads,,No Response,,,,,,,,,False,False
+270,2023-04-15,OHiggins,mercadolibre_ads,,No Response,1.0,53152.0,53152.0,2023-12-22,2023-12-22,405.0,0.0,Dormant,False,False
 271,2024-05-12,Metropolitana,facebook_ads,,No Response,,,,,,,,,False,False
-272,2024-05-13,OHiggins,instagram_ads,9.0,Promoter,1.0,14408.0,14408.0,2024-10-31,2024-10-31,91.0,0.0,At Risk,False,False
+272,2024-05-13,OHiggins,instagram_ads,,No Response,1.0,14408.0,14408.0,2024-10-31,2024-10-31,91.0,0.0,At Risk,False,False
 273,2024-08-28,Metropolitana,instagram_ads,,No Response,,,,,,,,,False,False
 274,2024-12-31,Metropolitana,organic,,No Response,,,,,,,,,False,False
-275,2023-08-03,Maule,google_ads,10.0,Promoter,1.0,17072.0,17072.0,2024-09-08,2024-09-08,144.0,0.0,At Risk,False,False
+275,2023-08-03,Maule,google_ads,,No Response,1.0,17072.0,17072.0,2024-09-08,2024-09-08,144.0,0.0,At Risk,False,False
 276,2023-07-28,Metropolitana,organic,,No Response,1.0,18384.0,18384.0,2023-10-02,2023-10-02,486.0,0.0,Dormant,False,False
-277,2024-04-25,Metropolitana,google_ads,10.0,Promoter,3.0,57002.0,19000.666666666668,2023-06-11,2024-11-09,82.0,517.0,Active,False,False
+277,2024-04-25,Metropolitana,google_ads,,No Response,3.0,57002.0,19000.666666666668,2023-06-11,2024-11-09,82.0,517.0,Active,False,False
 278,2023-11-11,Araucania,instagram_ads,,No Response,1.0,27889.0,27889.0,2023-09-03,2023-09-03,515.0,0.0,Dormant,False,False
-279,2023-12-30,Araucania,organic,10.0,Promoter,1.0,31480.0,31480.0,2025-01-20,2025-01-20,10.0,0.0,Active,False,False
+279,2023-12-30,Araucania,organic,,No Response,,,,,,,,,False,False
 280,2024-04-21,Biobio,facebook_ads,,No Response,,,,,,,,,False,False
-281,2024-10-24,Araucania,facebook_ads,10.0,Promoter,2.0,38345.0,19172.5,2023-12-28,2024-01-31,365.0,34.0,Dormant,False,False
-282,2023-05-04,Valparaiso,google_ads,3.0,Detractor,2.0,130428.0,65214.0,2024-05-10,2024-07-05,209.0,56.0,Dormant,True,True
-283,2023-05-22,Metropolitana,mercadolibre_ads,7.0,Passive,2.0,42480.0,21240.0,2024-02-20,2024-08-09,174.0,171.0,At Risk,False,False
-284,2023-01-30,Metropolitana,organic,7.0,Passive,2.0,31980.0,15990.0,2024-03-17,2025-01-12,18.0,301.0,Active,False,False
+281,2024-10-24,Araucania,facebook_ads,,No Response,2.0,38345.0,19172.5,2023-12-28,2024-01-31,365.0,34.0,Dormant,False,False
+282,2023-05-04,Valparaiso,google_ads,5.0,Detractor,1.0,102438.0,102438.0,2024-05-10,2024-05-10,265.0,0.0,Dormant,False,False
+283,2023-05-22,Metropolitana,mercadolibre_ads,10.0,Promoter,1.0,11000.0,11000.0,2024-08-09,2024-08-09,174.0,0.0,At Risk,False,False
+284,2023-01-30,Metropolitana,organic,,No Response,,,,,,,,,False,False
 285,2023-09-17,Metropolitana,mercadolibre_ads,,No Response,,,,,,,,,False,False
-286,2023-01-11,Los Lagos,mercadolibre_ads,7.0,Passive,2.0,69444.0,34722.0,2023-03-16,2024-01-26,370.0,316.0,Dormant,False,False
-287,2023-07-07,Biobio,organic,,No Response,1.0,13688.0,13688.0,2024-08-22,2024-08-22,161.0,0.0,At Risk,False,False
-288,2023-08-23,Valparaiso,mercadolibre_ads,10.0,Promoter,5.0,148512.0,29702.4,2023-01-27,2024-12-30,31.0,703.0,Active,True,False
-289,2023-04-12,Valparaiso,organic,9.0,Promoter,4.0,80240.0,20060.0,2023-01-25,2024-09-16,136.0,600.0,At Risk,False,False
-290,2023-09-26,Los Lagos,organic,,No Response,2.0,44931.0,22465.5,2024-08-08,2024-12-16,45.0,130.0,Active,False,False
+286,2023-01-11,Los Lagos,mercadolibre_ads,10.0,Promoter,2.0,69444.0,34722.0,2023-03-16,2024-01-26,370.0,316.0,Dormant,False,False
+287,2023-07-07,Biobio,organic,10.0,Promoter,1.0,13688.0,13688.0,2024-08-22,2024-08-22,161.0,0.0,At Risk,False,False
+288,2023-08-23,Valparaiso,mercadolibre_ads,,No Response,3.0,97532.0,32510.666666666668,2023-01-27,2024-01-25,371.0,363.0,Dormant,False,False
+289,2023-04-12,Valparaiso,organic,8.0,Passive,2.0,46280.0,23140.0,2023-01-25,2023-04-13,658.0,78.0,Dormant,False,False
+290,2023-09-26,Los Lagos,organic,,No Response,1.0,27441.0,27441.0,2024-12-16,2024-12-16,45.0,0.0,Active,False,False
 291,2023-01-10,Metropolitana,mercadolibre_ads,,No Response,,,,,,,,,False,False
-292,2023-01-12,Biobio,organic,10.0,Promoter,2.0,56961.0,28480.5,2023-02-18,2024-01-26,370.0,342.0,Dormant,False,False
-293,2024-06-02,Valparaiso,facebook_ads,7.0,Passive,1.0,7707.0,7707.0,2023-03-20,2023-03-20,682.0,0.0,Dormant,False,False
-294,2023-05-14,Biobio,mercadolibre_ads,,No Response,2.0,59281.0,29640.5,2023-07-02,2024-11-10,81.0,497.0,Active,False,False
-295,2023-02-10,Metropolitana,google_ads,9.0,Promoter,2.0,117800.0,58900.0,2023-03-29,2024-11-24,67.0,606.0,Active,False,False
+292,2023-01-12,Biobio,organic,,No Response,2.0,56961.0,28480.5,2023-02-18,2024-01-26,370.0,342.0,Dormant,False,False
+293,2024-06-02,Valparaiso,facebook_ads,0.0,Detractor,1.0,7707.0,7707.0,2023-03-20,2023-03-20,682.0,0.0,Dormant,False,False
+294,2023-05-14,Biobio,mercadolibre_ads,8.0,Passive,1.0,16811.0,16811.0,2023-07-02,2023-07-02,578.0,0.0,Dormant,False,False
+295,2023-02-10,Metropolitana,google_ads,,No Response,2.0,117800.0,58900.0,2023-03-29,2024-11-24,67.0,606.0,Active,False,False
 296,2023-08-10,OHiggins,mercadolibre_ads,,No Response,,,,,,,,,False,False
 297,2024-03-16,Los Lagos,mercadolibre_ads,,No Response,,,,,,,,,False,False
-298,2023-03-14,Biobio,organic,9.0,Promoter,1.0,12990.0,12990.0,2024-06-03,2024-06-03,241.0,0.0,Dormant,False,False
-299,2023-10-20,Araucania,google_ads,9.0,Promoter,2.0,34980.0,17490.0,2024-08-01,2025-01-25,5.0,177.0,Active,False,False
+298,2023-03-14,Biobio,organic,,No Response,,,,,,,,,False,False
+299,2023-10-20,Araucania,google_ads,,No Response,,,,,,,,,False,False
 300,2023-01-27,Los Lagos,google_ads,,No Response,,,,,,,,,False,False
-301,2023-01-16,Araucania,organic,9.0,Promoter,4.0,73075.0,18268.75,2023-02-23,2024-09-27,125.0,582.0,At Risk,False,False
-302,2023-08-16,Metropolitana,instagram_ads,,No Response,1.0,39098.0,39098.0,2023-07-08,2023-07-08,572.0,0.0,Dormant,False,False
+301,2023-01-16,Araucania,organic,10.0,Promoter,3.0,45085.0,15028.333333333334,2023-02-23,2023-06-06,604.0,103.0,Dormant,False,False
+302,2023-08-16,Metropolitana,instagram_ads,7.0,Passive,1.0,39098.0,39098.0,2023-07-08,2023-07-08,572.0,0.0,Dormant,False,False
 303,2023-08-22,Biobio,organic,,No Response,,,,,,,,,False,False
-304,2023-11-01,Biobio,google_ads,,No Response,2.0,107387.0,53693.5,2024-05-16,2024-07-12,202.0,57.0,Dormant,False,False
-305,2024-01-24,Valparaiso,facebook_ads,9.0,Promoter,1.0,59480.0,59480.0,2024-12-03,2024-12-03,58.0,0.0,Active,False,False
+304,2023-11-01,Biobio,google_ads,6.0,Detractor,1.0,75897.0,75897.0,2024-05-16,2024-05-16,259.0,0.0,Dormant,False,False
+305,2024-01-24,Valparaiso,facebook_ads,,No Response,,,,,,,,,False,False
 306,2024-12-31,Araucania,instagram_ads,,No Response,,,,,,,,,False,False
 307,2023-08-06,Los Lagos,facebook_ads,,No Response,,,,,,,,,False,False
-308,2023-04-28,Los Lagos,google_ads,9.0,Promoter,1.0,40044.0,40044.0,2024-03-08,2024-03-08,328.0,0.0,Dormant,False,False
-309,2024-04-20,Valparaiso,google_ads,,No Response,2.0,52366.0,26183.0,2024-04-19,2024-10-22,100.0,186.0,At Risk,False,False
-310,2023-04-05,Metropolitana,google_ads,,No Response,5.0,139383.0,27876.6,2023-06-24,2024-08-14,169.0,417.0,At Risk,True,False
+308,2023-04-28,Los Lagos,google_ads,8.0,Passive,1.0,40044.0,40044.0,2024-03-08,2024-03-08,328.0,0.0,Dormant,False,False
+309,2024-04-20,Valparaiso,google_ads,7.0,Passive,1.0,20886.0,20886.0,2024-10-22,2024-10-22,100.0,0.0,At Risk,False,False
+310,2023-04-05,Metropolitana,google_ads,,No Response,3.0,75923.0,25307.666666666668,2023-06-24,2024-08-14,169.0,417.0,At Risk,False,False
 311,2023-06-23,Coquimbo,organic,,No Response,1.0,33643.0,33643.0,2023-02-14,2023-02-14,716.0,0.0,Dormant,False,False
 312,2023-01-25,OHiggins,facebook_ads,,No Response,,,,,,,,,False,False
-313,2023-01-08,Metropolitana,mercadolibre_ads,,No Response,3.0,86266.0,28755.33333333333,2023-10-01,2024-02-13,352.0,135.0,Dormant,False,False
-314,2024-12-31,Los Lagos,instagram_ads,1.0,Detractor,4.0,159245.0,39811.25,2023-06-28,2024-10-31,91.0,491.0,At Risk,True,False
-315,2024-06-26,OHiggins,facebook_ads,,No Response,2.0,71026.0,35513.0,2024-04-07,2024-08-11,172.0,126.0,At Risk,False,False
-316,2023-12-24,Valparaiso,google_ads,8.0,Passive,3.0,126269.0,42089.66666666666,2023-03-31,2024-04-28,277.0,394.0,Dormant,False,False
-317,2023-06-07,Biobio,mercadolibre_ads,9.0,Promoter,1.0,15990.0,15990.0,2024-07-25,2024-07-25,189.0,0.0,Dormant,False,False
-318,2023-02-27,Metropolitana,google_ads,8.0,Passive,1.0,55576.0,55576.0,2023-12-14,2023-12-14,413.0,0.0,Dormant,False,False
-319,2023-02-21,Metropolitana,organic,10.0,Promoter,1.0,31490.0,31490.0,2024-04-29,2024-04-29,276.0,0.0,Dormant,False,False
-320,2023-03-28,Metropolitana,organic,7.0,Passive,1.0,14490.0,14490.0,2024-02-02,2024-02-02,363.0,0.0,Dormant,False,False
+313,2023-01-08,Metropolitana,mercadolibre_ads,2.0,Detractor,2.0,69776.0,34888.0,2023-10-01,2024-01-08,388.0,99.0,Dormant,False,False
+314,2024-12-31,Los Lagos,instagram_ads,4.0,Detractor,4.0,159245.0,39811.25,2023-06-28,2024-10-31,91.0,491.0,At Risk,True,False
+315,2024-06-26,OHiggins,facebook_ads,10.0,Promoter,1.0,32046.0,32046.0,2024-08-11,2024-08-11,172.0,0.0,At Risk,False,False
+316,2023-12-24,Valparaiso,google_ads,,No Response,2.0,109779.0,54889.5,2023-03-31,2024-03-14,322.0,349.0,Dormant,False,False
+317,2023-06-07,Biobio,mercadolibre_ads,,No Response,,,,,,,,,False,False
+318,2023-02-27,Metropolitana,google_ads,10.0,Promoter,1.0,55576.0,55576.0,2023-12-14,2023-12-14,413.0,0.0,Dormant,False,False
+319,2023-02-21,Metropolitana,organic,,No Response,,,,,,,,,False,False
+320,2023-03-28,Metropolitana,organic,,No Response,,,,,,,,,False,False
 321,2023-08-28,Maule,mercadolibre_ads,,No Response,,,,,,,,,False,False
-322,2024-01-12,Metropolitana,mercadolibre_ads,,No Response,2.0,44348.0,22174.0,2023-09-19,2024-12-26,35.0,464.0,Active,False,False
+322,2024-01-12,Metropolitana,mercadolibre_ads,,No Response,1.0,33858.0,33858.0,2023-09-19,2023-09-19,499.0,0.0,Dormant,False,False
 323,2023-11-20,Metropolitana,instagram_ads,,No Response,,,,,,,,,False,False
-324,2023-04-09,Metropolitana,mercadolibre_ads,,No Response,5.0,71856.0,14371.2,2023-02-09,2024-09-08,144.0,577.0,At Risk,False,False
-325,2024-12-31,Valparaiso,instagram_ads,7.0,Passive,2.0,58558.0,29279.0,2023-08-21,2024-09-10,142.0,386.0,At Risk,False,False
-326,2024-02-06,Los Lagos,google_ads,10.0,Promoter,3.0,171968.0,57322.66666666666,2023-07-17,2024-07-26,188.0,375.0,Dormant,True,True
-327,2023-08-31,Metropolitana,mercadolibre_ads,7.0,Passive,3.0,115758.0,38586.0,2023-09-20,2024-09-16,136.0,362.0,At Risk,False,False
-328,2023-10-11,Metropolitana,facebook_ads,9.0,Promoter,1.0,6990.0,6990.0,2024-09-04,2024-09-04,148.0,0.0,At Risk,False,False
+324,2023-04-09,Metropolitana,mercadolibre_ads,3.0,Detractor,3.0,46876.0,15625.333333333334,2023-02-09,2024-09-08,144.0,577.0,At Risk,False,False
+325,2024-12-31,Valparaiso,instagram_ads,,No Response,1.0,40068.0,40068.0,2023-08-21,2023-08-21,528.0,0.0,Dormant,False,False
+326,2024-02-06,Los Lagos,google_ads,9.0,Promoter,1.0,64018.0,64018.0,2023-07-17,2023-07-17,563.0,0.0,Dormant,False,False
+327,2023-08-31,Metropolitana,mercadolibre_ads,,No Response,1.0,61308.0,61308.0,2023-09-20,2023-09-20,498.0,0.0,Dormant,False,False
+328,2023-10-11,Metropolitana,facebook_ads,,No Response,,,,,,,,,False,False
 329,2023-06-13,Araucania,mercadolibre_ads,,No Response,,,,,,,,,False,False
-330,2023-03-27,Valparaiso,mercadolibre_ads,10.0,Promoter,2.0,57970.0,28985.0,2024-02-23,2024-09-13,139.0,203.0,At Risk,False,False
-331,2023-05-13,Metropolitana,mercadolibre_ads,8.0,Passive,1.0,19610.0,19610.0,2024-06-20,2024-06-20,224.0,0.0,Dormant,False,False
+330,2023-03-27,Valparaiso,mercadolibre_ads,,No Response,,,,,,,,,False,False
+331,2023-05-13,Metropolitana,mercadolibre_ads,10.0,Promoter,1.0,19610.0,19610.0,2024-06-20,2024-06-20,224.0,0.0,Dormant,False,False
 332,2024-03-01,Valparaiso,facebook_ads,,No Response,,,,,,,,,False,False
-333,2023-01-05,Metropolitana,mercadolibre_ads,10.0,Promoter,4.0,124125.0,31031.25,2023-06-29,2024-11-15,76.0,505.0,Active,False,False
-334,2023-02-07,Metropolitana,instagram_ads,6.0,Detractor,1.0,25480.0,25480.0,2024-10-08,2024-10-08,114.0,0.0,At Risk,False,False
+333,2023-01-05,Metropolitana,mercadolibre_ads,1.0,Detractor,2.0,68655.0,34327.5,2023-06-29,2023-12-30,397.0,184.0,Dormant,False,False
+334,2023-02-07,Metropolitana,instagram_ads,,No Response,,,,,,,,,False,False
 335,2023-01-15,Valparaiso,instagram_ads,9.0,Promoter,1.0,27460.0,27460.0,2023-04-09,2023-04-09,662.0,0.0,Dormant,False,False
-336,2023-01-13,Valparaiso,mercadolibre_ads,8.0,Passive,2.0,133118.0,66559.0,2023-04-04,2024-05-04,271.0,396.0,Dormant,True,True
-337,2024-08-03,Los Lagos,mercadolibre_ads,2.0,Detractor,2.0,54916.0,27458.0,2024-11-10,2024-12-05,56.0,25.0,Active,False,False
-338,2023-12-31,Metropolitana,facebook_ads,9.0,Promoter,1.0,24490.0,24490.0,2024-09-04,2024-09-04,148.0,0.0,At Risk,False,False
-339,2023-07-12,Biobio,organic,10.0,Promoter,2.0,47228.0,23614.0,2023-02-20,2024-11-01,90.0,620.0,Active,False,False
-340,2023-01-31,Biobio,organic,8.0,Passive,2.0,61696.0,30848.0,2023-04-27,2024-01-08,388.0,256.0,Dormant,False,False
-341,2023-07-22,Metropolitana,mercadolibre_ads,9.0,Promoter,1.0,8480.0,8480.0,2024-03-01,2024-03-01,335.0,0.0,Dormant,False,False
+336,2023-01-13,Valparaiso,mercadolibre_ads,10.0,Promoter,2.0,133118.0,66559.0,2023-04-04,2024-05-04,271.0,396.0,Dormant,True,True
+337,2024-08-03,Los Lagos,mercadolibre_ads,10.0,Promoter,1.0,25436.0,25436.0,2024-11-10,2024-11-10,81.0,0.0,Active,False,False
+338,2023-12-31,Metropolitana,facebook_ads,,No Response,,,,,,,,,False,False
+339,2023-07-12,Biobio,organic,10.0,Promoter,1.0,28758.0,28758.0,2023-02-20,2023-02-20,710.0,0.0,Dormant,False,False
+340,2023-01-31,Biobio,organic,8.0,Passive,1.0,36216.0,36216.0,2023-04-27,2023-04-27,644.0,0.0,Dormant,False,False
+341,2023-07-22,Metropolitana,mercadolibre_ads,,No Response,,,,,,,,,False,False
 342,2023-07-12,Biobio,google_ads,,No Response,,,,,,,,,False,False
-343,2023-02-27,Metropolitana,facebook_ads,,No Response,1.0,15490.0,15490.0,2024-10-06,2024-10-06,116.0,0.0,At Risk,False,False
-344,2023-06-20,Coquimbo,google_ads,8.0,Passive,1.0,51022.0,51022.0,2023-05-23,2023-05-23,618.0,0.0,Dormant,False,False
-345,2023-06-02,Metropolitana,google_ads,6.0,Detractor,1.0,34076.0,34076.0,2024-09-09,2024-09-09,143.0,0.0,At Risk,False,False
-346,2023-10-15,Valparaiso,google_ads,8.0,Passive,1.0,20983.0,20983.0,2023-05-02,2023-05-02,639.0,0.0,Dormant,False,False
+343,2023-02-27,Metropolitana,facebook_ads,,No Response,,,,,,,,,False,False
+344,2023-06-20,Coquimbo,google_ads,7.0,Passive,1.0,51022.0,51022.0,2023-05-23,2023-05-23,618.0,0.0,Dormant,False,False
+345,2023-06-02,Metropolitana,google_ads,7.0,Passive,1.0,34076.0,34076.0,2024-09-09,2024-09-09,143.0,0.0,At Risk,False,False
+346,2023-10-15,Valparaiso,google_ads,9.0,Promoter,1.0,20983.0,20983.0,2023-05-02,2023-05-02,639.0,0.0,Dormant,False,False
 347,2023-10-30,Metropolitana,mercadolibre_ads,,No Response,,,,,,,,,False,False
-348,2023-01-14,Coquimbo,mercadolibre_ads,,No Response,1.0,22540.0,22540.0,2023-03-16,2023-03-16,686.0,0.0,Dormant,False,False
-349,2023-05-21,Valparaiso,instagram_ads,9.0,Promoter,1.0,11374.0,11374.0,2023-04-26,2023-04-26,645.0,0.0,Dormant,False,False
+348,2023-01-14,Coquimbo,mercadolibre_ads,9.0,Promoter,1.0,22540.0,22540.0,2023-03-16,2023-03-16,686.0,0.0,Dormant,False,False
+349,2023-05-21,Valparaiso,instagram_ads,8.0,Passive,1.0,11374.0,11374.0,2023-04-26,2023-04-26,645.0,0.0,Dormant,False,False
 350,2023-10-22,Biobio,organic,,No Response,2.0,24239.0,12119.5,2023-11-04,2023-11-10,447.0,6.0,Dormant,False,False
 351,2023-07-29,Metropolitana,instagram_ads,,No Response,,,,,,,,,False,False
-352,2024-08-05,Araucania,facebook_ads,,No Response,1.0,26259.0,26259.0,2023-12-18,2023-12-18,409.0,0.0,Dormant,False,False
+352,2024-08-05,Araucania,facebook_ads,7.0,Passive,1.0,26259.0,26259.0,2023-12-18,2023-12-18,409.0,0.0,Dormant,False,False
 353,2023-11-19,Metropolitana,google_ads,,No Response,,,,,,,,,False,False
-354,2023-02-23,Los Lagos,google_ads,9.0,Promoter,2.0,39470.0,19735.0,2024-07-05,2024-08-28,155.0,54.0,At Risk,False,False
-355,2023-01-22,Metropolitana,mercadolibre_ads,,No Response,2.0,26980.0,13490.0,2024-01-15,2024-05-04,271.0,110.0,Dormant,False,False
+354,2023-02-23,Los Lagos,google_ads,,No Response,,,,,,,,,False,False
+355,2023-01-22,Metropolitana,mercadolibre_ads,,No Response,,,,,,,,,False,False
 356,2023-11-05,Metropolitana,instagram_ads,,No Response,,,,,,,,,False,False
 357,2023-01-09,Metropolitana,facebook_ads,,No Response,,,,,,,,,False,False
-358,2023-09-22,Valparaiso,google_ads,,No Response,4.0,101333.0,25333.25,2023-05-10,2024-02-28,337.0,294.0,Dormant,False,False
+358,2023-09-22,Valparaiso,google_ads,10.0,Promoter,3.0,70843.0,23614.33333333333,2023-05-10,2023-07-30,550.0,81.0,Dormant,False,False
 359,2024-12-31,Biobio,google_ads,,No Response,2.0,45164.0,22582.0,2023-02-20,2024-07-14,200.0,510.0,Dormant,False,False
 360,2023-09-15,Metropolitana,google_ads,,No Response,2.0,44505.0,22252.5,2023-05-08,2023-11-05,452.0,181.0,Dormant,False,False
 361,2023-05-28,Maule,facebook_ads,,No Response,,,,,,,,,False,False
 362,2023-11-06,Valparaiso,mercadolibre_ads,,No Response,,,,,,,,,False,False
-363,2023-07-03,Valparaiso,google_ads,,No Response,1.0,19990.0,19990.0,2024-08-23,2024-08-23,160.0,0.0,At Risk,False,False
+363,2023-07-03,Valparaiso,google_ads,,No Response,,,,,,,,,False,False
 364,2023-08-25,Valparaiso,google_ads,,No Response,1.0,16893.0,16893.0,2023-07-18,2023-07-18,562.0,0.0,Dormant,False,False
-365,2024-12-31,Valparaiso,facebook_ads,6.0,Detractor,1.0,63765.0,63765.0,2023-06-15,2023-06-15,595.0,0.0,Dormant,False,False
+365,2024-12-31,Valparaiso,facebook_ads,8.0,Passive,1.0,63765.0,63765.0,2023-06-15,2023-06-15,595.0,0.0,Dormant,False,False
 366,2023-05-27,Biobio,organic,,No Response,,,,,,,,,False,False
-367,2024-12-31,Metropolitana,facebook_ads,10.0,Promoter,4.0,132604.0,33151.0,2023-03-12,2024-06-25,219.0,471.0,Dormant,True,True
-368,2024-12-08,Metropolitana,instagram_ads,,No Response,3.0,137814.0,45938.0,2023-01-25,2023-09-24,494.0,242.0,Dormant,True,True
+367,2024-12-31,Metropolitana,facebook_ads,,No Response,2.0,62654.0,31327.0,2023-03-12,2023-11-07,450.0,240.0,Dormant,False,False
+368,2024-12-08,Metropolitana,instagram_ads,9.0,Promoter,3.0,137814.0,45938.0,2023-01-25,2023-09-24,494.0,242.0,Dormant,True,True
 369,2023-03-07,OHiggins,organic,,No Response,1.0,18988.0,18988.0,2023-10-10,2023-10-10,478.0,0.0,Dormant,False,False
-370,2023-01-22,Los Lagos,mercadolibre_ads,,No Response,1.0,31490.0,31490.0,2024-11-01,2024-11-01,90.0,0.0,Active,False,False
-371,2023-02-01,Metropolitana,instagram_ads,,No Response,1.0,16490.0,16490.0,2024-08-10,2024-08-10,173.0,0.0,At Risk,False,False
-372,2023-01-06,Metropolitana,organic,1.0,Detractor,1.0,18680.0,18680.0,2024-08-15,2024-08-15,168.0,0.0,At Risk,False,False
-373,2023-01-30,Biobio,facebook_ads,,No Response,3.0,138820.0,46273.333333333336,2023-02-26,2024-07-02,212.0,492.0,Dormant,True,True
-374,2023-12-11,Valparaiso,google_ads,7.0,Passive,2.0,57304.0,28652.0,2023-05-06,2023-05-15,626.0,9.0,Dormant,False,False
+370,2023-01-22,Los Lagos,mercadolibre_ads,,No Response,,,,,,,,,False,False
+371,2023-02-01,Metropolitana,instagram_ads,,No Response,,,,,,,,,False,False
+372,2023-01-06,Metropolitana,organic,,No Response,1.0,18680.0,18680.0,2024-08-15,2024-08-15,168.0,0.0,At Risk,False,False
+373,2023-01-30,Biobio,facebook_ads,7.0,Passive,2.0,77350.0,38675.0,2023-02-26,2023-03-25,677.0,27.0,Dormant,False,False
+374,2023-12-11,Valparaiso,google_ads,10.0,Promoter,2.0,57304.0,28652.0,2023-05-06,2023-05-15,626.0,9.0,Dormant,False,False
 375,2023-01-23,Metropolitana,mercadolibre_ads,,No Response,1.0,47982.0,47982.0,2023-07-24,2023-07-24,556.0,0.0,Dormant,False,False
 376,2023-04-26,Metropolitana,facebook_ads,,No Response,,,,,,,,,False,False
-377,2024-07-13,Araucania,google_ads,8.0,Passive,3.0,77476.0,25825.33333333333,2023-04-05,2024-06-16,228.0,438.0,Dormant,False,False
+377,2024-07-13,Araucania,google_ads,10.0,Promoter,2.0,41506.0,20753.0,2023-04-05,2024-06-16,228.0,438.0,Dormant,False,False
 378,2023-01-08,Biobio,mercadolibre_ads,,No Response,,,,,,,,,False,False
 379,2024-05-20,Metropolitana,google_ads,,No Response,,,,,,,,,False,False
-380,2023-04-10,Metropolitana,mercadolibre_ads,3.0,Detractor,2.0,41751.0,20875.5,2023-05-23,2024-09-16,136.0,482.0,At Risk,False,False
-381,2023-02-07,Metropolitana,organic,10.0,Promoter,1.0,66040.0,66040.0,2023-12-09,2023-12-09,418.0,0.0,Dormant,False,False
-382,2023-12-24,Araucania,mercadolibre_ads,9.0,Promoter,2.0,42443.0,21221.5,2023-05-05,2024-06-06,238.0,398.0,Dormant,False,False
+380,2023-04-10,Metropolitana,mercadolibre_ads,10.0,Promoter,1.0,15771.0,15771.0,2023-05-23,2023-05-23,618.0,0.0,Dormant,False,False
+381,2023-02-07,Metropolitana,organic,8.0,Passive,1.0,66040.0,66040.0,2023-12-09,2023-12-09,418.0,0.0,Dormant,False,False
+382,2023-12-24,Araucania,mercadolibre_ads,8.0,Passive,2.0,42443.0,21221.5,2023-05-05,2024-06-06,238.0,398.0,Dormant,False,False
 383,2023-10-25,Metropolitana,instagram_ads,8.0,Passive,2.0,71415.0,35707.5,2023-06-20,2024-02-27,338.0,252.0,Dormant,False,False
-384,2024-09-21,Metropolitana,google_ads,7.0,Passive,1.0,30772.0,30772.0,2023-09-07,2023-09-07,511.0,0.0,Dormant,False,False
-385,2024-02-03,Maule,facebook_ads,,No Response,2.0,40856.0,20428.0,2023-06-17,2024-11-21,70.0,523.0,Active,False,False
-386,2024-05-03,Metropolitana,google_ads,,No Response,1.0,30490.0,30490.0,2024-08-18,2024-08-18,165.0,0.0,At Risk,False,False
-387,2023-04-10,Biobio,google_ads,9.0,Promoter,2.0,40980.0,20490.0,2024-09-01,2025-01-30,0.0,151.0,Active,False,False
-388,2023-02-28,Metropolitana,organic,,No Response,1.0,31480.0,31480.0,2024-12-09,2024-12-09,52.0,0.0,Active,False,False
+384,2024-09-21,Metropolitana,google_ads,9.0,Promoter,1.0,30772.0,30772.0,2023-09-07,2023-09-07,511.0,0.0,Dormant,False,False
+385,2024-02-03,Maule,facebook_ads,,No Response,1.0,13876.0,13876.0,2023-06-17,2023-06-17,593.0,0.0,Dormant,False,False
+386,2024-05-03,Metropolitana,google_ads,,No Response,,,,,,,,,False,False
+387,2023-04-10,Biobio,google_ads,,No Response,,,,,,,,,False,False
+388,2023-02-28,Metropolitana,organic,,No Response,,,,,,,,,False,False
 389,2024-02-21,Metropolitana,instagram_ads,,No Response,,,,,,,,,False,False
-390,2024-05-08,Metropolitana,facebook_ads,0.0,Detractor,3.0,50170.0,16723.333333333332,2024-05-15,2024-10-27,95.0,165.0,At Risk,False,False
+390,2024-05-08,Metropolitana,facebook_ads,,No Response,1.0,27690.0,27690.0,2024-07-16,2024-07-16,198.0,0.0,Dormant,False,False
 391,2024-12-31,Araucania,google_ads,8.0,Passive,1.0,41218.0,41218.0,2023-05-20,2023-05-20,621.0,0.0,Dormant,False,False
-392,2023-06-09,OHiggins,organic,,No Response,2.0,86526.0,43263.0,2023-04-24,2024-05-17,258.0,389.0,Dormant,False,False
+392,2023-06-09,OHiggins,organic,,No Response,1.0,41056.0,41056.0,2023-04-24,2023-04-24,647.0,0.0,Dormant,False,False
 393,2023-05-20,OHiggins,organic,,No Response,,,,,,,,,False,False
 394,2024-03-25,Metropolitana,facebook_ads,,No Response,2.0,155836.0,77918.0,2023-08-06,2024-06-04,240.0,303.0,Dormant,True,True
 395,2023-05-06,Biobio,mercadolibre_ads,,No Response,,,,,,,,,False,False
-396,2024-12-31,Metropolitana,instagram_ads,9.0,Promoter,1.0,8837.0,8837.0,2024-10-27,2024-10-27,95.0,0.0,At Risk,False,False
-397,2024-08-09,Metropolitana,google_ads,10.0,Promoter,1.0,89470.0,89470.0,2024-08-03,2024-08-03,180.0,0.0,At Risk,False,False
+396,2024-12-31,Metropolitana,instagram_ads,,No Response,1.0,8837.0,8837.0,2024-10-27,2024-10-27,95.0,0.0,At Risk,False,False
+397,2024-08-09,Metropolitana,google_ads,,No Response,,,,,,,,,False,False
 398,2023-06-18,Los Lagos,mercadolibre_ads,,No Response,,,,,,,,,False,False
 399,2024-02-21,Metropolitana,facebook_ads,,No Response,,,,,,,,,False,False
-400,2024-02-26,Metropolitana,facebook_ads,1.0,Detractor,3.0,58946.0,19648.666666666668,2023-12-19,2024-11-02,89.0,319.0,Active,False,False
-401,2023-02-02,Metropolitana,organic,10.0,Promoter,3.0,69194.0,23064.666666666668,2023-06-16,2024-05-23,252.0,342.0,Dormant,False,False
+400,2024-02-26,Metropolitana,facebook_ads,,No Response,1.0,26966.0,26966.0,2023-12-19,2023-12-19,408.0,0.0,Dormant,False,False
+401,2023-02-02,Metropolitana,organic,10.0,Promoter,1.0,37724.0,37724.0,2023-06-16,2023-06-16,594.0,0.0,Dormant,False,False
 402,2024-11-29,Metropolitana,mercadolibre_ads,,No Response,,,,,,,,,False,False
-403,2023-07-31,Metropolitana,organic,10.0,Promoter,1.0,14297.0,14297.0,2023-07-03,2023-07-03,577.0,0.0,Dormant,False,False
+403,2023-07-31,Metropolitana,organic,,No Response,1.0,14297.0,14297.0,2023-07-03,2023-07-03,577.0,0.0,Dormant,False,False
 404,2024-06-09,Biobio,facebook_ads,,No Response,,,,,,,,,False,False
-405,2023-04-26,Valparaiso,mercadolibre_ads,7.0,Passive,3.0,62650.0,20883.33333333333,2023-05-10,2025-01-29,1.0,630.0,Active,False,False
-406,2024-11-08,Los Lagos,facebook_ads,10.0,Promoter,1.0,24242.0,24242.0,2023-06-01,2023-06-01,609.0,0.0,Dormant,False,False
-407,2023-05-28,Maule,google_ads,8.0,Passive,2.0,69614.0,34807.0,2024-07-09,2025-01-22,8.0,197.0,Active,False,False
-408,2023-01-04,Metropolitana,google_ads,9.0,Promoter,1.0,16832.0,16832.0,2024-02-16,2024-02-16,349.0,0.0,Dormant,False,False
-409,2024-12-08,Metropolitana,facebook_ads,3.0,Detractor,2.0,83940.0,41970.0,2024-02-10,2024-12-05,56.0,299.0,Active,False,False
-410,2023-01-29,Metropolitana,facebook_ads,0.0,Detractor,3.0,76750.0,25583.33333333333,2023-09-25,2024-11-18,73.0,420.0,Active,False,False
+405,2023-04-26,Valparaiso,mercadolibre_ads,3.0,Detractor,2.0,46160.0,23080.0,2023-05-10,2023-09-06,512.0,119.0,Dormant,False,False
+406,2024-11-08,Los Lagos,facebook_ads,6.0,Detractor,1.0,24242.0,24242.0,2023-06-01,2023-06-01,609.0,0.0,Dormant,False,False
+407,2023-05-28,Maule,google_ads,10.0,Promoter,1.0,30644.0,30644.0,2024-07-09,2024-07-09,205.0,0.0,Dormant,False,False
+408,2023-01-04,Metropolitana,google_ads,7.0,Passive,1.0,16832.0,16832.0,2024-02-16,2024-02-16,349.0,0.0,Dormant,False,False
+409,2024-12-08,Metropolitana,facebook_ads,,No Response,,,,,,,,,False,False
+410,2023-01-29,Metropolitana,facebook_ads,2.0,Detractor,2.0,29280.0,14640.0,2023-09-25,2023-12-05,422.0,71.0,Dormant,False,False
 411,2023-04-26,Biobio,mercadolibre_ads,,No Response,,,,,,,,,False,False
-412,2024-12-31,Metropolitana,mercadolibre_ads,,No Response,1.0,29480.0,29480.0,2024-04-18,2024-04-18,287.0,0.0,Dormant,False,False
-413,2024-12-31,Biobio,google_ads,2.0,Detractor,4.0,165538.0,41384.5,2023-08-29,2024-10-17,105.0,415.0,At Risk,True,False
+412,2024-12-31,Metropolitana,mercadolibre_ads,,No Response,,,,,,,,,False,False
+413,2024-12-31,Biobio,google_ads,8.0,Passive,2.0,76568.0,38284.0,2023-08-29,2023-10-05,483.0,37.0,Dormant,False,False
 414,2023-09-13,Valparaiso,organic,,No Response,,,,,,,,,False,False
-415,2023-10-27,Biobio,google_ads,8.0,Passive,1.0,31990.0,31990.0,2024-11-18,2024-11-18,73.0,0.0,Active,False,False
-416,2023-06-28,Valparaiso,facebook_ads,10.0,Promoter,1.0,18470.0,18470.0,2024-04-09,2024-04-09,296.0,0.0,Dormant,False,False
-417,2023-04-15,Metropolitana,organic,9.0,Promoter,1.0,14990.0,14990.0,2024-03-28,2024-03-28,308.0,0.0,Dormant,False,False
-418,2023-04-30,Los Lagos,organic,,No Response,2.0,41970.0,20985.0,2024-07-27,2024-09-25,127.0,60.0,At Risk,False,False
-419,2023-12-01,Maule,google_ads,,No Response,1.0,20470.0,20470.0,2024-05-15,2024-05-15,260.0,0.0,Dormant,False,False
+415,2023-10-27,Biobio,google_ads,,No Response,,,,,,,,,False,False
+416,2023-06-28,Valparaiso,facebook_ads,,No Response,,,,,,,,,False,False
+417,2023-04-15,Metropolitana,organic,,No Response,,,,,,,,,False,False
+418,2023-04-30,Los Lagos,organic,,No Response,,,,,,,,,False,False
+419,2023-12-01,Maule,google_ads,,No Response,,,,,,,,,False,False
 420,2024-02-23,Metropolitana,instagram_ads,,No Response,1.0,18924.0,18924.0,2023-02-04,2023-02-04,726.0,0.0,Dormant,False,False
 421,2024-04-15,OHiggins,google_ads,,No Response,5.0,199202.0,39840.4,2023-01-07,2024-12-15,46.0,708.0,Active,True,False
-422,2024-04-12,Valparaiso,facebook_ads,10.0,Promoter,1.0,29480.0,29480.0,2024-06-16,2024-06-16,228.0,0.0,Dormant,False,False
+422,2024-04-12,Valparaiso,facebook_ads,,No Response,,,,,,,,,False,False
 423,2023-01-29,Los Lagos,organic,,No Response,1.0,32969.0,32969.0,2023-09-27,2023-09-27,491.0,0.0,Dormant,False,False
-424,2023-07-24,Maule,organic,9.0,Promoter,1.0,25480.0,25480.0,2025-01-07,2025-01-07,23.0,0.0,Active,False,False
-425,2023-01-18,Valparaiso,instagram_ads,,No Response,5.0,117190.0,23438.0,2023-02-13,2024-11-27,64.0,653.0,Active,False,False
+424,2023-07-24,Maule,organic,,No Response,,,,,,,,,False,False
+425,2023-01-18,Valparaiso,instagram_ads,,No Response,3.0,52720.0,17573.333333333332,2023-02-13,2024-05-14,261.0,456.0,Dormant,False,False
 426,2023-08-28,Metropolitana,instagram_ads,9.0,Promoter,1.0,24321.0,24321.0,2024-06-25,2024-06-25,219.0,0.0,Dormant,False,False
-427,2023-06-24,Metropolitana,organic,,No Response,2.0,74058.0,37029.0,2023-05-18,2024-02-16,349.0,274.0,Dormant,False,False
-428,2024-10-17,Valparaiso,instagram_ads,,No Response,1.0,23988.0,23988.0,2023-03-23,2023-03-23,679.0,0.0,Dormant,False,False
+427,2023-06-24,Metropolitana,organic,,No Response,1.0,55588.0,55588.0,2023-05-18,2023-05-18,623.0,0.0,Dormant,False,False
+428,2024-10-17,Valparaiso,instagram_ads,1.0,Detractor,1.0,23988.0,23988.0,2023-03-23,2023-03-23,679.0,0.0,Dormant,False,False
 429,2023-05-10,Biobio,mercadolibre_ads,,No Response,,,,,,,,,False,False
 430,2023-02-07,Metropolitana,facebook_ads,,No Response,,,,,,,,,False,False
-431,2023-02-16,Metropolitana,mercadolibre_ads,9.0,Promoter,4.0,110307.0,27576.75,2023-04-09,2024-05-19,256.0,406.0,Dormant,False,False
-432,2024-03-06,OHiggins,facebook_ads,7.0,Passive,4.0,85307.0,21326.75,2023-01-18,2024-10-17,105.0,638.0,At Risk,False,False
+431,2023-02-16,Metropolitana,mercadolibre_ads,8.0,Passive,2.0,65337.0,32668.5,2023-04-09,2023-08-26,523.0,139.0,Dormant,False,False
+432,2024-03-06,OHiggins,facebook_ads,9.0,Promoter,1.0,15857.0,15857.0,2023-01-18,2023-01-18,743.0,0.0,Dormant,False,False
 433,2023-10-16,Coquimbo,google_ads,,No Response,,,,,,,,,False,False
 434,2023-02-01,Valparaiso,mercadolibre_ads,,No Response,,,,,,,,,False,False
-435,2023-01-27,Metropolitana,organic,5.0,Detractor,2.0,49037.0,24518.5,2023-06-18,2024-10-13,109.0,483.0,At Risk,False,False
+435,2023-01-27,Metropolitana,organic,,No Response,2.0,49037.0,24518.5,2023-06-18,2024-10-13,109.0,483.0,At Risk,False,False
 436,2023-12-29,Metropolitana,organic,,No Response,,,,,,,,,False,False
-437,2023-01-23,Metropolitana,mercadolibre_ads,,No Response,4.0,101678.0,25419.5,2023-08-20,2024-08-13,170.0,359.0,At Risk,False,False
-438,2024-06-01,Los Lagos,facebook_ads,9.0,Promoter,3.0,99300.0,33100.0,2024-02-20,2024-12-31,30.0,315.0,Active,False,False
+437,2023-01-23,Metropolitana,mercadolibre_ads,5.0,Detractor,2.0,66198.0,33099.0,2023-08-20,2023-11-05,452.0,77.0,Dormant,False,False
+438,2024-06-01,Los Lagos,facebook_ads,,No Response,1.0,52330.0,52330.0,2024-02-20,2024-02-20,345.0,0.0,Dormant,False,False
 439,2024-01-03,Metropolitana,google_ads,,No Response,,,,,,,,,False,False
 440,2023-01-26,Biobio,mercadolibre_ads,,No Response,2.0,113942.0,56971.0,2023-03-31,2023-11-26,431.0,240.0,Dormant,False,False
-441,2023-01-27,Metropolitana,instagram_ads,6.0,Detractor,3.0,50887.0,16962.333333333332,2024-03-26,2024-12-15,46.0,264.0,Active,False,False
-442,2024-12-31,Biobio,organic,,No Response,2.0,46414.0,23207.0,2024-12-29,2025-01-10,20.0,12.0,Active,False,False
-443,2023-05-21,Biobio,mercadolibre_ads,9.0,Promoter,2.0,45309.0,22654.5,2023-11-09,2024-04-07,298.0,150.0,Dormant,False,False
-444,2023-05-19,OHiggins,mercadolibre_ads,10.0,Promoter,2.0,60308.0,30154.0,2023-01-08,2023-04-03,668.0,85.0,Dormant,False,False
-445,2024-05-17,Metropolitana,instagram_ads,7.0,Passive,1.0,13990.0,13990.0,2024-12-20,2024-12-20,41.0,0.0,Active,False,False
-446,2024-12-31,Metropolitana,mercadolibre_ads,,No Response,2.0,24059.0,12029.5,2023-02-21,2025-01-06,24.0,685.0,Active,False,False
-447,2024-12-31,Metropolitana,facebook_ads,8.0,Passive,1.0,47739.0,47739.0,2024-08-27,2024-08-27,156.0,0.0,At Risk,False,False
+441,2023-01-27,Metropolitana,instagram_ads,8.0,Passive,1.0,8917.0,8917.0,2024-03-26,2024-03-26,310.0,0.0,Dormant,False,False
+442,2024-12-31,Biobio,organic,8.0,Passive,1.0,30924.0,30924.0,2024-12-29,2024-12-29,32.0,0.0,Active,False,False
+443,2023-05-21,Biobio,mercadolibre_ads,,No Response,2.0,45309.0,22654.5,2023-11-09,2024-04-07,298.0,150.0,Dormant,False,False
+444,2023-05-19,OHiggins,mercadolibre_ads,7.0,Passive,2.0,60308.0,30154.0,2023-01-08,2023-04-03,668.0,85.0,Dormant,False,False
+445,2024-05-17,Metropolitana,instagram_ads,,No Response,,,,,,,,,False,False
+446,2024-12-31,Metropolitana,mercadolibre_ads,,No Response,1.0,7069.0,7069.0,2023-02-21,2023-02-21,709.0,0.0,Dormant,False,False
+447,2024-12-31,Metropolitana,facebook_ads,9.0,Promoter,1.0,47739.0,47739.0,2024-08-27,2024-08-27,156.0,0.0,At Risk,False,False
 448,2024-02-24,Los Lagos,instagram_ads,,No Response,,,,,,,,,False,False
-449,2023-05-22,OHiggins,facebook_ads,,No Response,3.0,85062.0,28354.0,2023-05-30,2024-06-02,242.0,369.0,Dormant,False,False
+449,2023-05-22,OHiggins,facebook_ads,,No Response,2.0,43592.0,21796.0,2023-05-30,2023-12-02,425.0,186.0,Dormant,False,False
 450,2023-01-27,Biobio,mercadolibre_ads,,No Response,,,,,,,,,False,False
-451,2024-03-26,Biobio,facebook_ads,2.0,Detractor,1.0,33398.0,33398.0,2023-06-16,2023-06-16,594.0,0.0,Dormant,False,False
-452,2023-09-03,Biobio,google_ads,,No Response,3.0,112382.0,37460.66666666666,2023-06-02,2024-06-18,226.0,382.0,Dormant,False,False
-453,2023-06-15,Metropolitana,facebook_ads,,No Response,3.0,67838.0,22612.666666666668,2024-04-13,2024-12-14,47.0,245.0,Active,False,False
-454,2024-12-11,Los Lagos,facebook_ads,,No Response,1.0,19855.0,19855.0,2024-07-20,2024-07-20,194.0,0.0,Dormant,False,False
-455,2023-02-05,Valparaiso,organic,,No Response,2.0,52148.0,26074.0,2023-01-13,2024-12-21,40.0,708.0,Active,False,False
-456,2023-07-23,Metropolitana,instagram_ads,10.0,Promoter,1.0,29480.0,29480.0,2024-04-22,2024-04-22,283.0,0.0,Dormant,False,False
-457,2023-01-04,Valparaiso,mercadolibre_ads,0.0,Detractor,1.0,39504.0,39504.0,2023-08-20,2023-08-20,529.0,0.0,Dormant,False,False
-458,2023-07-09,Metropolitana,facebook_ads,,No Response,1.0,13674.0,13674.0,2023-02-19,2023-02-19,711.0,0.0,Dormant,False,False
+451,2024-03-26,Biobio,facebook_ads,8.0,Passive,1.0,33398.0,33398.0,2023-06-16,2023-06-16,594.0,0.0,Dormant,False,False
+452,2023-09-03,Biobio,google_ads,,No Response,1.0,38412.0,38412.0,2023-06-02,2023-06-02,608.0,0.0,Dormant,False,False
+453,2023-06-15,Metropolitana,facebook_ads,,No Response,1.0,24858.0,24858.0,2024-08-14,2024-08-14,169.0,0.0,At Risk,False,False
+454,2024-12-11,Los Lagos,facebook_ads,9.0,Promoter,1.0,19855.0,19855.0,2024-07-20,2024-07-20,194.0,0.0,Dormant,False,False
+455,2023-02-05,Valparaiso,organic,,No Response,1.0,22168.0,22168.0,2023-01-13,2023-01-13,748.0,0.0,Dormant,False,False
+456,2023-07-23,Metropolitana,instagram_ads,,No Response,,,,,,,,,False,False
+457,2023-01-04,Valparaiso,mercadolibre_ads,8.0,Passive,1.0,39504.0,39504.0,2023-08-20,2023-08-20,529.0,0.0,Dormant,False,False
+458,2023-07-09,Metropolitana,facebook_ads,10.0,Promoter,1.0,13674.0,13674.0,2023-02-19,2023-02-19,711.0,0.0,Dormant,False,False
 459,2023-01-18,Metropolitana,mercadolibre_ads,,No Response,,,,,,,,,False,False
-460,2023-02-07,Araucania,mercadolibre_ads,9.0,Promoter,2.0,97510.0,48755.0,2023-03-07,2024-05-21,254.0,441.0,Dormant,False,False
+460,2023-02-07,Araucania,mercadolibre_ads,3.0,Detractor,1.0,65520.0,65520.0,2023-03-07,2023-03-07,695.0,0.0,Dormant,False,False
 461,2023-02-07,Metropolitana,mercadolibre_ads,,No Response,3.0,116428.0,38809.333333333336,2023-09-30,2023-11-20,437.0,51.0,Dormant,False,False
-462,2023-11-11,Biobio,facebook_ads,7.0,Passive,2.0,35861.0,17930.5,2023-06-28,2024-05-03,272.0,310.0,Dormant,False,False
+462,2023-11-11,Biobio,facebook_ads,9.0,Promoter,1.0,17371.0,17371.0,2023-06-28,2023-06-28,582.0,0.0,Dormant,False,False
 463,2024-02-16,Metropolitana,mercadolibre_ads,,No Response,,,,,,,,,False,False
-464,2023-09-20,Metropolitana,facebook_ads,10.0,Promoter,3.0,82922.0,27640.666666666668,2023-03-21,2025-01-22,8.0,673.0,Active,False,False
-465,2024-12-31,Metropolitana,instagram_ads,,No Response,1.0,17990.0,17990.0,2024-12-07,2024-12-07,54.0,0.0,Active,False,False
-466,2023-05-21,Metropolitana,organic,,No Response,1.0,34676.0,34676.0,2023-06-29,2023-06-29,581.0,0.0,Dormant,False,False
+464,2023-09-20,Metropolitana,facebook_ads,,No Response,2.0,53442.0,26721.0,2023-03-21,2023-11-24,433.0,248.0,Dormant,False,False
+465,2024-12-31,Metropolitana,instagram_ads,,No Response,,,,,,,,,False,False
+466,2023-05-21,Metropolitana,organic,10.0,Promoter,1.0,34676.0,34676.0,2023-06-29,2023-06-29,581.0,0.0,Dormant,False,False
 467,2023-04-11,Araucania,instagram_ads,,No Response,,,,,,,,,False,False
 468,2024-08-31,Metropolitana,google_ads,,No Response,,,,,,,,,False,False
 469,2023-03-17,Biobio,facebook_ads,,No Response,2.0,96250.0,48125.0,2023-06-18,2024-04-10,295.0,297.0,Dormant,False,False
-470,2024-12-31,Valparaiso,instagram_ads,,No Response,3.0,87458.0,29152.666666666668,2024-02-21,2024-07-13,201.0,143.0,Dormant,False,False
+470,2024-12-31,Valparaiso,instagram_ads,9.0,Promoter,1.0,32998.0,32998.0,2024-03-19,2024-03-19,317.0,0.0,Dormant,False,False
 471,2023-01-04,Biobio,mercadolibre_ads,,No Response,,,,,,,,,False,False
-472,2024-12-31,Los Lagos,facebook_ads,10.0,Promoter,1.0,16490.0,16490.0,2025-01-25,2025-01-25,5.0,0.0,Active,False,False
-473,2023-01-14,Araucania,facebook_ads,,No Response,1.0,25990.0,25990.0,2024-05-17,2024-05-17,258.0,0.0,Dormant,False,False
-474,2024-10-27,Metropolitana,google_ads,,No Response,2.0,100838.0,50419.0,2023-01-29,2024-12-24,37.0,695.0,Active,False,False
-475,2023-08-14,Metropolitana,mercadolibre_ads,,No Response,3.0,83742.0,27914.0,2023-04-18,2024-03-24,312.0,341.0,Dormant,False,False
-476,2024-12-31,Metropolitana,facebook_ads,,No Response,1.0,17355.0,17355.0,2024-06-25,2024-06-25,219.0,0.0,Dormant,False,False
-477,2023-01-23,Biobio,google_ads,10.0,Promoter,1.0,19423.0,19423.0,2023-05-10,2023-05-10,631.0,0.0,Dormant,False,False
-478,2023-08-31,Metropolitana,facebook_ads,10.0,Promoter,2.0,29718.0,14859.0,2023-09-04,2024-02-17,348.0,166.0,Dormant,False,False
-479,2024-12-31,Valparaiso,instagram_ads,,No Response,1.0,55980.0,55980.0,2024-11-17,2024-11-17,74.0,0.0,Active,False,False
-480,2023-08-11,Biobio,google_ads,,No Response,2.0,51795.0,25897.5,2023-06-10,2023-06-17,593.0,7.0,Dormant,False,False
-481,2023-10-25,Metropolitana,facebook_ads,,No Response,1.0,32490.0,32490.0,2024-10-31,2024-10-31,91.0,0.0,At Risk,False,False
-482,2023-12-23,Maule,organic,8.0,Passive,2.0,134308.0,67154.0,2023-01-19,2023-10-27,461.0,281.0,Dormant,True,True
-483,2023-07-01,Metropolitana,google_ads,9.0,Promoter,1.0,31990.0,31990.0,2024-11-11,2024-11-11,80.0,0.0,Active,False,False
+472,2024-12-31,Los Lagos,facebook_ads,,No Response,,,,,,,,,False,False
+473,2023-01-14,Araucania,facebook_ads,,No Response,,,,,,,,,False,False
+474,2024-10-27,Metropolitana,google_ads,,No Response,1.0,56358.0,56358.0,2023-01-29,2023-01-29,732.0,0.0,Dormant,False,False
+475,2023-08-14,Metropolitana,mercadolibre_ads,0.0,Detractor,2.0,58262.0,29131.0,2023-04-18,2023-11-18,439.0,214.0,Dormant,False,False
+476,2024-12-31,Metropolitana,facebook_ads,9.0,Promoter,1.0,17355.0,17355.0,2024-06-25,2024-06-25,219.0,0.0,Dormant,False,False
+477,2023-01-23,Biobio,google_ads,,No Response,1.0,19423.0,19423.0,2023-05-10,2023-05-10,631.0,0.0,Dormant,False,False
+478,2023-08-31,Metropolitana,facebook_ads,8.0,Passive,1.0,16728.0,16728.0,2023-09-04,2023-09-04,514.0,0.0,Dormant,False,False
+479,2024-12-31,Valparaiso,instagram_ads,,No Response,,,,,,,,,False,False
+480,2023-08-11,Biobio,google_ads,8.0,Passive,2.0,51795.0,25897.5,2023-06-10,2023-06-17,593.0,7.0,Dormant,False,False
+481,2023-10-25,Metropolitana,facebook_ads,,No Response,,,,,,,,,False,False
+482,2023-12-23,Maule,organic,9.0,Promoter,2.0,134308.0,67154.0,2023-01-19,2023-10-27,461.0,281.0,Dormant,True,True
+483,2023-07-01,Metropolitana,google_ads,,No Response,,,,,,,,,False,False
 484,2023-10-24,Metropolitana,organic,,No Response,,,,,,,,,False,False
 485,2023-09-21,Araucania,mercadolibre_ads,,No Response,,,,,,,,,False,False
-486,2024-11-25,Valparaiso,google_ads,8.0,Passive,1.0,18624.0,18624.0,2023-10-16,2023-10-16,472.0,0.0,Dormant,False,False
-487,2023-01-14,Araucania,mercadolibre_ads,,No Response,3.0,180959.0,60319.66666666666,2023-07-02,2024-08-26,157.0,421.0,At Risk,True,False
+486,2024-11-25,Valparaiso,google_ads,6.0,Detractor,1.0,18624.0,18624.0,2023-10-16,2023-10-16,472.0,0.0,Dormant,False,False
+487,2023-01-14,Araucania,mercadolibre_ads,,No Response,2.0,93489.0,46744.5,2023-07-02,2023-07-24,556.0,22.0,Dormant,False,False
 488,2023-04-09,Valparaiso,mercadolibre_ads,,No Response,,,,,,,,,False,False
 489,2024-12-31,Metropolitana,google_ads,,No Response,,,,,,,,,False,False
-490,2024-10-24,Maule,google_ads,9.0,Promoter,4.0,128974.0,32243.5,2023-05-16,2025-01-08,22.0,603.0,Active,False,False
+490,2024-10-24,Maule,google_ads,,No Response,2.0,64524.0,32262.0,2023-05-16,2023-09-16,502.0,123.0,Dormant,False,False
 491,2023-07-02,Maule,mercadolibre_ads,,No Response,,,,,,,,,False,False
-492,2023-10-18,Araucania,mercadolibre_ads,,No Response,1.0,26480.0,26480.0,2024-06-22,2024-06-22,222.0,0.0,Dormant,False,False
-493,2023-04-08,Metropolitana,mercadolibre_ads,7.0,Passive,3.0,74048.0,24682.666666666668,2023-06-01,2024-01-11,385.0,224.0,Dormant,False,False
-494,2023-03-04,Biobio,organic,9.0,Promoter,3.0,148246.0,49415.333333333336,2023-09-08,2024-05-20,255.0,255.0,Dormant,True,True
+492,2023-10-18,Araucania,mercadolibre_ads,,No Response,,,,,,,,,False,False
+493,2023-04-08,Metropolitana,mercadolibre_ads,7.0,Passive,2.0,47058.0,23529.0,2023-06-01,2023-09-13,505.0,104.0,Dormant,False,False
+494,2023-03-04,Biobio,organic,9.0,Promoter,1.0,55296.0,55296.0,2023-09-08,2023-09-08,510.0,0.0,Dormant,False,False
 495,2023-07-06,Metropolitana,google_ads,,No Response,,,,,,,,,False,False
-496,2023-05-11,Metropolitana,mercadolibre_ads,,No Response,1.0,42970.0,42970.0,2024-03-29,2024-03-29,307.0,0.0,Dormant,False,False
-497,2023-09-20,Los Lagos,google_ads,8.0,Passive,5.0,136957.0,27391.4,2023-07-09,2024-11-21,70.0,501.0,Active,True,False
+496,2023-05-11,Metropolitana,mercadolibre_ads,,No Response,,,,,,,,,False,False
+497,2023-09-20,Los Lagos,google_ads,10.0,Promoter,3.0,90987.0,30329.0,2023-07-09,2023-12-30,397.0,174.0,Dormant,False,False
 498,2023-01-25,Metropolitana,mercadolibre_ads,9.0,Promoter,2.0,38271.0,19135.5,2023-03-15,2024-08-16,167.0,520.0,At Risk,False,False
-499,2024-12-31,Coquimbo,google_ads,8.0,Passive,1.0,22480.0,22480.0,2024-08-06,2024-08-06,177.0,0.0,At Risk,False,False
+499,2024-12-31,Coquimbo,google_ads,,No Response,,,,,,,,,False,False
 500,2024-12-31,Valparaiso,instagram_ads,8.0,Passive,1.0,32628.0,32628.0,2023-06-28,2023-06-28,582.0,0.0,Dormant,False,False
