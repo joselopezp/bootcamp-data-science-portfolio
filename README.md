@@ -4,7 +4,7 @@
 
 [🇪🇸 Versión en Español](#portafolio-del-bootcamp-de-ciencia-de-datos)
 
-Welcome to my Data Science portfolio! This repository contains projects developed during the "Data Science Fundamentals" bootcamp (SENCE 2024-2026).
+Welcome to my Data Science portfolio! This repository contains projects developed during the "Data Science Fundamentals" bootcamp (SENCE 2025-2026).
 
 ## Projects
 
@@ -55,7 +55,7 @@ The goal is to demonstrate structured thinking, analytical judgment, and adaptab
 
 **Jose Marcel Lopez Pino**  
 Industrial Engineer (Business + Operations) | Data Science & Business Analytics  
-Bootcamp: Fundamentos de Ciencia de Datos - SENCE/Alkemy (2024-2026)
+Bootcamp: Fundamentos de Ciencia de Datos - SENCE/Alkemy (2025-2026)
 
 *Industrial Engineering in Chile encompasses finance, marketing, economics, and operations management - enabling a unique business + analytics perspective.*
 
@@ -68,7 +68,7 @@ Bootcamp: Fundamentos de Ciencia de Datos - SENCE/Alkemy (2024-2026)
 
 # Portafolio del Bootcamp de Ciencia de Datos
 
-Bienvenido a mi portafolio de Ciencia de Datos. Este repositorio contiene los proyectos desarrollados durante el bootcamp "Fundamentos de Ciencia de Datos" (SENCE 2024-2026).
+Bienvenido a mi portafolio de Ciencia de Datos. Este repositorio contiene los proyectos desarrollados durante el bootcamp "Fundamentos de Ciencia de Datos" (SENCE 2025-2026).
 
 ## Proyectos
 
@@ -119,7 +119,7 @@ El objetivo de este portafolio no es demostrar adhesión a una metodología espe
 
 **Jose Marcel Lopez Pino**  
 Ingeniero Civil Industrial (Negocios + Operaciones) | Data Science & Business Analytics  
-Bootcamp: Fundamentos de Ciencia de Datos - SENCE/Alkemy (2024-2026)
+Bootcamp: Fundamentos de Ciencia de Datos - SENCE/Alkemy (2025-2026)
 
 *La Ingeniería Civil Industrial en Chile abarca finanzas, marketing, economía y gestión de operaciones - habilitando una perspectiva única de negocios + analytics.*
 
