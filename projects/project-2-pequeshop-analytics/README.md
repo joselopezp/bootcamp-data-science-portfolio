@@ -367,7 +367,7 @@ jupyter notebook notebooks/data_preparation.ipynb
 
 **Jose Marcel Lopez Pino**  
 Industrial Engineer (Business + Operations) | Data Science & Business Analytics  
-Bootcamp: Fundamentos de Ciencia de Datos - SENCE/Alkemy (2024-2026)
+Bootcamp: Fundamentos de Ciencia de Datos - SENCE/Alkemy (2025-2026)
 
 *Industrial Engineering in Chile encompasses finance, marketing, economics, and operations management - enabling a unique business + analytics perspective.*
 

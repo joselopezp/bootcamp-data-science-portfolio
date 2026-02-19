@@ -58,3 +58,14 @@ learning/
 # Raw data (large files)
 # ======================
 **/data/raw/
+
+# ======================
+# Project 3 Reports (local deliverables)
+# ======================
+# Ignore everything inside reports
+projects/project-3-eda-pequeshop/reports/*
+
+# But keep figures folder
+!projects/project-3-eda-pequeshop/reports/figures/
+!projects/project-3-eda-pequeshop/reports/figures/**
+

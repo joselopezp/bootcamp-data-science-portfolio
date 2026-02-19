@@ -1,159 +1,199 @@
-# [Project Name]
+# PequeShop: Exploratory Data Analysis for Commercial Decisions
 
-> **One-line description**: [What business problem does this solve?]
-
-**Author**: Jose Marcel Lopez Pino — Industrial Civil Engineer | Data Science  
-**Date**: [YYYY-MM-DD]  
-**Framework**: CRISP-DM + Lean  
-**Tools**: Python, Pandas, NumPy, Matplotlib, Seaborn  
-**Status**: 🟡 In Progress | 🟢 Complete | 🔴 On Hold
+> **CRISP-DM Cycle 2 — Diagnostic Analytics** | Module 4: Análisis Exploratorio de Datos
 
 ---
 
-## Executive Summary
+## Project Overview
 
-[2-3 paragraphs answering:]
-- What business problem does this project address?
-- What is the main insight or finding?
-- What decision does it enable?
+This project applies Exploratory Data Analysis (EDA) techniques on PequeShop's e-commerce dataset to uncover customer behavior patterns and support strategic decisions on retention, pricing, and channel optimization.
 
-**Key Findings**:
-1. [Finding 1 — with metric and business impact]
-2. [Finding 2 — with metric and business impact]
-3. [Finding 3 — with metric and business impact]
+**This is CRISP-DM Cycle 2**, building directly on [Project 2 (Module 3 — Data Preparation)](../Module_3_Data_Preparation/), which completed the first three CRISP-DM phases: Business Understanding, Data Understanding, and Data Preparation. Project 3 picks up with clean datasets and advances through Modeling, Evaluation, and Deployment — demonstrating how real data science projects evolve iteratively.
 
-**Recommendation**: [One clear, actionable recommendation for stakeholders]
+```
+CRISP-DM Iterative Cycles — PequeShop
+
+Cycle 1 (Project 2, M3):  Business Understanding → Data Understanding → Data Preparation
+                           Output: Clean datasets + KPIs + Customer segmentation
+
+Cycle 2 (Project 3, M4):  Modeling → Evaluation → Deployment
+                           Output: Statistical insights + Visualizations + Recommendations
+
+Cycle 3 (Future, M6):     Predictive modeling (ML supervised)
+Cycle 4 (Future, M7):     RFM + K-Means customer segmentation
+Cycle 5 (Future, Post):   BG/NBD probabilistic models (CLV)
+```
 
 ---
 
 ## Business Context
 
-| Attribute | Description |
-|-----------|-------------|
-| **Industry** | [e.g., Retail, Mining, Technology, Labor Market] |
-| **Stakeholders** | [Who uses this analysis?] |
-| **Business Problem** | [Detailed description of the problem] |
-| **Expected Value** | [What decision improves? How much saves? What optimizes?] |
-| **Success Criteria** | [How do we know this analysis is useful?] |
+**PequeShop** is a Chilean e-commerce specializing in children's clothing and accessories (ages 4-10), operating on two platforms: MercadoLibre and Shopify. The Dirección de Análisis Estratégico needs to understand historical customer data to make evidence-based decisions.
+
+**Key Business Questions:**
+- What drives revenue? Which variables are the strongest predictors?
+- What is the customer retention health? How severe is churn?
+- Are there actionable patterns in customer behavior across platforms?
+- Which correlations are meaningful vs. spurious?
 
 ---
 
-## Methodology: CRISP-DM + Lean
+## Key Results
 
-This project follows the **CRISP-DM** framework enhanced with **Lean** principles.  
-See [METHODOLOGY.md](./docs/METHODOLOGY.md) for detailed documentation.
+| KPI | Value | Context |
+|-----|-------|---------|
+| Total Revenue | $37.5M CLP | 1,192 transactions |
+| Active Customers | 392 | Out of 500 registered (108 never purchased) |
+| Average Ticket | $31,500 CLP | Right-skewed: Pareto pattern |
+| NPS Score | 30.2 | 47% response rate (53% no response — bias) |
+| Churn Rate | 41.4% | 207 Dormant / 500 total customers |
 
-### CRISP-DM Phases Applied
+### Regression Models (statsmodels OLS)
 
-| Phase | Notebook | Lean Filter | Status |
-|-------|----------|-------------|--------|
-| 1. Business Understanding | `01_business_understanding.ipynb` | Define value for stakeholder | ⬜ |
-| 2. Data Understanding | `02_data_understanding.ipynb` | Only explore what informs decisions | ⬜ |
-| 3. Data Preparation | `03_data_preparation.ipynb` | Minimum viable transformations | ⬜ |
-| 4. Modeling | `04_modeling.ipynb` | Simplest model that answers the question | ⬜ |
-| 5. Evaluation | `05_evaluation.ipynb` | Does it solve the business problem? | ⬜ |
-| 6. Deployment | `06_deployment.ipynb` | Actionable deliverable for stakeholder | ⬜ |
+| Metric | Simple Regression | Multiple Regression |
+|--------|-------------------|---------------------|
+| R² | 0.362 | **0.992** |
+| RMSE | $16,845 | **$1,856** |
+| MAE | $12,334 | **$1,295** |
+| Predictors | quantity | quantity + unit_price |
+
+### Key Correlations (Pearson)
+
+| Relationship | r | Classification |
+|---|---|---|
+| quantity → total_amount | 0.602 | Meaningful |
+| unit_price → total_amount | 0.610 | Meaningful |
+| subtotal → total_amount | 0.997 | Spurious (structural) |
+| shipping → total_amount | -0.548 | Investigate |
+| NPS → revenue | 0.12 | Weak (53% non-response bias) |
 
 ---
 
 ## Project Structure
 
 ```
-project-name/
-├── README.md                     # This file
-├── requirements.txt              # Python dependencies
-├── .gitignore                    # Git exclusions
-│
+project-3-eda-pequeshop/
 ├── data/
-│   ├── raw/                      # Original data (never modify)
-│   ├── processed/                # Intermediate clean data
-│   └── final/                    # Analysis-ready datasets
-│
+│   ├── raw/                         # Symlink to Project 2 outputs
+│   ├── processed/                   # Datasets from Project 2 ETL
+│   │   ├── transactions_final.csv   # 1,192 rows × 15 columns
+│   │   └── customers_final.csv      # 392 rows × 12 columns
+│   └── final/                       # Analysis outputs
 ├── notebooks/
-│   ├── 01_business_understanding.ipynb
-│   ├── 02_data_understanding.ipynb
-│   ├── 03_data_preparation.ipynb
-│   ├── 04_modeling.ipynb
-│   ├── 05_evaluation.ipynb
-│   └── 06_deployment.ipynb
-│
-├── src/
-│   ├── data_processing.py        # ETL functions
-│   ├── analysis.py               # Statistical analysis
-│   └── visualization.py          # Chart functions
-│
+│   ├── 01_business_understanding.ipynb   # → Links to Project 2 (M3 L1-L2)
+│   ├── 02_data_understanding.ipynb       # → Links to Project 2 (M3 L2-L3)
+│   ├── 03_data_preparation.ipynb         # → Links to Project 2 (M3 L4-L6)
+│   ├── 04_modeling.ipynb                 # EDA + Stats + Correlations + Regression
+│   ├── 05_evaluation.ipynb               # Seaborn + Matplotlib visualizations
+│   └── 06_deployment.ipynb               # Insights + Recommendations + Export
 ├── reports/
-│   ├── technical/                # For data scientists
-│   ├── executive/                # For business stakeholders
-│   └── figures/                  # Exported charts
-│
+│   ├── figures/                     # 16 exported PNG visualizations
+│   └── pequeshop_eda_informe_tecnico.pptx
+├── src/
+│   ├── analysis.py
+│   └── visualization.py
 ├── docs/
-│   ├── METHODOLOGY.md            # CRISP-DM + Lean framework
-│   ├── data_dictionary.md        # Variable descriptions
-│   ├── decisions_log.md          # Key decisions record
-│   └── lean_retrospective.md    # Lessons learned
-│
-├── config/
-│   └── config.py                 # Paths and parameters
-│
-└── tests/                        # Unit tests
+│   └── data_dictionary.md
+└── README.md
 ```
+
+### CRISP-DM Phase Mapping
+
+| Notebook | CRISP-DM Phase | Scope | Source |
+|----------|----------------|-------|--------|
+| 01_business_understanding | Business Understanding | Problem definition, KPIs | **Project 2** |
+| 02_data_understanding | Data Understanding | Data extraction, IDA | **Project 2** |
+| 03_data_preparation | Data Preparation | ETL, cleaning, feature engineering | **Project 2** |
+| 04_modeling | Modeling | EDA, descriptive stats, correlations, regression | **This project** |
+| 05_evaluation | Evaluation | Advanced visualization (Seaborn + Matplotlib) | **This project** |
+| 06_deployment | Deployment | Insights, recommendations, export | **This project** |
 
 ---
 
-## How to Reproduce
+## Tech Stack
+
+| Tool | Purpose |
+|------|---------|
+| Python 3.12 | Core language |
+| Pandas | Data manipulation |
+| NumPy | Numerical operations |
+| Statsmodels | OLS regression, statistical tests |
+| Seaborn | Statistical visualizations (pairplot, violinplot, heatmap, FacetGrid) |
+| Matplotlib | Custom visualizations, subplots, export |
+| SciPy | Statistical functions |
+| Scikit-learn | Metrics (MSE, MAE) |
+
+---
+
+## Lessons Covered (Module 4)
+
+| Lesson | Topic | Key Deliverables |
+|--------|-------|-----------------|
+| L1 | Análisis Exploratorio de Datos | Variable classification, IDA, EDA vs IDA distinction |
+| L2 | Estadística Descriptiva | Mean, median, mode, variance, std, quartiles, histograms, boxplots |
+| L3 | Correlación | Pearson coefficient, scatterplots, correlation matrix, spurious detection |
+| L4 | Regresiones Lineales | OLS with statsmodels, R², MSE, MAE, predictor significance |
+| L5 | Análisis Visual (Seaborn) | pairplot, violinplot, jointplot, heatmap, FacetGrid |
+| L6 | Matplotlib | Subplots, annotations, custom styling, PNG export, technical report |
+
+---
+
+## Strategic Recommendations
+
+| Priority | Action | Expected Impact |
+|----------|--------|-----------------|
+| **HIGH** | Reactivation campaign for 207 Dormant customers | Reduce churn from 41.4% to <30% |
+| **HIGH** | Cross-sell/upsell strategy (dual levers: quantity + unit_price) | Increase avg ticket by 15-20% |
+| MEDIUM | Improve NPS response rate (current: 47%) | Reliable satisfaction data |
+| MEDIUM | Investigate Shopify underperformance (25% vs MercadoLibre 75%) | Optimize channel investment |
+| LOW | Analyze negative shipping correlation → free shipping threshold | Revenue uplift |
+
+---
+
+## How to Run
 
 ```bash
-# 1. Clone the repository
-git clone https://github.com/[username]/[project-name].git
-cd [project-name]
+# Clone the repository
+git clone https://github.com/joselopezp/bootcamp-data-science-portfolio.git
+cd Projects/project-3-eda-pequeshop
 
-# 2. Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate        # Linux/Mac
-# venv\Scripts\activate         # Windows
+# Activate virtual environment
+.venv\Scripts\activate          # Windows
+# source .venv/bin/activate     # Linux/Mac
 
-# 3. Install dependencies
-pip install -r requirements.txt
-
-# 4. Run notebooks in order (01 → 06)
-jupyter notebook
+# Run notebooks in order
+# Open 04_modeling.ipynb → 05_evaluation.ipynb → 06_deployment.ipynb
 ```
 
 ---
 
 ## Deliverables
 
-| Deliverable | Audience | Format | Location |
-|-------------|----------|--------|----------|
-| Technical Report | Data Scientists | Markdown / Notebook | `reports/technical/` |
-| Executive Summary | Business Stakeholders | PDF / PPTX | `reports/executive/` |
-| Clean Dataset | Analysts | CSV | `data/final/` |
-| Visualizations | All | PNG | `reports/figures/` |
+- [x] Notebooks L1-L6 in VS Code (Jupyter)
+- [x] 16 exported figures (PNG) in `reports/figures/`
+- [x] Technical presentation (3-slide PPTX)
+- [x] Commented source code (PEP 8, Google-style docstrings)
+- [x] Final document with insights and recommendations
+- [x] GitHub repository
 
 ---
 
-## Lean Metrics
+## CRISP-DM Evolution Roadmap
 
-| Metric | Target | Actual |
-|--------|--------|--------|
-| Time to first insight | [X days] | [X days] |
-| Analyses discarded (waste eliminated) | — | [count] |
-| Business questions answered | [X] | [X] |
-| Stakeholder feedback incorporated | — | [count] |
-
----
-
-## Resumen Ejecutivo (Español)
-
-[Misma información del Executive Summary, en español, para stakeholders hispanohablantes]
+| Level | Question | PequeShop Cycle | Module | Status |
+|-------|----------|-----------------|--------|--------|
+| Descriptive | What happened? | Project 2 (ETL + KPIs) | M3 | ✅ Done |
+| Diagnostic | Why did it happen? | Project 3 (EDA + Regression) | M4 | ✅ Current |
+| Predictive | What will happen? | Churn classification (ML) | M6 | ⏳ Next |
+| Segmentation | Natural groups? | RFM + K-Means + NPS cross-analysis | M7 | 📋 Planned |
+| Prescriptive | What should we do? | BG/NBD (CLV) + Earned Growth Rate (EGR) | Post | 🔮 Future |
 
 ---
 
-## License
+*Framework: CRISP-DM + Lean | Methodology: Project-Based Learning (PBL)*
 
-[Choose: MIT / Apache 2.0 / CC BY 4.0 / Private]
+**Jose Marcel Lopez Pino**  
+Industrial Engineer (Business + Operations) | Data Science & Business Analytics  
+Bootcamp: Fundamentos de Ciencia de Datos - SENCE/Alkemy (2025-2026)
 
----
-
-*Built with CRISP-DM + Lean framework | Project-Based Learning methodology*
+*Industrial Engineering in Chile encompasses finance, marketing, economics, and operations management — enabling a unique business + analytics perspective.*
