@@ -2,7 +2,7 @@
 
 ## End-to-End Data Science Project with Business Focus
 
-**Framework:** CRISP-DM  
+**Methodology:** CRISP-DM + Lean Thinking  
 **Data Pipeline:** ETL (Extract, Transform, Load)  
 **Focus:** Applied Data Science for E-commerce Analytics
 
@@ -20,13 +20,24 @@
 
 **Business Problem:** Data is fragmented across multiple platforms with inconsistent formats, missing values, and outliers that prevent unified analytics and decision-making.
 
-**Business Decision Enabled:** Clean, consolidated data enables Customer Lifetime Value (CLTV) analysis, Customer Acquisition Cost (CAC) optimization, and marketing attribution modeling.
+**Business Decision Enabled:** Clean, consolidated data enables Customer Lifetime Value (CLTV) analysis, Customer Acquisition Cost (CAC) optimization, Net Promoter Score (NPS) segmentation, and marketing attribution modeling.
+
+---
+
+## Methodology: CRISP-DM + Lean Thinking
+
+This project follows **CRISP-DM** for structured data science work, combined with **Lean principles** for iterative validation and value generation over excessive complexity.
+
+**Lean principles applied:**
+- **Eliminate waste:** Early identification of `customer_id` mapping ensured data traceability across platforms, avoiding rework in later phases.
+- **Build-Measure-Learn:** NPS integration was discovered during exploratory analysis and incorporated iteratively, enhancing customer segmentation without delaying the pipeline.
+- **Value focus:** Every transformation decision (outlier treatment, feature engineering) was evaluated against business impact, not just technical correctness.
 
 ---
 
 ## Project Evolution
 
-This project followed an iterative approach aligned with CRISP-DM methodology:
+This project followed an iterative approach aligned with CRISP-DM + Lean methodology:
 
 1. **Initial Scope:** Consolidate transaction data from multiple platforms
 2. **Discovery:** During data preparation, exploratory analysis revealed that customer feedback could be consolidated into an NPS metric
@@ -36,22 +47,21 @@ This evolution demonstrates how real-world data science projects evolve iterativ
 
 ---
 
-## Project Scope: CRISP-DM Phases
+## Project Scope: CRISP-DM + Lean
 
-This project covers the first three phases of the CRISP-DM methodology:
+This project covers phases 1-3 of CRISP-DM, applying Lean principles throughout:
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                        CRISP-DM Framework                        │
-├─────────────────────────────────────────────────────────────────┤
-│  ✅ Business Understanding    → Problem definition, KPIs        │
-│  ✅ Data Understanding        → Extract (ETL)                   │
-│  ✅ Data Preparation          → Transform + Load (ETL)          │
-│  ⏳ Modeling                  → Future: ML models               │
-│  ⏳ Evaluation                → Future: Business impact         │
-│  ⏳ Deployment                → Future: Dashboard/API           │
-└─────────────────────────────────────────────────────────────────┘
-```
+| CRISP-DM Phase | Lean Principle Applied | ETL Stage | Lessons |
+|----------------|------------------------|-----------|---------|
+| ✅ Business Understanding | Value focus | - | Problem definition, KPIs |
+| ✅ Data Understanding | Eliminate waste | **Extract** | L1-L3: Early `customer_id` mapping |
+| ✅ Data Preparation | Build-Measure-Learn | **Transform** | L4-L5: NPS discovered & integrated iteratively |
+| ✅ Data Preparation | Continuous improvement | **Load** | L6: Aggregation, KPIs, export |
+| ⏳ Modeling | - | - | *Future: ML models* |
+| ⏳ Evaluation | - | - | *Future: Business impact* |
+| ⏳ Deployment | - | - | *Future: Dashboard/API* |
+
+**Note:** ETL (Extract → Transform → Load) is the data pipeline pattern used to implement the CRISP-DM phases.
 
 ---
 
@@ -110,10 +120,11 @@ Fragmented data across multiple platforms prevented PequeShop from understanding
 
 | Segment | Criteria | Action |
 |---------|----------|--------|
-| Active | Purchased within 60 days | Upsell campaigns |
-| At Risk | No purchase 60-90 days | Retention offers |
-| Dormant | No purchase 90+ days | Win-back campaigns |
-| High Value Inactive | High CLTV + inactive | VIP exclusive offer |
+| Active | Purchased within 90 days | Upsell campaigns |
+| At Risk | No purchase 90-180 days | Retention offers |
+| Dormant | No purchase 180+ days | Win-back campaigns |
+
+*Note: Thresholds adjusted for children's clothing retail cycle (kids outgrow clothes every 3-6 months).*
 
 ### ROI Potential
 
@@ -121,6 +132,24 @@ Fragmented data across multiple platforms prevented PequeShop from understanding
 - **Lower CAC** by focusing on high-performing channels
 - **Increase CLTV** through targeted retention actions
 - **Improve NPS** by addressing detractor feedback
+
+---
+
+## KPI Summary (Final Results)
+
+| Category | Metric | Value |
+|----------|--------|-------|
+| 📊 Customer Health | NPS Score | 30.2 |
+| 📊 Customer Health | Churn Rate | 41.4% |
+| 📊 Customer Health | At-Risk Rate | 17.6% |
+| 💰 Revenue | Total Revenue | $37.8M CLP (~$44K USD) |
+| 💰 Revenue | Transactions | 1,192 |
+| 💰 Revenue | Average Ticket | $31,689 CLP (~$37 USD) |
+| 🎯 Customers | Registered | 500 |
+| 🎯 Customers | Active (with purchases) | 392 |
+| 🎯 Acquisition | Overall CAC | $23,771 CLP (~$28 USD) |
+
+*Exchange rate: 1 USD ≈ 860 CLP (Feb 2026)*
 
 ---
 
@@ -146,32 +175,7 @@ Where β represents price elasticity of demand directly.
 
 **Key Insight:**
 
-> "In a hypothetical scenario (e.g., β ≈ -0.6), high NPS customers may exhibit lower price sensitivity, opening the door for future price optimization analysis without sacrificing customer loyalty.
-"       
-
----
-
-## Prescriptive Pricing Framework
-
-**Approach:** Bounded adjustments based on elasticity, not point estimates.
-
-> "Based on estimated price elasticity, pricing recommendations were defined as bounded adjustments rather than point estimates."
-
-### Decision Rules (Customer-Aware Pricing)
-
-| Elasticity | NPS | Churn Risk | Recommendation |
-|------------|-----|------------|----------------|
-| Inelastic (β > -1) | High | Low | ↑ Price increase up to 5% |
-| Inelastic (β > -1) | Low | High | → Hold price |
-| Elastic (β < -1) | High | Low | → Maintain price |
-| Elastic (β < -1) | Low | High | ↓ Promotional discount |
-
-**Example:**
-- Elasticity: β = -0.6 (inelastic)
-- Action: +5% price increase
-- Expected impact: -3% volume, net revenue ↑
-
-See [Pricing Playbook](docs/pricing_playbook.md) for implementation guidelines.
+> "In a hypothetical scenario (e.g., β ≈ -0.6), high NPS customers may exhibit lower price sensitivity, opening the door for future price optimization analysis without sacrificing customer loyalty."
 
 ---
 
@@ -203,32 +207,6 @@ See [KPI Framework](docs/kpi_framework.md) for complete metrics documentation.
 
 ---
 
-## Production Architecture (Reference)
-
-This project is a local MVP. Below is the reference architecture for a production deployment:
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                        AWS Cloud                             │
-├─────────────────────────────────────────────────────────────┤
-│                                                              │
-│   S3 Bucket          →    Lambda/Glue    →    Redshift      │
-│   (Raw Data)              (ETL Pipeline)      (Data Warehouse)
-│                                                      ↓       │
-│                                               QuickSight     │
-│                                               (Dashboard)    │
-└─────────────────────────────────────────────────────────────┘
-```
-
-| Component | Local (Current) | Production (AWS) |
-|-----------|-----------------|------------------|
-| Storage | CSV/Excel files | S3 Bucket |
-| Processing | Python scripts | Lambda / Glue |
-| Data Warehouse | Pandas DataFrames | Redshift |
-| Visualization | Excel / Jupyter | QuickSight |
-
----
-
 ## Project Structure
 
 ```
@@ -256,7 +234,7 @@ Module_3_Data_Preparation/
 
 ---
 
-## Tech Stack
+## Analytical Tools
 
 | Tool | Purpose |
 |------|---------|
@@ -266,6 +244,8 @@ Module_3_Data_Preparation/
 | SciPy | Statistical methods (Z-score) |
 | openpyxl | Excel read/write |
 | lxml | HTML parsing |
+| CRISP-DM | Methodology framework |
+| Lean Thinking | Iterative validation, value focus |
 
 ---
 
@@ -285,7 +265,8 @@ Module_3_Data_Preparation/
 ## Data Quality Report
 
 ### Before Cleaning
-- Total records: ~2,000+ transactions
+- Initial generation: 2,000 transactions (L1)
+- After consolidation: 1,192 transactions (892 MercadoLibre + 300 Shopify)
 - Null values: Present in Shopify data
 - Outliers: Extreme prices, bulk quantities
 
@@ -294,6 +275,8 @@ Module_3_Data_Preparation/
 - Outliers: Capped or flagged
 - New features: 15+ engineered columns
 - Data integrity: 100%
+- Final transactions: 1,192
+- Active customers: 392
 
 ### Cleaning Decisions Documented
 
@@ -317,9 +300,9 @@ Module_3_Data_Preparation/
 
 | File | Records | Purpose |
 |------|---------|---------|
-| transactions_final.csv | 2,000 | Clean transaction data with time features |
-| customers_final.csv | 500 | Enriched customers with NPS, metrics, segments |
-| nps_surveys.csv | 300 | NPS survey responses |
+| transactions_final.csv | 1,192 | Clean transaction data with time features |
+| customers_final.csv | 392 | Active customers with NPS, metrics, segments |
+| nps_surveys.csv | ~235 | NPS survey responses (60% of active customers) |
 | pequeshop_analytics.xlsx | 6 sheets | Business-ready workbook |
 
 ### Features Engineered
@@ -332,6 +315,28 @@ Module_3_Data_Preparation/
 - days_since_last_purchase, tenure_days
 - nps_score, nps_category
 - retargeting_segment, is_high_value, priority_winback
+
+---
+
+## Post-Evaluation Enhancements
+
+After initial project evaluation, the following improvements were implemented in the `post-evaluation-enhancements` branch:
+
+| Enhancement | Description | Impact |
+|-------------|-------------|--------|
+| Customer ID consistency | Shopify transactions now use existing customer IDs from pool | Data integrity improved |
+| Retargeting thresholds | Adjusted from 60/90 to 90/180 days | More realistic for children's clothing retail |
+| Variable naming | Standardized `df_treated` throughout L5-L6 | Code consistency |
+| KPI accuracy | Recalculated with corrected data | More reliable metrics |
+
+### Future Roadmap
+
+| Enhancement | Description | Priority |
+|-------------|-------------|----------|
+| RFM Segmentation | Recency, Frequency, Monetary analysis | Medium |
+| Earned Growth Rate (EGR) | Referral tracking, Net Revenue Retention | Medium |
+| Fader & Hardie Model (sBG) | Cohort-based churn projection | Advanced |
+| CLTV Modeling | Customer Lifetime Value prediction | High |
 
 ---
 
@@ -358,28 +363,13 @@ jupyter notebook notebooks/data_preparation.ipynb
 
 ---
 
-## Next Steps (Future Work)
-
-| Phase | Local (Current) | Production (AWS) |
-|-------|-----------------|------------------|
-| Storage | CSV/Excel files | S3 Bucket |
-| Processing | Python scripts | Lambda / Glue |
-| Data Warehouse | Pandas DataFrames | Redshift |
-| Visualization | Excel / Jupyter | QuickSight |
-
-**Modeling opportunities:**
-- Churn Prediction Model
-- CLTV Estimation
-- Price Elasticity Analysis (Log-Log regression)
-- A/B Testing Framework
-
----
-
 ## Author
 
 **Jose Marcel Lopez Pino**  
-Industrial Engineer | Data Science & Business Analytics  
+Industrial Engineer (Business + Operations) | Data Science & Business Analytics  
 Bootcamp: Fundamentos de Ciencia de Datos - SENCE/Alkemy (2024-2026)
+
+*Industrial Engineering in Chile encompasses finance, marketing, economics, and operations management - enabling a unique business + analytics perspective.*
 
 [![GitHub](https://img.shields.io/badge/GitHub-joselopezp-181717?style=flat&logo=github)](https://github.com/joselopezp)
 
