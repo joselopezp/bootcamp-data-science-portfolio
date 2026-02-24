@@ -229,8 +229,15 @@ This project is licensed under the [MIT License](LICENSE).
 Industrial Engineer (Business + Operations) | Data Science & Business Analytics
 Bootcamp: Fundamentos de Ciencia de Datos - SENCE/Alkemy (2025–2026)
 
-*Industrial Engineering in Chile encompasses business strategy, finance, marketing,
-economics, and operations management — enabling a unique business + analytics perspective.*
+*Industrial Engineering in Chile (Academic degree: Bachelor of Science in
+Industrial Engineering — 5.5-year program, comparable to a U.S. M.S.) encompasses
+business strategy, finance, marketing, economics, operations management, and
+technology management — backed by a rigorous scientific foundation in calculus,
+linear algebra, probability and statistics, physics, and optimization — enabling
+a unique business + analytics perspective.*
+
+*Thesis: Volatility Forecasting of IPSA Stock Returns (Chilean Stock Exchange)
+using a GJR-GARCH Model.*
 
 [![GitHub](https://img.shields.io/badge/GitHub-joselopezp-181717?style=flat&logo=github)](https://github.com/joselopezp)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Jose%20Lopez%20Pino-0077B5?logo=linkedin&logoColor=white)](https://linkedin.com/in/jose-lopez-pino)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-jose--lopez--pino-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/jose-lopez-pino/)
