@@ -261,4 +261,5 @@ This project is licensed under the [MIT License](LICENSE).
 Industrial Engineer (Business + Operations) | Data Science & Business Analytics
 Bootcamp: Fundamentos de Ciencia de Datos - SENCE/Alkemy (2025-2026)
 
-*Industrial Engineering in Chile encompasses finance, marketing, economics, and operations management — enabling a unique business + analytics perspective.*
+*Industrial Engineering in Chile encompasses business strategy, finance, marketing,
+economics, and operations management — enabling a unique business + analytics perspective.*

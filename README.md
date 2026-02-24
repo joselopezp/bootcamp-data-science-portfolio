@@ -57,7 +57,8 @@ The goal is to demonstrate structured thinking, analytical judgment, and adaptab
 Industrial Engineer (Business + Operations) | Data Science & Business Analytics  
 Bootcamp: Fundamentos de Ciencia de Datos - SENCE/Alkemy (2025-2026)
 
-*Industrial Engineering in Chile encompasses finance, marketing, economics, and operations management - enabling a unique business + analytics perspective.*
+*Industrial Engineering in Chile encompasses business strategy, finance, marketing,
+economics, and operations management — enabling a unique business + analytics perspective.*
 
 [![GitHub](https://img.shields.io/badge/GitHub-joselopezp-181717?style=flat&logo=github)](https://github.com/joselopezp)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-jose--lopez--pino-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/jose-lopez-pino/)
@@ -121,7 +122,7 @@ El objetivo de este portafolio no es demostrar adhesión a una metodología espe
 Ingeniero Civil Industrial (Negocios + Operaciones) | Data Science & Business Analytics  
 Bootcamp: Fundamentos de Ciencia de Datos - SENCE/Alkemy (2025-2026)
 
-*La Ingeniería Civil Industrial en Chile abarca finanzas, marketing, economía y gestión de operaciones - habilitando una perspectiva única de negocios + analytics.*
+*La Ingeniería Civil Industrial en Chile abarca la gestión estratégica, finanzas, marketing, economía y gestión de operaciones - habilitando una perspectiva única de negocios + analytics.*
 
 [![GitHub](https://img.shields.io/badge/GitHub-joselopezp-181717?style=flat&logo=github)](https://github.com/joselopezp)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-jose--lopez--pino-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/jose-lopez-pino/)

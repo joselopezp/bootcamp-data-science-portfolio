@@ -99,7 +99,7 @@ Manages the contact collection:
 ```bash
 # 1. Clone the repository
 git clone https://github.com/joselopezp/bootcamp-data-science-portfolio.git
-cd projects/project-1-contact-management-system
+cd projects/project-1-oop-contact-system
 
 # 2. Verify Python version (3.10+ required for match-case)
 python --version
@@ -229,8 +229,8 @@ This project is licensed under the [MIT License](LICENSE).
 Industrial Engineer (Business + Operations) | Data Science & Business Analytics
 Bootcamp: Fundamentos de Ciencia de Datos - SENCE/Alkemy (2025–2026)
 
-*Industrial Engineering in Chile encompasses finance, marketing, economics,
-and operations management — enabling a unique business + analytics perspective.*
+*Industrial Engineering in Chile encompasses business strategy, finance, marketing,
+economics, and operations management — enabling a unique business + analytics perspective.*
 
 [![GitHub](https://img.shields.io/badge/GitHub-joselopezp-181717?style=flat&logo=github)](https://github.com/joselopezp)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Jose%20Lopez%20Pino-0077B5?logo=linkedin&logoColor=white)](https://linkedin.com/in/jose-lopez-pino)
