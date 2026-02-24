@@ -1,67 +1,107 @@
 # PequeShop: Data Preparation Pipeline
 
-## End-to-End Data Science Project with Business Focus
+> **CRISP-DM Cycle 1 — Data Preparation** | Module 3: Preparación de Datos
 
-**Methodology:** CRISP-DM + Lean Thinking  
-**Data Pipeline:** ETL (Extract, Transform, Load)  
-**Focus:** Applied Data Science for E-commerce Analytics
+![Python](https://img.shields.io/badge/Python-3.12.10-3776AB?logo=python&logoColor=white)
+![Framework](https://img.shields.io/badge/Framework-CRISP--DM%20%2B%20LEAN-2E86AB)
+![Type](https://img.shields.io/badge/Type-ETL%20Pipeline%20%7C%20Data%20Preparation-blueviolet)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
+---
+
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Business Context](#business-context)
+- [Methodology: CRISP-DM + Lean](#methodology-crisp-dm--lean)
+- [ETL Pipeline Architecture](#etl-pipeline-architecture)
+- [KPI Summary](#kpi-summary-final-results)
+- [Business Value](#business-value)
+- [Pricing Insights](#pricing-insights-conceptual-extension)
+- [KPI Framework](#kpi-framework)
+- [Project Structure](#project-structure)
+- [Tech Stack](#tech-stack)
+- [Lessons / Pipeline Stages](#lessons--pipeline-stages)
+- [Data Quality Report](#data-quality-report)
+- [Key Outputs](#key-outputs)
+- [Post-Evaluation Enhancements](#post-evaluation-enhancements)
+- [How to Run](#how-to-run)
+- [Credits](#credits)
+- [License](#license)
+
+---
+
+## Project Overview
+
+End-to-end ETL data preparation pipeline for PequeShop, a Chilean children's
+e-commerce. Consolidates fragmented data from MercadoLibre, Shopify, and
+marketing platforms into clean, analytics-ready datasets with business KPIs,
+customer segmentation, and NPS integration.
+
+**This is CRISP-DM Cycle 1**, covering phases 1–3 (Business Understanding,
+Data Understanding, Data Preparation). Clean outputs feed directly into
+[Project 3 (Module 4 — EDA)](../project-3-eda-pequeshop/), which continues
+with Modeling, Evaluation, and Deployment.
+
+**What I learned:** Designing multi-source ETL pipelines with schema
+harmonization, applying hybrid outlier treatment (business rules + statistical
+methods), and translating data quality decisions into documented business
+rationale — not just technical fixes.
 
 ---
 
 ## Business Context
 
-**PequeShop** is a Chilean e-commerce specializing in children's clothing and accessories (ages 4-10). The company's growth journey:
+**PequeShop** is a Chilean e-commerce specializing in children's clothing and
+accessories (ages 4–10). The company's growth journey:
 
 | Phase | Period | Platform | Challenge |
 |-------|--------|----------|-----------|
 | Launch | 2023 | MercadoLibre | Market validation |
 | Migration | 2024 | Shopify | Own storefront, reduce fees |
-| Growth | 2024-2025 | Multi-channel | Facebook/Instagram Ads integration |
+| Growth | 2024–2025 | Multi-channel | Facebook/Instagram Ads integration |
 
-**Business Problem:** Data is fragmented across multiple platforms with inconsistent formats, missing values, and outliers that prevent unified analytics and decision-making.
+**Business Problem:** Data is fragmented across multiple platforms with
+inconsistent formats, missing values, and outliers that prevent unified
+analytics and decision-making.
 
-**Business Decision Enabled:** Clean, consolidated data enables Customer Lifetime Value (CLTV) analysis, Customer Acquisition Cost (CAC) optimization, Net Promoter Score (NPS) segmentation, and marketing attribution modeling.
+**Business Decision Enabled:** Clean, consolidated data enables Customer
+Lifetime Value (CLTV) analysis, Customer Acquisition Cost (CAC) optimization,
+Net Promoter Score (NPS) segmentation, and marketing attribution modeling.
 
 ---
 
-## Methodology: CRISP-DM + Lean Thinking
+## Methodology: CRISP-DM + Lean
 
-This project follows **CRISP-DM** for structured data science work, combined with **Lean principles** for iterative validation and value generation over excessive complexity.
+This project follows **CRISP-DM** for structured data science work, combined
+with **Lean principles** for iterative validation and value generation over
+excessive complexity.
 
 **Lean principles applied:**
-- **Eliminate waste:** Early identification of `customer_id` mapping ensured data traceability across platforms, avoiding rework in later phases.
-- **Build-Measure-Learn:** NPS integration was discovered during exploratory analysis and incorporated iteratively, enhancing customer segmentation without delaying the pipeline.
-- **Value focus:** Every transformation decision (outlier treatment, feature engineering) was evaluated against business impact, not just technical correctness.
+- **Eliminate waste:** Early identification of `customer_id` mapping ensured
+  data traceability across platforms, avoiding rework in later phases.
+- **Build-Measure-Learn:** NPS integration was discovered during exploratory
+  analysis and incorporated iteratively, enhancing customer segmentation
+  without delaying the pipeline.
+- **Value focus:** Every transformation decision (outlier treatment, feature
+  engineering) was evaluated against business impact, not just technical
+  correctness.
 
----
-
-## Project Evolution
-
-This project followed an iterative approach aligned with CRISP-DM + Lean methodology:
-
-1. **Initial Scope:** Consolidate transaction data from multiple platforms
-2. **Discovery:** During data preparation, exploratory analysis revealed that customer feedback could be consolidated into an NPS metric
-3. **Refined Objective:** Correlate customer satisfaction with purchasing behavior
-
-This evolution demonstrates how real-world data science projects evolve iteratively, uncovering opportunities to enhance business value beyond the original scope.
-
----
-
-## Project Scope: CRISP-DM + Lean
-
-This project covers phases 1-3 of CRISP-DM, applying Lean principles throughout:
+### Project Scope: CRISP-DM Phases
 
 | CRISP-DM Phase | Lean Principle Applied | ETL Stage | Lessons |
 |----------------|------------------------|-----------|---------|
-| ✅ Business Understanding | Value focus | - | Problem definition, KPIs |
-| ✅ Data Understanding | Eliminate waste | **Extract** | L1-L3: Early `customer_id` mapping |
-| ✅ Data Preparation | Build-Measure-Learn | **Transform** | L4-L5: NPS discovered & integrated iteratively |
+| ✅ Business Understanding | Value focus | — | Problem definition, KPIs |
+| ✅ Data Understanding | Eliminate waste | **Extract** | L1–L3: Early `customer_id` mapping |
+| ✅ Data Preparation | Build-Measure-Learn | **Transform** | L4–L5: NPS discovered & integrated iteratively |
 | ✅ Data Preparation | Continuous improvement | **Load** | L6: Aggregation, KPIs, export |
-| ⏳ Modeling | - | - | *Future: ML models* |
-| ⏳ Evaluation | - | - | *Future: Business impact* |
-| ⏳ Deployment | - | - | *Future: Dashboard/API* |
+| ⏳ Modeling | — | — | *Project 3 (M4)* |
+| ⏳ Evaluation | — | — | *Project 3 (M4)* |
+| ⏳ Deployment | — | — | *Project 3 (M4)* |
 
-**Note:** ETL (Extract → Transform → Load) is the data pipeline pattern used to implement the CRISP-DM phases.
+> See [`docs/lean_retrospective.md`](docs/lean_retrospective.md) for full
+> methodology retrospective.
 
 ---
 
@@ -100,11 +140,31 @@ This project covers phases 1-3 of CRISP-DM, applying Lean principles throughout:
 
 ---
 
+## KPI Summary (Final Results)
+
+| Category | Metric | Value |
+|----------|--------|-------|
+| 📊 Customer Health | NPS Score | 30.2 |
+| 📊 Customer Health | Churn Rate | 41.4% |
+| 📊 Customer Health | At-Risk Rate | 17.6% |
+| 💰 Revenue | Total Revenue | $37.8M CLP (~$44K USD) |
+| 💰 Revenue | Transactions | 1,192 |
+| 💰 Revenue | Average Ticket | $31,689 CLP (~$37 USD) |
+| 🎯 Customers | Registered | 500 |
+| 🎯 Customers | Active (with purchases) | 392 |
+| 🎯 Acquisition | Overall CAC | $23,771 CLP (~$28 USD) |
+
+*Exchange rate: 1 USD ≈ 860 CLP (Feb 2026)*
+
+---
+
 ## Business Value
 
 ### Problem Solved
 
-Fragmented data across multiple platforms prevented PequeShop from understanding customer behavior and making data-driven decisions. This pipeline consolidates and cleans data to enable actionable analytics.
+Fragmented data across multiple platforms prevented PequeShop from
+understanding customer behavior and making data-driven decisions. This
+pipeline consolidates and cleans data to enable actionable analytics.
 
 ### Decisions Enabled
 
@@ -121,10 +181,11 @@ Fragmented data across multiple platforms prevented PequeShop from understanding
 | Segment | Criteria | Action |
 |---------|----------|--------|
 | Active | Purchased within 90 days | Upsell campaigns |
-| At Risk | No purchase 90-180 days | Retention offers |
+| At Risk | No purchase 90–180 days | Retention offers |
 | Dormant | No purchase 180+ days | Win-back campaigns |
 
-*Note: Thresholds adjusted for children's clothing retail cycle (kids outgrow clothes every 3-6 months).*
+*Note: Thresholds adjusted for children's clothing retail cycle
+(kids outgrow clothes every 3–6 months).*
 
 ### ROI Potential
 
@@ -132,24 +193,6 @@ Fragmented data across multiple platforms prevented PequeShop from understanding
 - **Lower CAC** by focusing on high-performing channels
 - **Increase CLTV** through targeted retention actions
 - **Improve NPS** by addressing detractor feedback
-
----
-
-## KPI Summary (Final Results)
-
-| Category | Metric | Value |
-|----------|--------|-------|
-| 📊 Customer Health | NPS Score | 30.2 |
-| 📊 Customer Health | Churn Rate | 41.4% |
-| 📊 Customer Health | At-Risk Rate | 17.6% |
-| 💰 Revenue | Total Revenue | $37.8M CLP (~$44K USD) |
-| 💰 Revenue | Transactions | 1,192 |
-| 💰 Revenue | Average Ticket | $31,689 CLP (~$37 USD) |
-| 🎯 Customers | Registered | 500 |
-| 🎯 Customers | Active (with purchases) | 392 |
-| 🎯 Acquisition | Overall CAC | $23,771 CLP (~$28 USD) |
-
-*Exchange rate: 1 USD ≈ 860 CLP (Feb 2026)*
 
 ---
 
@@ -169,13 +212,13 @@ Where β represents price elasticity of demand directly.
 
 | Segment | β (Elasticity) | Interpretation | Strategy |
 |---------|----------------|----------------|----------|
-| Promoters (9-10) | -0.6 | Inelastic | Premium pricing potential |
-| Passives (7-8) | -1.1 | Unit elastic | Maintain current pricing |
-| Detractors (0-6) | -1.8 | Elastic | Discount-driven retention |
+| Promoters (9–10) | -0.6 | Inelastic | Premium pricing potential |
+| Passives (7–8) | -1.1 | Unit elastic | Maintain current pricing |
+| Detractors (0–6) | -1.8 | Elastic | Discount-driven retention |
 
-**Key Insight:**
-
-> "In a hypothetical scenario (e.g., β ≈ -0.6), high NPS customers may exhibit lower price sensitivity, opening the door for future price optimization analysis without sacrificing customer loyalty."
+> "In a hypothetical scenario (e.g., β ≈ -0.6), high NPS customers may exhibit
+> lower price sensitivity, opening the door for future price optimization
+> analysis without sacrificing customer loyalty."
 
 ---
 
@@ -210,7 +253,7 @@ See [KPI Framework](docs/kpi_framework.md) for complete metrics documentation.
 ## Project Structure
 
 ```
-Module_3_Data_Preparation/
+project-2-pequeshop-analytics/
 ├── data/
 │   ├── raw/                        # Original & intermediate data
 │   │   ├── *.npy                   # NumPy arrays (synthetic generation)
@@ -225,27 +268,32 @@ Module_3_Data_Preparation/
 │       ├── customers_final.csv
 │       └── pequeshop_analytics.xlsx
 ├── notebooks/
-│   └── data_preparation.ipynb      # Main ETL pipeline (L1-L6)
+│   └── data_preparation.ipynb      # Main ETL pipeline (L1–L6)
 ├── docs/
 │   ├── pricing_playbook.md
-│   └── kpi_framework.md
+│   ├── kpi_framework.md
+│   └── lean_retrospective.md
+├── LICENSE
 └── README.md
 ```
 
 ---
 
-## Analytical Tools
+## Tech Stack
 
 | Tool | Purpose |
 |------|---------|
 | Python 3.12 | Core language |
-| NumPy | Numerical operations, synthetic data |
-| Pandas | Data manipulation, ETL |
-| SciPy | Statistical methods (Z-score) |
+| NumPy | Numerical operations, synthetic data generation |
+| Pandas | Data manipulation, ETL pipeline |
+| SciPy | Statistical methods (Z-score outlier detection) |
 | openpyxl | Excel read/write |
-| lxml | HTML parsing |
-| CRISP-DM | Methodology framework |
-| Lean Thinking | Iterative validation, value focus |
+| lxml | HTML parsing (web data extraction) |
+
+**Skills Demonstrated:**
+`Python` · `Pandas` · `NumPy` · `SciPy` · `ETL Pipeline` · `Data Cleaning` ·
+`Feature Engineering` · `Outlier Detection` · `NPS Analysis` · `Customer Segmentation` ·
+`CRISP-DM` · `Business Analytics` · `KPI Design` · `E-commerce Analytics`
 
 ---
 
@@ -253,7 +301,7 @@ Module_3_Data_Preparation/
 
 | Stage | CRISP-DM | ETL | Description | Status |
 |-------|----------|-----|-------------|--------|
-| L1 | Data Understanding | - | Synthetic data generation (NumPy) | ✅ |
+| L1 | Data Understanding | — | Synthetic data generation (NumPy) | ✅ |
 | L2 | Data Understanding | Extract | DataFrame creation (Pandas) | ✅ |
 | L3 | Data Understanding | Extract | Multi-source ingestion (CSV, Excel, Web) | ✅ |
 | L4 | Data Preparation | Transform | Missing values & outliers | ✅ |
@@ -290,7 +338,8 @@ Module_3_Data_Preparation/
 **Outlier Treatment Strategy:**
 - Detection: Business rule (>100,000 CLP = likely data entry error)
 - Capping: P99 percentile to preserve realistic price distribution
-- This hybrid approach uses domain knowledge for detection and statistical methods for replacement.
+- Hybrid approach: domain knowledge for detection + statistical methods
+  for replacement.
 
 ---
 
@@ -320,13 +369,14 @@ Module_3_Data_Preparation/
 
 ## Post-Evaluation Enhancements
 
-After initial project evaluation, the following improvements were implemented in the `post-evaluation-enhancements` branch:
+After initial project evaluation, the following improvements were implemented
+in the `post-evaluation-enhancements` branch:
 
 | Enhancement | Description | Impact |
 |-------------|-------------|--------|
 | Customer ID consistency | Shopify transactions now use existing customer IDs from pool | Data integrity improved |
 | Retargeting thresholds | Adjusted from 60/90 to 90/180 days | More realistic for children's clothing retail |
-| Variable naming | Standardized `df_treated` throughout L5-L6 | Code consistency |
+| Variable naming | Standardized `df_treated` throughout L5–L6 | Code consistency |
 | KPI accuracy | Recalculated with corrected data | More reliable metrics |
 
 ### Future Roadmap
@@ -347,12 +397,12 @@ After initial project evaluation, the following improvements were implemented in
 git clone https://github.com/joselopezp/bootcamp-data-science-portfolio.git
 
 # 2. Navigate to project
-cd Projects/Module_3_Data_Preparation
+cd projects/project-2-pequeshop-analytics
 
-# 3. Create virtual environment
+# 3. Create and activate virtual environment
 python -m venv .venv
-source .venv/bin/activate  # Linux/Mac
-.venv\Scripts\activate     # Windows
+.venv\Scripts\activate          # Windows
+# source .venv/bin/activate     # Linux/Mac
 
 # 4. Install dependencies
 pip install -r requirements.txt
@@ -361,20 +411,43 @@ pip install -r requirements.txt
 jupyter notebook notebooks/data_preparation.ipynb
 ```
 
+> ⚠️ Raw data is generated synthetically in L1 of the notebook —
+> no external dataset download required.
+
 ---
 
-## Author
+## Credits
 
-**Jose Marcel Lopez Pino**  
-Industrial Engineer (Business + Operations) | Data Science & Business Analytics  
-Bootcamp: Fundamentos de Ciencia de Datos - SENCE/Alkemy (2025-2026)
+**Data:** PequeShop is a fictional Chilean e-commerce business created for
+educational purposes within the Alkemy / SENCE Data Science Bootcamp (2025–2026).
+The dataset was designed and generated synthetically by Jose Marcel Lopez Pino
+using NumPy to simulate realistic multi-platform e-commerce operations.
 
-*Industrial Engineering in Chile encompasses finance, marketing, economics, and operations management - enabling a unique business + analytics perspective.*
+**Methodology References:**
+- CRISP-DM: [Chapman et al. (2000)](https://www.the-modeling-agency.com/crisp-dm.pdf) — Cross-Industry Standard Process for Data Mining
+- Lean Thinking: Womack & Jones (1996) — applied to analytical workflow design
+- NPS Framework: Reichheld, F. (2003) — *The One Number You Need to Grow*, Harvard Business Review
+- Price Elasticity: Varian, H. (1992) — *Microeconomic Analysis*, applied to NPS segmentation
 
-[![GitHub](https://img.shields.io/badge/GitHub-joselopezp-181717?style=flat&logo=github)](https://github.com/joselopezp)
+**Tools & Libraries:** See [Tech Stack](#tech-stack) section.
 
 ---
 
 ## License
 
-Educational project - Portfolio demonstration
+This project is licensed under the [MIT License](LICENSE).
+
+© 2026 Jose Marcel Lopez Pino
+
+---
+
+*Framework: CRISP-DM + Lean | Methodology: Project-Based Learning (PBL)*
+
+**Jose Marcel Lopez Pino**
+Industrial Engineer (Business + Operations) | Data Science & Business Analytics
+Bootcamp: Fundamentos de Ciencia de Datos - SENCE/Alkemy (2025–2026)
+
+*Industrial Engineering in Chile encompasses finance, marketing, economics,
+and operations management — enabling a unique business + analytics perspective.*
+
+[![GitHub](https://img.shields.io/badge/GitHub-joselopezp-181717?style=flat&logo=github)](https://github.com/joselopezp)
