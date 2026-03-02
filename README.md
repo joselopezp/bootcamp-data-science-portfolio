@@ -42,7 +42,7 @@ background.
 | 2 | [Contact Management System](projects/project-1-oop-contact-system) | CRUD system with OOP and encapsulation | 21h | ✅ |
 | 3 | [PequeShop Analytics](projects/project-2-pequeshop-analytics) | E-commerce ETL pipeline with business KPIs | 21h | ✅ |
 | 4 | [PequeShop EDA](projects/project-3-eda-pequeshop) | Exploratory Data Analysis + OLS Regression | 24h | ✅ |
-| 5 | Statistical Inference | *Coming soon* | 24h | ⏳ |
+| 5 | Statistical Inference | Submitted | 24h | 📝 |
 | 6 | Supervised Machine Learning | *Coming soon* | 33h | ⏳ |
 | 7 | Unsupervised Machine Learning | *Coming soon* | 18h | ⏳ |
 | 8 | Deep Learning Fundamentals | *Coming soon* | 18h | ⏳ |
@@ -166,7 +166,7 @@ perspectiva de Ingeniería Civil Industrial.
 | 2 | [Sistema de Gestión de Contactos](projects/project-1-oop-contact-system) | Sistema CRUD con POO y encapsulación | 21h | ✅ |
 | 3 | [PequeShop Analytics](projects/project-2-pequeshop-analytics) | Pipeline ETL e-commerce con KPIs de negocio | 21h | ✅ |
 | 4 | [PequeShop EDA](projects/project-3-eda-pequeshop) | Análisis Exploratorio de Datos + Regresión OLS | 24h | ✅ |
-| 5 | Inferencia Estadística | *Próximamente* | 24h | ⏳ |
+| 5 | Inferencia Estadística | Entregado | 24h | 📝 |
 | 6 | Machine Learning Supervisado | *Próximamente* | 33h | ⏳ |
 | 7 | Machine Learning No Supervisado | *Próximamente* | 18h | ⏳ |
 | 8 | Fundamentos de Deep Learning | *Próximamente* | 18h | ⏳ |
