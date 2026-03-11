@@ -244,10 +244,11 @@ jupyter notebook notebooks/01_business_understanding.ipynb
 as part of the PequeShop Analytics continuous case study.
 
 **Methodology References:**
-- CRISP-DM: [Chapman et al. (2000)](https://www.the-modeling-agency.com/crisp-dm.pdf)
-- Lean Thinking: Womack & Jones (1996)
-- Cohen, J. (1988). *Statistical Power Analysis for the Behavioral Sciences* (2nd ed.)
-- Montgomery, D.C. (2017). *Design and Analysis of Experiments* (9th ed.)
+- CRISP-DM: Chapman et al. (2000). *CRISP-DM 1.0: Step-by-step data mining guide*. SPSS Inc.
+- Provost, F. & Fawcett, T. (2013). *Data Science for Business: What You Need to Know about Data Mining and Data-Analytic Thinking* (1st ed.). O'Reilly Media.
+- Lean Thinking: Womack, J. & Jones, D. (1996). *Lean Thinking*. Simon & Schuster.
+- Cohen, J. (1988). *Statistical Power Analysis for the Behavioral Sciences* (2nd ed.). Lawrence Erlbaum.
+- Montgomery, D.C. (2017). *Design and Analysis of Experiments* (9th ed.). Wiley.
 
 **Tools & Libraries:** See [Tech Stack](#tech-stack) section.
 
