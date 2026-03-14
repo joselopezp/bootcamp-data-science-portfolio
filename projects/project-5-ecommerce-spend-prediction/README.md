@@ -352,9 +352,27 @@ real e-commerce behavior in the Chilean children's products market.
 
 ## License
 
-MIT License — see [LICENSE](../../LICENSE) for details.
+This project is licensed under the [MIT License](LICENSE).
+
+© 2026 Jose Marcel Lopez Pino
 
 ---
 
-*Framework: CRISP-DM + Lean + DMAIC | Module 6 — Supervised Machine Learning*
-*Jose Marcel Lopez Pino — Bootcamp Fundamentos de Ciencia de Datos, SENCE/Alkemy 2025-2026*
+*Framework: CRISP-DM + Lean | Methodology: Project-Based Learning (PBL)*
+
+**Jose Marcel Lopez Pino**
+Industrial Engineer (Business + Operations) | Data Science & Business Analytics
+Bootcamp: Fundamentos de Ciencia de Datos - SENCE/Alkemy (2025–2026)
+
+*Industrial Engineering in Chile (Academic degree: Bachelor of Science in
+Industrial Engineering — 5.5-year program, comparable to a U.S. M.S.) encompasses
+business strategy, finance, marketing, economics, operations management, and
+technology management — backed by a rigorous scientific foundation in calculus,
+linear algebra, probability and statistics, physics, and optimization — enabling
+a unique business + analytics perspective.*
+
+*Thesis: Volatility Forecasting of IPSA Stock Returns (Chilean Stock Exchange)
+using a GJR-GARCH Model.*
+
+[![GitHub](https://img.shields.io/badge/GitHub-joselopezp-181717?style=flat&logo=github)](https://github.com/joselopezp)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-jose--lopez--pino-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/jose-lopez-pino/)
