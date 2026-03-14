@@ -169,7 +169,7 @@ model output into evidence-based business decisions.
 
 > **Methodology:** Estimates based on n=392 synthetic customers and project-4b hypothesis test results.
 > **Assumptions:** Linear retention response; no cross-channel cannibalization.
-> **Limitation:** Dataset is synthetic — effects may differ with real Tuttycosas Kids data.
+> **Limitation:** Dataset is synthetic — effects may differ with real company data.
 
 ---
 
@@ -297,7 +297,7 @@ jupyter notebook notebooks/01_business_understanding.ipynb
 - [x] Model card documented in `models/model_card.md`
 
 ### Monitoring (awareness level)
-- [ ] Data drift: synthetic dataset — real-world Tuttycosas Kids data will differ
+- [ ] Data drift: synthetic dataset — real-world company data will differ
 - [ ] Model limitations: n=392 synthetic customers; performance may degrade on real data
 - [ ] Retraining trigger: when real transaction data from MercadoLibre is available
 
