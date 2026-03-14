@@ -1,4 +1,4 @@
-# PequeShop: Exploratory Data Analysis for Commercial Decisions
+# PequeShop: Exploratory Data Analysis for Business Decisions
 
 > **CRISP-DM Cycle 2 — Diagnostic Analytics** | Module 4: Análisis Exploratorio de Datos
 
