@@ -3,9 +3,15 @@
 > **Jose Marcel Lopez Pino** | SENCE / Alkemy Bootcamp 2025–2026
 
 ![Python](https://img.shields.io/badge/Python-3.12.10-3776AB?logo=python&logoColor=white)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-F7931E?logo=scikitlearn&logoColor=white)
+![Data Analysis](https://img.shields.io/badge/Data%20Analysis-Pandas%20%7C%20NumPy-150458?logo=pandas)
+![Business Analytics](https://img.shields.io/badge/Focus-Business%20Analytics-4CAF50)
 ![Framework](https://img.shields.io/badge/Framework-CRISP--DM%20%2B%20LEAN-2E86AB)
+![Tools](https://img.shields.io/badge/Tools-Git%20%7C%20Jupyter%20%7C%20Colab-black)
+![Projects](https://img.shields.io/badge/Projects-Data%20Science-blue)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-orange)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
+
 
 [🇪🇸 Versión en Español](#portafolio-del-bootcamp-de-ciencia-de-datos)
 
@@ -36,23 +42,23 @@ background.
 
 ## Projects
 
-| Module | Project | Description | Hours | Status |
-|:---|:---|:---|:---|:---:|
-| 1 | *No project* | Orientation and Methodology | 12h | ✅ |
-| 2 | [Contact Management System](projects/project-1-oop-contact-system) | CRUD system with OOP and encapsulation | 21h | ✅ |
-| 3 | [PequeShop Analytics](projects/project-2-pequeshop-analytics) | E-commerce ETL pipeline with business KPIs | 21h | ✅ |
-| 4 | [PequeShop EDA](projects/project-3-eda-pequeshop) | Exploratory Data Analysis + OLS Regression | 24h | ✅ |
-| 5 | [Student Health Analytics](projects/project-4-student-health-analytics) | Statistical Inference over student habits | 24h | ✅ |
-| | **Bonus:** [PequeShop Statistical Inference](projects/project-4b-pequeshop-statistical-inference) | Statistical Inference over customer data | | ✅ |
-| 6 | Supervised Machine Learning | Submitted | 33h | 📤 |
-| 7 | Unsupervised Machine Learning | *Coming soon* | 18h | ⏳ |
-| 8 | Deep Learning Fundamentals | *Coming soon* | 18h | ⏳ |
-| 9 | Big Data Fundamentals | *Coming soon* | 18h | ⏳ |
-| 10 | *No project* | Portfolio Development | 12h | ⏳ |
-| 11 | *No project* | Employability Development | 9h | ⏳ |
+| Module | Project | Description | Status |
+|:---|:---|:---|:---:|
+| 1 | *No project* | Orientation and Methodology | ✅ |
+| 2 | [Contact Management System](projects/project-1-oop-contact-system) | CRUD system with OOP and encapsulation | ✅ |
+| 3 | [PequeShop Analytics](projects/project-2-pequeshop-analytics) | E-commerce ETL pipeline with business KPIs | ✅ |
+| 4 | [PequeShop EDA](projects/project-3-eda-pequeshop) | Exploratory Data Analysis + OLS Regression | ✅ |
+| 5 | [Student Health Analytics](projects/project-4-student-health-analytics) | Statistical Inference over student habits | ✅ |
+|   | **Bonus:** [PequeShop Statistical Inference](projects/project-4b-pequeshop-statistical-inference) | Statistical Inference over customer data | ✅ |
+| 6 | Supervised Machine Learning | Submitted | 📤 |
+| 7 | Unsupervised Machine Learning | *Coming soon* | ⏳ |
+| 8 | Deep Learning Fundamentals | *Coming soon* | ⏳ |
+| 9 | Big Data Fundamentals | *Coming soon* | ⏳ |
+| 10 | *No project* | Portfolio Development | ⏳ |
+| 11 | *No project* | Employability Development | ⏳ |
 
-> **Note:** Hours shown are class hours. Additional self-study and project
-> development time not included.
+> **Note:** In addition to synchronous classes, personal study and project development were required.
+
 
 ---
 
@@ -86,15 +92,34 @@ The goal is to demonstrate **structured thinking, analytical judgment, and adapt
 
 ## Skills
 
-**Programming:** Python · SQL
+**Programming**  
+Python · SQL (self-study via DataCamp)
 
-**Libraries:** Pandas · NumPy · Matplotlib · Seaborn · Statsmodels · Scikit-learn
+**Data Analysis & Visualization**  
+Pandas · NumPy · Matplotlib · Seaborn
 
-**Concepts:** OOP · ETL Pipelines · Data Wrangling · EDA · Statistical Inference ·
-OLS Regression · Machine Learning · CRISP-DM · Lean Thinking · KPI Design ·
-Customer Analytics · Business Analytics
+**Machine Learning**  
+Scikit-learn · Supervised Learning (Regression, Classification) ·  
+Feature Scaling · Cross Validation · Model Evaluation · Boosting
 
-**Tools:** Git · GitHub · VS Code · Jupyter · Spyder
+**Statistical Methods**  
+Statistical Inference · OLS Regression · Hypothesis Testing
+
+**Unsupervised Learning**  
+Clustering · Dimensionality Reduction
+
+**Deep Learning**  
+Neural Networks · Convolutional Neural Networks (CNN)
+
+**Data Engineering & Big Data**  
+ETL Pipelines · Data Wrangling · Big Data Fundamentals · Scalable Machine Learning
+
+**Development Tools**  
+Git · GitHub · VS Code · Jupyter Notebook · Google Colab · Spyder ·  
+Python Virtual Environments · Markdown
+
+**Frameworks & Methodologies**  
+CRISP-DM · Lean Thinking · DMAIC · Customer Analytics · Business Analytics
 
 ---
 
@@ -160,23 +185,23 @@ perspectiva de Ingeniería Civil Industrial.
 
 ## Proyectos
 
-| Módulo | Proyecto | Descripción | Horas | Estado |
-|:---|:---|:---|:---|:---:|
-| 1 | *Sin proyecto* | Orientación y Metodología | 12h | ✅ |
-| 2 | [Contact Management System](projects/project-1-oop-contact-system) | Sistema CRUD con POO y encapsulamiento | 21h | ✅ |
-| 3 | [PequeShop Analytics](projects/project-2-pequeshop-analytics) | Pipeline ETL de E-commerce con KPIs de negocio | 21h | ✅ |
-| 4 | [PequeShop EDA](projects/project-3-eda-pequeshop) | Análisis Exploratorio de Datos + Regresión OLS | 24h | ✅ |
-| 5 | [Student Health Analytics](projects/project-4-student-health-analytics) | Inferencia estadística sobre hábitos estudiantiles | 24h | ✅ |
-| | **Bonus:** [PequeShop Statistical Inference](projects/project-4b-pequeshop-statistical-inference) | Inferencia estadística sobre datos de clientes | | ✅ |
-| 6 | Machine Learning Supervisado | Enviado | 33h | 📤 |
-| 7 | Machine Learning No Supervisado | *Próximamente* | 18h | ⏳ |
-| 8 | Fundamentos de Deep Learning | *Próximamente* | 18h | ⏳ |
-| 9 | Fundamentos de Big Data | *Próximamente* | 18h | ⏳ |
-| 10 | *Sin proyecto* | Desarrollo de Portafolio | 12h | ⏳ |
-| 11 | *Sin proyecto* | Desarrollo de Empleabilidad | 9h | ⏳ |
+| Módulo | Proyecto | Descripción | Estado |
+|:---|:---|:---|:---:|
+| 1 | *Sin proyecto* | Orientación y metodología | ✅ |
+| 2 | [Contact Management System](projects/project-1-oop-contact-system) | Sistema CRUD con POO y encapsulación | ✅ |
+| 3 | [PequeShop Analytics](projects/project-2-pequeshop-analytics) | Pipeline ETL de e-commerce con KPIs de negocio | ✅ |
+| 4 | [PequeShop EDA](projects/project-3-eda-pequeshop) | Análisis Exploratorio de Datos + Regresión OLS | ✅ |
+| 5 | [Student Health Analytics](projects/project-4-student-health-analytics) | Inferencia estadística sobre hábitos de estudiantes | ✅ |
+|   | **Bonus:** [PequeShop Statistical Inference](projects/project-4b-pequeshop-statistical-inference) | Inferencia estadística sobre datos de clientes | ✅ |
+| 6 | Machine Learning Supervisado | Enviado | 📤 |
+| 7 | Machine Learning No Supervisado | *Próximamente* | ⏳ |
+| 8 | Fundamentos de Deep Learning | *Próximamente* | ⏳ |
+| 9 | Fundamentos de Big Data | *Próximamente* | ⏳ |
+| 10 | *Sin proyecto* | Desarrollo de Portafolio | ⏳ |
+| 11 | *Sin proyecto* | Desarrollo de Empleabilidad | ⏳ |
 
-> **Nota:** Las horas mostradas son horas de clase. No incluyen tiempo adicional
-> de estudio y desarrollo de proyectos.
+> **Nota:** Además de las clases sincrónicas, ha sido necesario estudio personal y desarrollo de proyectos.
+
 
 ---
 
@@ -211,15 +236,34 @@ El objetivo es demostrar **pensamiento estructurado, criterio analítico y capac
 
 ## Habilidades
 
-**Programación:** Python · SQL
+**Programación**  
+Python · SQL (autoestudio en DataCamp)
 
-**Librerías:** Pandas · NumPy · Matplotlib · Seaborn · Statsmodels · Scikit-learn
+**Análisis y Visualización de Datos**  
+Pandas · NumPy · Matplotlib · Seaborn
 
-**Conceptos:** POO · Pipelines ETL · Data Wrangling · EDA · Inferencia Estadística ·
-Regresión OLS · Machine Learning · CRISP-DM · Lean Thinking · Diseño de KPIs ·
-Analítica de Clientes · Business Analytics
+**Machine Learning**  
+Scikit-learn · Aprendizaje Supervisado (Regresión, Clasificación) ·  
+Escalado de Variables · Validación Cruzada · Evaluación de Modelos · Boosting
 
-**Herramientas:** Git · GitHub · VS Code · Jupyter · Spyder
+**Métodos Estadísticos**  
+Inferencia Estadística · Regresión OLS · Pruebas de Hipótesis
+
+**Aprendizaje No Supervisado**  
+Clustering · Reducción de Dimensionalidad
+
+**Deep Learning**  
+Redes Neuronales · Redes Neuronales Convolucionales (CNN)
+
+**Ingeniería de Datos y Big Data**  
+Pipelines ETL · Preparación de Datos (Data Wrangling) · Fundamentos de Big Data · Machine Learning Escalable
+
+**Herramientas de Desarrollo**  
+Git · GitHub · VS Code · Jupyter Notebook · Google Colab · Spyder ·  
+Entornos Virtuales de Python · Markdown
+
+**Frameworks y Metodologías**  
+CRISP-DM · Lean Thinking · DMAIC · Customer Analytics · Business Analytics
 
 ---
 
