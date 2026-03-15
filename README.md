@@ -72,16 +72,15 @@ This hybrid approach (CRISP-DM + Lean) reflects how data projects develop in
 real contexts, where requirements evolve and decisions must balance analytical
 rigor with speed and pragmatism.
 
-### Limitations and Flexibility
+## Limitations and Flexibility
 
-CRISP-DM is not applied rigidly. Depending on context, industry, or problem
-type, projects may:
+CRISP-DM is not applied rigidly. Depending on the context, industry, or type of problem, projects may:
+
 - Stop at early phases (e.g., descriptive analysis or data preparation)
-- Deep-dive into specific stages (modeling, evaluation, or deployment)
-- Adapt methodology to other approaches when the problem requires it
+- Focus more deeply on specific stages such as modeling, evaluation, or deployment
+- Adapt the methodology to other analytical approaches when required by the problem
 
-The goal is to demonstrate structured thinking, analytical judgment, and
-adaptability across different business contexts and industries.
+The goal is to demonstrate **structured thinking, analytical judgment, and adaptability** when addressing data problems across different business contexts and industries.
 
 ---
 
@@ -198,17 +197,15 @@ Este enfoque híbrido (CRISP-DM + Lean) busca reflejar cómo se desarrollan los
 proyectos de datos en contextos reales, donde los requerimientos evolucionan y
 las decisiones deben balancear rigor analítico con velocidad y pragmatismo.
 
-### Limitaciones y Flexibilidad
+## Limitaciones y Flexibilidad
 
-El uso de CRISP-DM no se plantea como un marco rígido. Dependiendo del contexto,
-la industria o el tipo de problema, los proyectos pueden:
+CRISP-DM no se aplica de forma rígida. Dependiendo del contexto, la industria o el tipo de problema, los proyectos pueden:
+
 - Detenerse en fases tempranas (por ejemplo, análisis descriptivo o preparación de datos)
-- Profundizar en etapas específicas (modelado, evaluación o despliegue)
-- Adaptar la metodología a otros enfoques cuando el problema lo requiera
+- Profundizar en etapas específicas como modelado, evaluación o despliegue
+- Adaptar la metodología a otros enfoques analíticos cuando el problema lo requiera
 
-El objetivo de este portafolio no es demostrar adhesión a una metodología
-específica, sino evidenciar pensamiento estructurado, criterio analítico y
-capacidad de adaptación a distintos contextos de negocio e industria.
+El objetivo es demostrar **pensamiento estructurado, criterio analítico y capacidad de adaptación** al abordar problemas de datos en distintos contextos empresariales e industrias.
 
 ---
 
