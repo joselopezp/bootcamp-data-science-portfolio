@@ -55,18 +55,31 @@ build/
 learning/
 
 # ======================
-# Raw data (large files)
+# Raw data (never commit source data)
 # ======================
-**/data/raw/
+**/data/raw/*
+!**/data/raw/README.md
 
 # ======================
-# Project 3 Reports (local deliverables)
+# Processed and final data
 # ======================
-# Ignore everything inside reports
-projects/project-3-eda-pequeshop/reports/*
+**/data/processed/*
+!**/data/processed/README.md
 
-# But keep figures folder
-!projects/project-3-eda-pequeshop/reports/figures/
-!projects/project-3-eda-pequeshop/reports/figures/**
+**/data/final/*
+!**/data/final/README.md
 
-projects/project-5-ecommerce-spend-prediction/models/*.pkl
+# ======================
+# Model artifacts
+# ======================
+**/models/*.pkl
+**/data/processed/*.pkl
+**/data/processed/*.npy
+**/data/final/*.npy
+**/data/final/*.csv
+
+# ======================
+# Project-specific exclusions
+# ======================
+projects/project-3-eda-pequeshop/reports/executive/
+projects/project-3-eda-pequeshop/reports/technical/
