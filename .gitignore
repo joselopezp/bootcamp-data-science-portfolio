@@ -69,3 +69,4 @@ projects/project-3-eda-pequeshop/reports/*
 !projects/project-3-eda-pequeshop/reports/figures/
 !projects/project-3-eda-pequeshop/reports/figures/**
 
+projects/project-5-ecommerce-spend-prediction/models/*.pkl
