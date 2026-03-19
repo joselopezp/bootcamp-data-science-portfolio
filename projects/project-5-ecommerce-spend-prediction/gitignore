@@ -1,0 +1,13 @@
+# Data
+data/raw/*
+!data/raw/README.md
+
+# Models (large files)
+models/*.pkl
+models/*.joblib
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/

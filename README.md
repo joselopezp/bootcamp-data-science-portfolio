@@ -1,339 +1,129 @@
-# Unsupervised ML Customer Segmentation: Discovering Behavioral Clusters in the Auto Industry
+# Data Science Bootcamp Portfolio
 
-> **Auto Industry Analytics — Unsupervised ML** | Module 7: Fundamentos de Ciencia de Datos
+> **Jose Marcel Lopez Pino** | SENCE / Alkemy Bootcamp 2025–2026
 
-![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.12.10-3776AB?logo=python&logoColor=white)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-F7931E?logo=scikitlearn&logoColor=white)
+![Data Analysis](https://img.shields.io/badge/Data%20Analysis-Pandas%20%7C%20NumPy-150458?logo=pandas)
+![Business Analytics](https://img.shields.io/badge/Focus-Business%20Analytics-4CAF50)
 ![Framework](https://img.shields.io/badge/Framework-CRISP--DM%20%2B%20LEAN-2E86AB)
-![Type](https://img.shields.io/badge/Type-Unsupervised%20ML-blueviolet)
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
+![Tools](https://img.shields.io/badge/Tools-Git%20%7C%20Jupyter%20%7C%20Colab-black)
+![Projects](https://img.shields.io/badge/Projects-Data%20Science-blue)
+![Status](https://img.shields.io/badge/Status-In%20Progress-orange)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
+
+
+[🇪🇸 Versión en Español](#portafolio-del-bootcamp-de-ciencia-de-datos)
 
 ---
 
 ## Table of Contents
 
-- [Project Overview](#project-overview)
-- [Business Context](#business-context)
-- [Key Results](#key-results)
-- [Cluster Profiles — Customer Personas](#cluster-profiles--customer-personas)
-- [Strategic Recommendations](#strategic-recommendations)
-- [Limitations & Honest Assessment](#limitations--honest-assessment)
-- [Project Structure](#project-structure)
-- [Tech Stack](#tech-stack)
-- [How to Run](#how-to-run)
-- [Deliverables](#deliverables)
-- [CRISP-DM Roadmap](#crisp-dm-roadmap)
-- [Model Card](#model-card)
-- [MLOps Checklist](#mlops-checklist)
-- [Data Source](#data-source)
-- [Credits](#credits)
+- [About This Portfolio](#about-this-portfolio)
+- [Projects](#projects)
+- [Methodology: CRISP-DM + Lean](#methodology-crisp-dm--lean)
+- [Skills](#skills)
+- [Author](#author)
 - [License](#license)
 
 ---
 
-## Project Overview
+## About This Portfolio
 
-This project applies unsupervised machine learning to validate and extend a
-customer segmentation strategy for an automobile company client of
-**Auto Industry Insights S.A.** — a market intelligence consultancy.
+This repository contains projects developed during the **Data Science Fundamentals**
+bootcamp (SENCE/Alkemy, 2025–2026), applying a CRISP-DM + Lean methodology with
+a Project-Based Learning (PBL) approach.
 
-The client's sales team manually classified 8,068 existing customers into
-4 segments (A, B, C, D) and used this strategy successfully for targeted
-outreach. They now plan to enter new markets and need to validate whether
-these segments reflect natural behavioral clusters — and whether the pipeline
-can scale to new, unlabeled customers.
-
-Using dimensionality reduction (PCA, t-SNE) and three clustering algorithms
-(KMeans, DBSCAN, Hierarchical), this project discovers hidden behavioral
-patterns independently of the manual labels — then compares results against
-the original segmentation as external validation.
-
-**What I learned:** KMeans, DBSCAN, and Agglomerative Clustering; PCA and t-SNE
-for dimensionality reduction; silhouette score and elbow method for model
-evaluation; cluster profiling for business interpretation; and the importance of
-honest assessment when unsupervised results diverge from expert-assigned labels.
+Each project is designed to solve real business problems, combining technical
+data science skills with business analytics thinking from an Industrial Engineering
+background.
 
 ---
 
-## Business Context
+## Projects
 
-**Client:** Auto Industry Insights S.A. — a market intelligence consultancy
-serving automobile manufacturers planning expansion into new markets.
+| Module | Project | Description | Status |
+|:---|:---|:---|:---:|
+| 1 | *No project* | Orientation and Methodology | ✅ |
+| 2 | [Contact Management System](projects/project-1-oop-contact-system) | CRUD system with OOP and encapsulation | ✅ |
+| 3 | [PequeShop Analytics](projects/project-2-pequeshop-analytics) | E-commerce ETL pipeline with business KPIs | ✅ |
+| 4 | [PequeShop EDA](projects/project-3-eda-pequeshop) | Exploratory Data Analysis + OLS Regression | ✅ |
+| 5 | [Student Health Analytics](projects/project-4-student-health-analytics) | Statistical Inference over student habits | ✅ |
+|   | **Bonus:** [PequeShop Statistical Inference](projects/project-4b-pequeshop-statistical-inference) | Statistical Inference over customer data | ✅ |
+| 6 | Supervised Machine Learning | Submitted | 📤 |
+| 7 | Unsupervised Machine Learning | *Coming soon* | ⏳ |
+| 8 | Deep Learning Fundamentals | *Coming soon* | ⏳ |
+| 9 | Big Data Fundamentals | *Coming soon* | ⏳ |
+| 10 | *No project* | Portfolio Development | ⏳ |
+| 11 | *No project* | Employability Development | ⏳ |
 
-**Problem:** The client's automobile company manually classified customers into
-4 segments (A, B, C, D) using sales team domain knowledge. While this strategy
-has worked well in existing markets, the company cannot verify whether these
-segments reflect genuine behavioral patterns or sales team bias — and cannot
-automatically assign segments to 2,627 new potential customers in new markets.
+> **Note:** In addition to synchronous classes, personal study and project development were required.
 
-**Decision enabled:** Do natural behavioral customer clusters exist in the data?
-If so, how many? And can the pipeline assign segments to new, unseen customers
-at scale — enabling the same targeted outreach strategy in new markets?
-
-**Dataset context:** The dataset contains 8,068 customers from the automobile
-company's existing market, with demographic and behavioral features plus the
-manually assigned segment labels (A/B/C/D). Our unsupervised approach discovers
-cluster structure independently — labels are used only for external validation
-in notebook 05 to assess alignment between data-driven and expert-assigned segments.
-
-**Key Business Questions:**
-
-| # | Question | Answer |
-|---|---------|--------|
-| BQ1 | Do natural behavioral clusters exist independently of manual labels? | Yes — 4 clusters identified (KMeans) |
-| BQ2 | What traits define each cluster? | Age, profession, spending score, marital status |
-| BQ3 | Which algorithm produces the most actionable segments? | KMeans (silhouette=0.154) |
-| BQ4 | Can the pipeline scale to new customers? | ✅ Validated on 20% holdout test set |
 
 ---
 
-## Key Results
+## Methodology: CRISP-DM + Lean
 
-| Algorithm | Silhouette Score | Clusters | vs Target (≥0.35) |
-|-----------|-----------------|----------|-------------------|
-| **KMeans** | **0.154** | **4** | ⚠️ Below target |
-| Hierarchical | 0.088 | 4 | ⚠️ Below target |
-| DBSCAN | N/A | — | N/A (1 cluster found) |
+This portfolio adopts **CRISP-DM** as the primary framework due to its clarity,
+traceability, and strong alignment with business decision-making. CRISP-DM
+structures projects consistently from problem understanding to data preparation
+and actionable insights.
 
-> **KMeans selected** as the best algorithm — highest silhouette score among
-> valid algorithms. Scores below 0.35 are expected given the expert-assigned
-> label structure (see Limitations section).
+Complementarily, the approach incorporates **Lean principles**, prioritizing:
+- Short, progressive iterations
+- Early value delivery for business stakeholders
+- Scope adjustment as data understanding improves
 
-> **Elbow curve note:** No pronounced inflection point was observed between
-> k=2 and k=10 — the inertia curve decreases near-linearly. k=4 was selected
-> as a pragmatic choice consistent with the company's existing 4-segment strategy.
+This hybrid approach (CRISP-DM + Lean) reflects how data projects develop in
+real contexts, where requirements evolve and decisions must balance analytical
+rigor with speed and pragmatism.
 
----
+## Limitations and Flexibility
 
-## Cluster Profiles — Customer Personas
+CRISP-DM is not applied rigidly. Depending on the context, industry, or type of problem, projects may:
 
-| Cluster | Persona | Age | Profession | Spending Score | Family Size | Key Traits |
-|---------|---------|-----|-----------|----------------|-------------|------------|
-| 0 | **Senior Executives** | ~63 | Executive / Lawyer | Medium-High (1.31) | 2.65 | Older, married, high seniority |
-| 1 | **Mid-Career Artists** | ~47 | Artist / Entertainment | Medium (0.61) | 2.48 | Graduated, creative professions |
-| 2 | **Young Healthcare** | ~29 | Healthcare / Doctor | Low (0.08) | 3.40 | Young, single, large families, low spending |
-| 3 | **Engineers** | ~42 | Engineer (100%) | Medium (0.50) | 2.90 | Homogeneous profession cluster |
+- Stop at early phases (e.g., descriptive analysis or data preparation)
+- Focus more deeply on specific stages such as modeling, evaluation, or deployment
+- Adapt the methodology to other analytical approaches when required by the problem
 
----
-
-## Strategic Recommendations
-
-| Priority | Segment | Finding | Recommended Action |
-|----------|---------|---------|-------------------|
-| **HIGH** | Senior Executives (C0) | Highest spending score; established careers | Premium vehicle offers + exclusive loyalty benefits |
-| **HIGH** | Young Healthcare (C2) | Youngest segment; large families; low spending | Entry-level + family vehicle promotions |
-| **MEDIUM** | Mid-Career Artists (C1) | Creative professionals; medium spending | Lifestyle-oriented campaigns + design-led models |
-| **LOW/HOLD** | Engineers (C3) | Homogeneous profession cluster; medium spending | Technical specification campaigns + performance models |
-
-> **LEAN rule:** Recommendations are directional. Validation on real new-market
-> customer data is required before full campaign deployment.
+The goal is to demonstrate **structured thinking, analytical judgment, and adaptability** when addressing data problems across different business contexts and industries.
 
 ---
 
-## Limitations & Honest Assessment
+## Skills
 
-| Limitation | Impact | Mitigation |
-|-----------|--------|-----------|
-| Expert-assigned labels | Segments A/B/C/D reflect sales team judgment — not pure behavioral patterns. Unsupervised clusters may not align with manual labels. | Use external validation (notebook 05) to assess alignment |
-| Silhouette scores below 0.35 | Cluster boundaries are soft — significant overlap between segments | Expected when ground truth was manually assigned; use for direction only |
-| No clear elbow | k=4 is pragmatic, not data-driven | Consider gap statistic for more rigorous k selection in future cycle |
-| DBSCAN found 1 cluster | Default eps=0.5 too restrictive for this feature space | Tune eps via k-distance plot in next iteration |
+**Programming**  
+Python · SQL (self-study via DataCamp)
 
-> **Personal perspective:** A silhouette score of 0.154 is analogous to a Cpk of ~0.5
-> — the process (segmentation) exists but has high variation. The low score is
-> partly expected: if segments were assigned by expert judgment rather than
-> behavioral distance, clustering algorithms will struggle to reproduce them.
-> The pipeline is validated and scalable — what requires improvement is the
-> feature engineering, not the methodology.
+**Data Analysis & Visualization**  
+Pandas · NumPy · Matplotlib · Seaborn
 
----
+**Machine Learning**  
+Scikit-learn · Supervised Learning (Regression, Classification) ·  
+Feature Scaling · Cross Validation · Model Evaluation · Boosting
 
-## Project Structure
+**Statistical Methods**  
+Statistical Inference · OLS Regression · Hypothesis Testing
 
-```
-project-6-unsupervised-ml-customer-segmentation/
-├── data/
-│   ├── raw/                    # Train.csv (Kaggle) + test.csv (80/20 split)
-│   ├── processed/              # customers_clean.csv, X_scaled.npy, scaler.pkl,
-│   │                           # feature_cols.csv, model_final_v1.pkl
-│   └── final/                  # cluster_labels.csv, X_pca.npy, X_tsne.npy
-├── notebooks/
-│   ├── 01_business_understanding.ipynb   # Problem Statement Canvas, BQs, success criteria
-│   ├── 02_data_understanding.ipynb       # EDA, distributions, correlation matrix
-│   ├── 03_data_preparation.ipynb         # Encoding, IQR, StandardScaler, 80/20 split
-│   ├── 04_modeling.ipynb                 # PCA, t-SNE, KMeans, DBSCAN, Hierarchical
-│   ├── 05_evaluation.ipynb               # Silhouette comparison, cluster profiling, personas
-│   └── 06_deployment.ipynb               # Pipeline validation on test set, MLOps checklist
-├── reports/
-│   └── figures/                # All generated visualizations
-├── docs/
-│   ├── METHODOLOGY.md
-│   ├── data_dictionary.md
-│   ├── decisions_log.md
-│   └── lean_retrospective.md
-├── src/
-│   ├── data_processing.py
-│   ├── analysis.py
-│   └── visualization.py
-├── requirements.txt
-├── .gitignore
-└── README.md
-```
+**Unsupervised Learning**  
+Clustering · Dimensionality Reduction
 
-### CRISP-DM Phase Mapping
+**Deep Learning**  
+Neural Networks · Convolutional Neural Networks (CNN)
 
-| Notebook | CRISP-DM Phase | Scope |
-|----------|----------------|-------|
-| 01 | Business Understanding | Problem Statement Canvas, BQs, stakeholder map |
-| 02 | Data Understanding | EDA, distributions, correlation matrix |
-| 03 | Data Preparation | Encoding, outlier removal, scaling, 80/20 split |
-| 04 | Modeling | PCA, t-SNE, KMeans (elbow), DBSCAN, Hierarchical |
-| 05 | Evaluation | Silhouette comparison, cluster profiling, personas |
-| 06 | Deployment | Pipeline validation on test set, MLOps checklist |
+**Data Engineering & Big Data**  
+ETL Pipelines · Data Wrangling · Big Data Fundamentals · Scalable Machine Learning
+
+**Development Tools**  
+Git · GitHub · VS Code · Jupyter Notebook · Google Colab · Spyder ·  
+Python Virtual Environments · Markdown
+
+**Frameworks & Methodologies**  
+CRISP-DM · Lean Thinking · DMAIC · Customer Analytics · Business Analytics
 
 ---
 
-## Tech Stack
-
-| Tool | Purpose |
-|------|---------|
-| Python 3.12 | Core language |
-| Pandas | Data manipulation and encoding |
-| NumPy | Numerical operations, array persistence |
-| Scikit-learn | PCA, t-SNE, KMeans, DBSCAN, Hierarchical, silhouette score |
-| SciPy | Hierarchical dendrogram (linkage) |
-| Matplotlib | Custom visualizations |
-| Seaborn | Heatmaps, scatter plots, cluster profiles |
-| Joblib | Model and scaler persistence |
-
-**Skills Demonstrated:**
-`Python` · `Unsupervised ML` · `Clustering` · `Dimensionality Reduction` · `PCA` · `t-SNE` · `KMeans` · `DBSCAN` · `Hierarchical Clustering` · `Silhouette Score` · `Elbow Method` · `Pandas` · `Scikit-learn` · `CRISP-DM` · `Lean Thinking` · `Business Analytics`
-
----
-
-## How to Run
-
-```bash
-git clone https://github.com/joselopezp/bootcamp-data-science-portfolio.git
-cd projects/project-6-unsupervised-ml-customer-segmentation
-python -m venv .venv
-.venv\Scripts\activate          # Windows
-pip install -r requirements.txt
-jupyter notebook notebooks/01_business_understanding.ipynb
-```
-
-> ⚠️ Download `Train.csv` from Kaggle before running:
-> https://www.kaggle.com/datasets/kaushiksuresh147/customer-segmentation
-> Place it in `data/raw/`. The 80/20 split (`test.csv`) is generated automatically
-> in notebook 03. Run notebooks in order: 01 → 02 → 03 → 04 → 05 → 06.
-
----
-
-## Deliverables
-
-- [x] 6 notebooks following CRISP-DM + Lean structure (01–06)
-- [x] PCA and t-SNE dimensionality reduction with visualizations
-- [x] KMeans, DBSCAN, and Hierarchical clustering implemented and compared
-- [x] Elbow method and silhouette score evaluation
-- [x] Cluster profiling with business persona interpretation
-- [x] Pipeline validated on 20% holdout test set
-- [x] Scaler and model serialized (`scaler.pkl`, `model_final_v1.pkl`)
-- [x] Visualizations in `reports/figures/`
-- [x] Decisions log and methodology documentation
-
----
-
-## CRISP-DM Roadmap
-
-| Level | Question | Cycle | Module | Status |
-|-------|----------|-------|--------|--------|
-| Descriptive | What happened? | project-2-pequeshop-analytics | M3 — ETL | ✅ Complete |
-| Diagnostic | Why did it happen? | project-3-eda-pequeshop | M4 — EDA | ✅ Complete |
-| Inferential | Are patterns statistically real? | project-4b-pequeshop-statistical-inference | M5 — Statistical Inference | ✅ Complete |
-| Predictive | What will happen? | project-5-ecommerce-spend-prediction | M6 — Supervised ML | ✅ Complete |
-| Segmentation | Who are our customers? | **project-6** (this project) | M7 — Unsupervised ML | ✅ Complete |
-
----
-
-## Model Card
-
-| Field | Details |
-|-------|---------|
-| **Model type** | KMeans Clustering |
-| **Task** | Customer segmentation (unsupervised) |
-| **Training data** | Kaggle automobile customer dataset — 80% split (~6,454 rows) |
-| **Features used** | 26 features after one-hot encoding (demographics + behavioral) |
-| **Target variable** | None — unsupervised |
-| **Framework** | Scikit-learn 1.4 |
-| **Optimal k** | 4 clusters |
-| **Silhouette score** | 0.154 (train set) |
-| **Training date** | March 2026 |
-
----
-
-## MLOps Checklist
-
-### Reproducibility
-- [x] Random seed fixed (`random_state=42`)
-- [x] Requirements pinned (`requirements.txt`)
-- [x] Scaler saved (`data/processed/scaler.pkl`)
-- [x] Final model saved (`data/processed/model_final_v1.pkl`)
-- [x] Feature columns saved (`data/processed/feature_cols.csv`)
-
-### Model Versioning
-- [x] Model filename includes version: `model_final_v1.pkl`
-- [x] Training parameters logged in `docs/decisions_log.md`
-
-### Monitoring (awareness level)
-- [ ] Data drift: expert-labeled dataset — real new-market data will differ in distribution
-- [ ] Model limitations: documented in Limitations section above
-- [ ] Retraining trigger: when new-market customer data becomes available
-
----
-
-## Data Source
-
-| Field | Details |
-|-------|---------|
-| **Dataset** | Customer Segmentation — Kaggle (kaushiksuresh147) |
-| **Original context** | Automobile company — 8,068 customers manually labeled A/B/C/D by sales team |
-| **Label type** | Expert-assigned — not derived from clustering or behavioral distance |
-| **Train.csv** | 8,068 rows with Segmentation label — used as full dataset |
-| **Train split** | 80% of Train.csv (~6,454 rows) — used for model fitting |
-| **Test split** | 20% of Train.csv (~1,614 rows) — stratified split generated in notebook 03 |
-| **Kaggle Test.csv** | Not used — lacks Segmentation column |
-| **Accessed** | March 2026 |
-
-### How to Reproduce
-
-> Download `Train.csv` from:
-> https://www.kaggle.com/datasets/kaushiksuresh147/customer-segmentation
-> Place in `data/raw/`. The 80/20 test split is generated automatically in notebook 03.
-> `Test.csv` from Kaggle is not used in this project.
-
----
-
-## Credits
-
-**Methodology References:**
-- CRISP-DM: Chapman et al. (2000). *CRISP-DM 1.0: Step-by-step data mining guide*. SPSS Inc.
-- Provost, F. & Fawcett, T. (2013). *Data Science for Business*. O'Reilly Media.
-- Lean Thinking: Womack, J. & Jones, D. (1996). *Lean Thinking*. Simon & Schuster.
-- Rousseeuw, P.J. (1987). Silhouettes: A graphical aid to the interpretation and validation of cluster analysis. *Journal of Computational and Applied Mathematics*, 20, 53–65.
-
-**Tools & Libraries:** See [Tech Stack](#tech-stack) section.
-
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-© 2026 Jose Marcel Lopez Pino
-
----
-
-*Framework: CRISP-DM + Lean | Methodology: Project-Based Learning (PBL)*
+## Author
 
 **Jose Marcel Lopez Pino**
 Industrial Engineer (Business + Operations) | Data Science & Business Analytics
@@ -346,5 +136,162 @@ technology management — backed by a rigorous scientific foundation in calculus
 linear algebra, probability and statistics, physics, and optimization — enabling
 a unique business + analytics perspective.*
 
+*Thesis: Volatility Forecasting of
+IPSA Stock Returns (Chilean Stock Exchange) using a GJR-GARCH Model.*
+
 [![GitHub](https://img.shields.io/badge/GitHub-joselopezp-181717?style=flat&logo=github)](https://github.com/joselopezp)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-jose--lopez--pino-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/jose-lopez-pino/)
+
+📧 jose.lopez.pino@gmail.com
+
+---
+
+## License
+
+This portfolio is licensed under the [MIT License](LICENSE).
+
+© 2026 Jose Marcel Lopez Pino
+
+---
+
+---
+
+# Portafolio del Bootcamp de Ciencia de Datos
+
+> **Jose Marcel Lopez Pino** | Bootcamp SENCE / Alkemy 2025–2026
+
+## Tabla de Contenidos
+
+- [Acerca de este Portafolio](#acerca-de-este-portafolio)
+- [Proyectos](#proyectos)
+- [Metodología: CRISP-DM + Lean](#metodología-crisp-dm--lean)
+- [Habilidades](#habilidades)
+- [Autor](#autor)
+- [Licencia](#licencia)
+
+---
+
+## Acerca de este Portafolio
+
+Este repositorio contiene los proyectos desarrollados durante el bootcamp
+**Fundamentos de Ciencia de Datos** (SENCE/Alkemy, 2025–2026), aplicando una
+metodología CRISP-DM + Lean con enfoque de Aprendizaje Basado en Proyectos (ABP).
+
+Cada proyecto está diseñado para resolver problemas reales de negocio, combinando
+habilidades técnicas de ciencia de datos con pensamiento analítico desde una
+perspectiva de Ingeniería Civil Industrial.
+
+---
+
+## Proyectos
+
+| Módulo | Proyecto | Descripción | Estado |
+|:---|:---|:---|:---:|
+| 1 | *Sin proyecto* | Orientación y metodología | ✅ |
+| 2 | [Contact Management System](projects/project-1-oop-contact-system) | Sistema CRUD con POO y encapsulación | ✅ |
+| 3 | [PequeShop Analytics](projects/project-2-pequeshop-analytics) | Pipeline ETL de e-commerce con KPIs de negocio | ✅ |
+| 4 | [PequeShop EDA](projects/project-3-eda-pequeshop) | Análisis Exploratorio de Datos + Regresión OLS | ✅ |
+| 5 | [Student Health Analytics](projects/project-4-student-health-analytics) | Inferencia estadística sobre hábitos de estudiantes | ✅ |
+|   | **Bonus:** [PequeShop Statistical Inference](projects/project-4b-pequeshop-statistical-inference) | Inferencia estadística sobre datos de clientes | ✅ |
+| 6 | Machine Learning Supervisado | Enviado | 📤 |
+| 7 | Machine Learning No Supervisado | *Próximamente* | ⏳ |
+| 8 | Fundamentos de Deep Learning | *Próximamente* | ⏳ |
+| 9 | Fundamentos de Big Data | *Próximamente* | ⏳ |
+| 10 | *Sin proyecto* | Desarrollo de Portafolio | ⏳ |
+| 11 | *Sin proyecto* | Desarrollo de Empleabilidad | ⏳ |
+
+> **Nota:** Además de las clases sincrónicas, ha sido necesario estudio personal y desarrollo de proyectos.
+
+
+---
+
+## Metodología: CRISP-DM + Lean
+
+Este portafolio adopta **CRISP-DM** como marco principal de trabajo debido a su
+claridad, trazabilidad y fuerte alineación con la toma de decisiones de negocio.
+CRISP-DM permite estructurar los proyectos de forma consistente, desde la
+comprensión del problema hasta la preparación de los datos y la generación de
+insights accionables.
+
+De manera complementaria, el enfoque incorpora **principios Lean**, priorizando:
+- Iteraciones cortas y progresivas
+- Entregables con valor temprano para el negocio
+- Ajuste del alcance a medida que se obtiene mayor entendimiento de los datos
+
+Este enfoque híbrido (CRISP-DM + Lean) busca reflejar cómo se desarrollan los
+proyectos de datos en contextos reales, donde los requerimientos evolucionan y
+las decisiones deben balancear rigor analítico con velocidad y pragmatismo.
+
+## Limitaciones y Flexibilidad
+
+CRISP-DM no se aplica de forma rígida. Dependiendo del contexto, la industria o el tipo de problema, los proyectos pueden:
+
+- Detenerse en fases tempranas (por ejemplo, análisis descriptivo o preparación de datos)
+- Profundizar en etapas específicas como modelado, evaluación o despliegue
+- Adaptar la metodología a otros enfoques analíticos cuando el problema lo requiera
+
+El objetivo es demostrar **pensamiento estructurado, criterio analítico y capacidad de adaptación** al abordar problemas de datos en distintos contextos empresariales e industrias.
+
+---
+
+## Habilidades
+
+**Programación**  
+Python · SQL (autoestudio en DataCamp)
+
+**Análisis y Visualización de Datos**  
+Pandas · NumPy · Matplotlib · Seaborn
+
+**Machine Learning**  
+Scikit-learn · Aprendizaje Supervisado (Regresión, Clasificación) ·  
+Escalado de Variables · Validación Cruzada · Evaluación de Modelos · Boosting
+
+**Métodos Estadísticos**  
+Inferencia Estadística · Regresión OLS · Pruebas de Hipótesis
+
+**Aprendizaje No Supervisado**  
+Clustering · Reducción de Dimensionalidad
+
+**Deep Learning**  
+Redes Neuronales · Redes Neuronales Convolucionales (CNN)
+
+**Ingeniería de Datos y Big Data**  
+Pipelines ETL · Preparación de Datos (Data Wrangling) · Fundamentos de Big Data · Machine Learning Escalable
+
+**Herramientas de Desarrollo**  
+Git · GitHub · VS Code · Jupyter Notebook · Google Colab · Spyder ·  
+Entornos Virtuales de Python · Markdown
+
+**Frameworks y Metodologías**  
+CRISP-DM · Lean Thinking · DMAIC · Customer Analytics · Business Analytics
+
+---
+
+## Autor
+
+**Jose Marcel Lopez Pino**
+Ingeniero Civil Industrial (Negocios + Operaciones) | Data Science & Business Analytics
+Bootcamp: Fundamentos de Ciencia de Datos - SENCE/Alkemy (2025–2026)
+
+*La Ingeniería Civil Industrial en Chile (Grado académico: Licenciado en Ciencias
+de la Ingeniería Industrial — programa de 5,5 años, comparable a un M.S. en EE.UU.)
+abarca la gestión estratégica, finanzas, marketing, economía, gestión de operaciones
+y gestión tecnológica — respaldada por una sólida base científica en cálculo,
+álgebra lineal, probabilidades y estadística, física y optimización — habilitando
+una perspectiva única de negocios + analytics.*
+
+*Memoria de Título: Pronóstico de
+Volatilidad de las acciones del IPSA con un modelo GJR-GARCH.*
+
+[![GitHub](https://img.shields.io/badge/GitHub-joselopezp-181717?style=flat&logo=github)](https://github.com/joselopezp)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-jose--lopez--pino-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/jose-lopez-pino/)
+
+📧 jose.lopez.pino@gmail.com
+
+---
+
+## Licencia
+
+Este portafolio está licenciado bajo la [Licencia MIT](LICENSE).
+
+© 2026 Jose Marcel Lopez Pino

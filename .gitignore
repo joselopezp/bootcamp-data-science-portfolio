@@ -1,12 +1,71 @@
+# ======================
+# Python
+# ======================
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
+.Python
+*.so
+
+# ======================
+# Virtual environments
+# ======================
 .venv/
-.ipynb_checkpoints/
-data/raw/*
-data/processed/*
-data/final/*
-!data/raw/README.md
-!data/processed/README.md
-!data/final/README.md
-.DS_Store
+venv/
+env/
+.env
+
+# ======================
+# IDEs / Editors
+# ======================
 .vscode/
+.idea/
+.spyderproject
+.spyproject
+spyder_config.ini
+*.swp
+
+# ======================
+# Jupyter Notebooks
+# ======================
+.ipynb_checkpoints/
+
+# ======================
+# OS files
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# Logs
+# ======================
+*.log
+
+# ======================
+# Build / Distribution
+# ======================
+dist/
+build/
+*.egg-info/
+
+# ======================
+# Bootcamp / Local practice
+# ======================
+learning/
+
+# ======================
+# Raw data (large files)
+# ======================
+**/data/raw/
+
+# ======================
+# Project 3 Reports (local deliverables)
+# ======================
+# Ignore everything inside reports
+projects/project-3-eda-pequeshop/reports/*
+
+# But keep figures folder
+!projects/project-3-eda-pequeshop/reports/figures/
+!projects/project-3-eda-pequeshop/reports/figures/**
+
