@@ -51,7 +51,7 @@ background.
 | 5 | [Student Health Analytics](projects/project-4-student-health-analytics) | Statistical Inference over student habits | ✅ |
 |   | **Bonus:** [PequeShop Statistical Inference](projects/project-4b-pequeshop-statistical-inference) | Statistical Inference over customer data | ✅ |
 | 6 | [PequeShop Spend Prediction (ML)](projects/project-5-ecommerce-spend-prediction) | Supervised Machine Learning model to predict customer spend (avg_ticket) and drive data-driven marketing decisions in e-commerce. | ✅ |
-| 7 | Unsupervised Machine Learning | submitted | 📤 |
+| 7 | Unsupervised Machine Learning | Under review ⭐ | 📤 |
 | 8 | Deep Learning Fundamentals | *Coming soon* | ⏳ |
 | 9 | Big Data Fundamentals | *Coming soon* | ⏳ |
 | 10 | *No project* | Portfolio Development | ⏳ |
@@ -194,7 +194,7 @@ perspectiva de Ingeniería Civil Industrial.
 | 5 | [Student Health Analytics](projects/project-4-student-health-analytics) | Inferencia estadística sobre hábitos de estudiantes | ✅ |
 |   | **Bonus:** [PequeShop Statistical Inference](projects/project-4b-pequeshop-statistical-inference) | Inferencia estadística sobre datos de clientes | ✅ |
 | 6 | [PequeShop Spend Prediction (ML)](projects/project-5-ecommerce-spend-prediction) | Modelo de Machine Learning supervisado para predecir el gasto por cliente (avg_ticket) y optimizar la toma de decisiones de marketing en e-commerce. | ✅ |
-| 7 | Machine Learning No Supervisado | entregado  | 📤 |
+| 7 | Machine Learning No Supervisado | Enviado para revisión ⭐  | 📤 |
 | 8 | Fundamentos de Deep Learning | *Próximamente* | ⏳ |
 | 9 | Fundamentos de Big Data | *Próximamente* | ⏳ |
 | 10 | *Sin proyecto* | Desarrollo de Portafolio | ⏳ |
