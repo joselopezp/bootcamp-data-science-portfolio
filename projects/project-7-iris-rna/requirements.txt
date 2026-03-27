@@ -1,0 +1,95 @@
+# ==============================================================================
+# REQUIREMENTS: PROJECT 7 - NEURAL NETWORK FOR IRIS CLASSIFICATION
+# Module 8: Deep Learning | BECA SENCE TALENTO DIGITAL & ALKEMY
+# Fundamentos de Ciencia de Datos (2025-2026)
+# ==============================================================================
+#
+# Dependency set specific to Project 7 only.
+# Program: Fundamentos de Ciencia de Datos
+# Provider: Alkemy
+# Scholarship: SENCE Talento Digital
+#
+# Installation:
+#   cd projects/project-7-iris-rna
+#   pip install -r requirements.txt
+#
+# Versions: March 2026
+# Python: 3.12+
+#
+# Project repository:
+#   GitHub: github.com/joselopezp/bootcamp-data-science-portfolio
+#   Path: /projects/project-7-iris-rna
+
+# ==============================================================================
+# CORE: Data Manipulation & Numerical Computing
+# ==============================================================================
+
+# Linear algebra and arrays
+numpy==2.4.1
+
+# Data manipulation (dataset loading, transformations)
+pandas==3.0.0
+
+# ==============================================================================
+# VISUALIZATION
+# ==============================================================================
+
+# Static plots (loss/accuracy curves, confusion matrix visualization)
+matplotlib==3.10.8
+
+# Advanced statistical visualization
+seaborn==0.13.2
+
+# ==============================================================================
+# MACHINE LEARNING & SKLEARN
+# ==============================================================================
+
+# Preprocessing: StandardScaler
+# Model Selection: train_test_split, GridSearchCV, RandomizedSearchCV
+# Metrics: confusion_matrix, classification_report, f1_score
+scikit-learn==1.8.0
+
+# Statistical distributions for RandomizedSearchCV
+scipy==1.17.0
+
+# ==============================================================================
+# DEEP LEARNING (TENSORFLOW / KERAS)
+# ==============================================================================
+
+# Deep Learning framework
+# Includes Keras integrated
+tensorflow==2.21.0
+
+# Keras wrapper for sklearn integration
+# Required for GridSearchCV + RandomizedSearchCV with Keras models
+scikeras==0.13.0
+
+# ==============================================================================
+# JUPYTER / INTERACTIVE NOTEBOOKS
+# ==============================================================================
+
+# Jupyter Lab (interactive development environment)
+jupyterlab==4.5.2
+
+# Python kernel for Jupyter
+ipykernel==6.31.0
+
+# ==============================================================================
+# OPTIONAL: Utilities
+# ==============================================================================
+
+# Parallelization and optimization
+joblib==1.3.2
+
+# Progress bars
+tqdm==4.67.3
+
+# ==============================================================================
+# NOTES:
+# - TensorFlow 2.21.0 is stable release (2.16.0+ compatible)
+# - SciKeras >= 0.12.0 required for GridSearchCV integration
+# - StandardScaler + ReLU + Adam are Deep Learning standards
+# - Project uses CRISP-DM + LEAN methodology
+# - Architecture: Dense(16) -> Dense(8) -> Dense(3, Softmax)
+# - Certification exam: May 6, 2026 (Modules 1-11)
+# ==============================================================================
