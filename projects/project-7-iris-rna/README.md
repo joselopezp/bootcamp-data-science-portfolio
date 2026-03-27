@@ -324,19 +324,30 @@ GridSearchCV + RandomizedSearchCV improved accuracy significantly:
 
 ---
 
-## Author
+## 👤 Author
 
-**José Marcel López Pino**
+**José Marcel López Pino**  
+Industrial Engineer (Business + Operations) | Data Science & Business Analytics
 
-- **Background:** Industrial Civil Engineer (ICI) with 15+ years in mining, forestry, technology, and academic management
-- **Current:** Data Science Bootcamp (SENCE Talento Digital & Alkemy, 2025-2026)
-- **Target Roles:** Data Scientist, Business Analyst, Analytics Consultant
-- **Focus:** Business-context framing of analytical decisions with operational domain knowledge
-- **Location:** Biobío/Araucanía regions (Chile); open to USA, Canada, UK, Netherlands
+**Bootcamp:** Fundamentos de Ciencia de Datos — SENCE Talento Digital / Alkemy (2025–2026)
 
-**Unique Differentiator:** Industrial Engineering background enables business-context framing of analytical decisions (process optimization, cost-of-error reasoning, operational domain knowledge) rather than purely technical execution.
+Industrial Engineer with a strong foundation in business and operations, currently developing end-to-end data science projects focused on solving real-world business problems and enabling data-driven decision-making.
 
-**Certification Exam:** May 6, 2026 (Modules 1-11, 3 hours)
+### Academic Background
+
+**Bachelor of Science in Industrial Engineering** (~5.5-year program, comparable in rigor to a U.S. M.S.)
+- Rigorous quantitative foundation: Calculus, Linear Algebra, Probability & Statistics, Physics, Optimization
+- Business & Operations: Strategy, Finance, Marketing, Economics, Operations Management, Technology Management
+- **Thesis:** Volatility Forecasting of IPSA Stock Returns (Chilean Stock Exchange) using GJR-GARCH modeling
+
+### Professional Context
+
+15+ years of experience across academic management, business operations, and technical roles, with a career spanning mining, forestry, and industrial sectors, including work with companies such as BHP, Collahuasi, Codelco, and Arauco.
+
+**Target Roles:** Data Scientist | Business Analyst | Analytics Consultant 
+**Location:** Chile | Open to remote roles (Chile & global) and relocation to USA, Canada, UK, or the Netherlands
+
+**Certification Exam:** Scheduled for May 6, 2026 (Modules 1–11, 3-hour assessment)
 
 ---
 
@@ -349,8 +360,9 @@ GridSearchCV + RandomizedSearchCV improved accuracy significantly:
 
 ## License
 
-MIT License - Copyright (c) 2026 Jose Marcel Lopez Pino  
-See [LICENSE](https://github.com/joselopezp/bootcamp-data-science-portfolio/blob/main/LICENSE) for details.
+This project is licensed under the MIT License.
+
+© 2026 Jose Marcel Lopez Pino
 
 ---
 
@@ -364,5 +376,5 @@ See [LICENSE](https://github.com/joselopezp/bootcamp-data-science-portfolio/blob
 ---
 
 **Last Updated:** March 26, 2026  
-**Current Status:** Phase 4 (MODELING) Complete ✅  
-**Next Project:** Project 7B — CNN for Fashion-MNIST (Image Classification)
+**Status:** Phase 4 (MODELING) Complete ✅  
+**Next Phase:** Project 7B (CNN for Fashion-MNIST)
