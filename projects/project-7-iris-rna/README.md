@@ -344,8 +344,8 @@ Industrial Engineer with a strong foundation in business and operations, current
 
 15+ years of experience across academic management, business operations, and technical roles, with a career spanning mining, forestry, and industrial sectors, including work with companies such as BHP, Collahuasi, Codelco, and Arauco.
 
-**Target Roles:** Data Scientist | Business Analyst | Analytics Consultant 
-**Location:** Chile | Open to remote roles (Chile & global) and relocation to USA, Canada, UK, or the Netherlands
+**Target Roles:** Data Scientist | Business Analyst | Analytics Consultant  
+**Location:** Chile | Open to remote roles (Chile & globally) and relocation to the U.S., Canada, the U.K., or the Netherlands
 
 **Certification Exam:** Scheduled for May 6, 2026 (Modules 1–11, 3-hour assessment)
 
