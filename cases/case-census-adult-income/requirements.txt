@@ -1,0 +1,7 @@
+# case-census-adult-income
+# Python 3.12 | Java 17 Temurin | PySpark local mode
+
+pyspark==4.1.1
+numpy==2.4.1
+pandas==3.0.0
+matplotlib==3.10.8
