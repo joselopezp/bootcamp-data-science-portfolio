@@ -1,4 +1,5 @@
-# Dimensional Reduction for Client Segmentation — VisionData
+# Case: Dimensionality Reduction Techniques
+## Customer Personality Analysis — PCA vs t-SNE
 
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
@@ -7,160 +8,171 @@
 ![Module](https://img.shields.io/badge/Module-M7%20Unsupervised%20ML-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
----
-
-## Executive Summary
-
-VisionData's survey datasets (60 variables per client) were degrading predictive model performance and producing unreadable executive visualizations. This case applies **PCA** and **t-SNE** to reduce dimensionality to 2D, compares their suitability for two distinct business use cases, and delivers a justified dual recommendation: PCA for ML pipelines, t-SNE for executive presentations.
-
-**Key result:** PCA explains 16.83% of variance in 2 components — confirming the problem is structural. t-SNE (KL divergence: 1.89) reveals three clearly separated client segments invisible to linear projection.
+> **VisionData** needs to compress a 100+ variable customer survey dataset into 2D to reveal natural segments for marketing campaign targeting. This case applies PCA and t-SNE to a real customer personality dataset (2,240 customers × 30 engineered features), compares their ability to expose cluster structure, and produces a justified two-track technique recommendation. **Key result:** PCA retains 28.8% variance in 2D (95% at 24 components); t-SNE achieves superior cluster separation with KL divergence = 0.8887.
 
 ---
 
 ## Table of Contents
 
-1. [Business Objective](#business-objective)
-2. [Problem Statement Canvas](#problem-statement-canvas)
-3. [Solution Overview](#solution-overview)
-4. [Repository Structure](#repository-structure)
-5. [CRISP-DM Phases](#crisp-dm-phases)
-6. [Key Insights](#key-insights)
-7. [Business Recommendations](#business-recommendations)
-8. [Limitations](#limitations)
-9. [Next Steps](#next-steps)
-10. [How to Run](#how-to-run)
+1. [Business Objective](#1-business-objective)
+2. [Problem Statement Canvas](#2-problem-statement-canvas)
+3. [Dataset](#3-dataset)
+4. [Repository Structure](#4-repository-structure)
+5. [CRISP-DM Scope](#5-crisp-dm-scope)
+6. [Key Findings](#6-key-findings)
+7. [Business Recommendations](#7-business-recommendations)
+8. [Limitations](#8-limitations)
+9. [Next Steps](#9-next-steps)
+10. [How to Run](#10-how-to-run)
 
 ---
 
-## Business Objective
+## 1. Business Objective
 
-**Problem:** Survey datasets with 60+ variables per client cause model degradation and unreadable executive visualizations at VisionData.
+**Problem:** Customer survey datasets with 100+ variables cause slow ML model training and produce unreadable executive visualisations — preventing the marketing team from identifying actionable customer segments.
 
-**Why it matters:** Marketing campaigns designed without clear segment insight waste budget on undifferentiated audiences. Unscalable pipelines block the analytics team as client base grows.
+**Why it matters:** Without visible segment structure, all customers receive the same campaign — wasting budget and reducing ROI.
 
-**Decision to support:** Which dimensionality reduction technique should VisionData adopt for (a) ML preprocessing pipelines and (b) executive client segment presentations?
+**Decision to support:** Select the dimensionality reduction technique that best reveals natural customer clusters for differentiated campaign targeting.
 
-**Expected impact:** Faster model training, improved predictive performance, and marketing visualizations that reveal three actionable client segments.
-
----
-
-## Problem Statement Canvas
-
-| Element | Description |
-|---|---|
-| **Business Problem** | 60-variable survey datasets degrade model performance and make client segmentation invisible to decision-makers |
-| **Business Impact** | Undifferentiated marketing spend; slow model training; erosion of trust in analytics function |
-| **Decision to Support** | PCA vs t-SNE selection for two distinct use cases: ML pipeline vs executive presentation |
-| **Analytical Question** | Do PCA and t-SNE reveal natural client clusters, and which is more suitable for each use case? |
-| **Success Metrics** | PCA: explained variance ratio quantified. t-SNE: visually distinct clusters without requiring labels |
-| **Proposed Approach** | Apply both techniques; compare 2D visualizations; deliver justified dual recommendation |
+**Expected impact:** Enables segment-specific marketing campaigns; reduces ML training dimensionality from 30 to 24 features (20% reduction) while retaining 95% of information.
 
 ---
 
-## Solution Overview
+## 2. Problem Statement Canvas
 
-| | |
-|---|---|
-| **Type** | Unsupervised ML — Dimensionality Reduction |
-| **Techniques** | PCA (linear) + t-SNE (non-linear) |
-| **End Users** | Marketing Director, Head of Sales, ML Engineering team |
-| **Output Format** | 2D visualizations + comparative analysis + business recommendation |
-| **Dataset** | Synthetic survey dataset — 1,000 clients × 60 variables (15 demographic, 25 consumption, 20 digital) |
-| **Key Libraries** | scikit-learn 1.8.0 · matplotlib 3.10.8 · seaborn 0.13.2 · numpy 2.4.1 · pandas 3.0.0 |
+| # | Element | Content |
+|---|---------|---------|
+| 1 | **Business Problem** | Survey datasets with 100+ variables make ML models slow and executive visualisations unreadable |
+| 2 | **Business Impact** | Marketing campaigns cannot be differentiated — all customers treated equally despite distinct behaviour |
+| 3 | **Decision to Support** | Which dimensionality reduction technique best reveals natural customer clusters for campaign targeting? |
+| 4 | **Analytical Question** | Can PCA or t-SNE compress 30 engineered customer features into 2D while preserving segment structure? |
+| 5 | **Success Metrics** | PCA: cumulative variance retained. t-SNE: KL divergence < 1.0. Justified recommendation with documented trade-offs |
+| 6 | **Proposed Approach** | Apply both techniques to real customer data; comparative analysis drives technique selection |
 
 ---
 
-## Repository Structure
+## 3. Dataset
+
+| Field | Detail |
+|-------|--------|
+| **Source** | [Customer Personality Analysis — Kaggle (imakash3011)](https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis) |
+| **File** | `marketing_campaign.csv` (tab-separated) |
+| **Raw dimensions** | 2,240 customers × 29 variables |
+| **Engineered features** | 30 features after preparation |
+| **Feature groups** | Demographics · Spend by category · Purchase channel · Campaign acceptance · Encoded marital status |
+
+**Final feature list (30):**
+
+| Group | Features |
+|-------|----------|
+| Demographics | `Education` (ordinal) · `Income` · `Kidhome` · `Teenhome` · `Age` · `Seniority_Days` |
+| Spend | `MntWines` · `MntFruits` · `MntMeatProducts` · `MntFishProducts` · `MntSweetProducts` · `MntGoldProds` |
+| Channel | `NumDealsPurchases` · `NumWebPurchases` · `NumCatalogPurchases` · `NumStorePurchases` · `NumWebVisitsMonth` |
+| Campaigns | `AcceptedCmp1` · `AcceptedCmp2` · `AcceptedCmp3` · `AcceptedCmp4` · `AcceptedCmp5` |
+| Marital Status | `Alone` · `Divorced` · `Married` · `Single` · `Together` · `Widow` · `YOLO` (dummy encoded) |
+
+**Preparation decisions:**
+- `Income`: 24 nulls (1.1%) → median imputation applied first, before any transformation
+- `Age`: engineered from `Year_Birth` (`2024 - Year_Birth`)
+- `Seniority_Days`: days since `Dt_Customer` relative to most recent enrollment date
+- Removed: `ID`, `Z_CostContact`, `Z_Revenue` (non-informative) · `Response`, `Complain` (target-like)
+- Scaling: `StandardScaler` — mandatory for distance-based techniques
+
+---
+
+## 4. Repository Structure
 
 ```
 case-pca-tsne-dimensionality-reduction/
 │
-├── README.md
+├── README.md                          # This file
 ├── notebooks/
-│   └── dimensionality_reduction_analysis.ipynb
+│   └── case_pca_tsne_dimensionality_reduction.ipynb   # Main analysis notebook
 ├── data/
-│   └── (no files — synthetic dataset generated in-notebook)
+│   ├── raw/
+│   │   └── marketing_campaign.csv     # Original dataset (Kaggle)
+│   ├── processed/
+│   │   └── marketing_scaled.csv       # StandardScaler output (30 features)
+│   └── final/
 └── reports/
-    ├── executive_summary.md
-    ├── fig_00_correlation_heatmap.png
-    ├── fig_01_pca_scree_plot.png
-    ├── fig_02_pca_2d.png
-    ├── fig_03_tsne_2d.png
-    └── fig_04_comparison_pca_tsne.png
+    ├── executive_summary.md           # 1-page business summary
+    └── figures/
+        ├── fig1_spend_distributions.png
+        ├── fig2_pca_explained_variance.png
+        ├── fig3_pca_2d.png
+        ├── fig4_tsne_2d.png
+        └── fig5_comparison.png
 ```
 
 ---
 
-## CRISP-DM Phases
+## 5. CRISP-DM Scope
 
-| Phase | Scope | Key Output |
-|---|---|---|
-| **Business Understanding** | ✅ Implemented | Problem Statement Canvas — dual use case framing |
-| **Data Understanding** | ✅ Implemented | Correlation heatmap confirming inter-feature redundancy |
-| **Data Preparation** | ✅ Implemented | StandardScaler applied; 0 missing values confirmed |
-| **Modeling** | ✅ Implemented | PCA (full spectrum + 2D) · t-SNE (perplexity=40, max_iter=1000) |
-| **Evaluation** | ✅ Implemented | 8-criterion comparison table · dual recommendation · UMAP roadmap |
-| **Deployment** | ⬜ Out of scope | CBL learning case — not a production pipeline |
-
----
-
-## Key Insights
-
-### Insight 1 — 16.83% variance in 2D confirms the problem is structural
-
-**Context:** VisionData suspected high dimensionality was hurting models but lacked quantification.
-**Analysis:** PCA's first 2 components explain only 16.83% of total variance (PC1: 8.81%, PC2: 8.02%). Reaching 80% requires 35+ components.
-**Insight:** No 2D linear projection can adequately summarize 60 correlated survey variables. This is a structural problem — not solvable by feature selection alone.
-**Possible Decision:** Redesign the survey instrument to eliminate redundant variables before the next data collection cycle; target 30–40 high-information variables.
-
-### Insight 2 — t-SNE reveals three actionable segments invisible to PCA
-
-**Context:** Marketing needed readable client groupings to personalize campaign strategy.
-**Analysis:** t-SNE (perplexity=40, KL divergence=1.89) produces clearly separated clusters — Digital Natives, Traditional Buyers, High-Value Spenders. PCA shows the same segments with significant overlap.
-**Insight:** The segments are real and separable — but only a non-linear technique reveals them visually. Overlap in PCA does not mean segments don't exist; it means linear assumptions are insufficient for this data structure.
-**Possible Decision:** Use t-SNE visualizations in the quarterly marketing review to align budget allocation across three distinct client profiles.
-
-### Insight 3 — PCA → t-SNE hybrid resolves the scalability trade-off
-
-**Context:** t-SNE's O(n²) complexity makes it impractical as VisionData's client base grows beyond 50,000 records.
-**Analysis:** Applying PCA first (retaining 80% variance) then running t-SNE on the compressed output reduces computational cost ~70% while preserving embedding quality.
-**Insight:** The choice between PCA and t-SNE is a false dilemma in production. The industry-standard pattern is PCA for compression, t-SNE (or UMAP) for visualization.
-**Possible Decision:** Implement the hybrid pipeline as the standard preprocessing step for all future survey datasets.
+| Phase | Status | Key Output |
+|-------|--------|------------|
+| 1. Business Understanding | ✅ Complete | Problem Statement Canvas · LEAN Value Statement |
+| 2. Data Understanding | ✅ Complete | Shape profiling · missing values · spend distribution (Fig 1) |
+| 3. Data Preparation | ✅ Complete | Feature engineering · encoding · imputation · StandardScaler |
+| 4. Modeling | ✅ Complete | PCA (Fig 2, 3) · t-SNE with PCA pre-reduction (Fig 4) |
+| 5. Evaluation | ✅ Complete | Side-by-side comparison (Fig 5) · justified two-track recommendation |
+| 6. Deployment | ⚠️ Out of scope | CBL case — technique selection only, not production integration |
 
 ---
 
-## Business Recommendations
+## 6. Key Findings
+
+### Finding 1 — PCA retains only 28.8% variance in 2D
+- **Context:** Marketing needs a 2D visualisation for executive presentations.
+- **Analysis:** PC1 = 21.5%, PC2 = 7.3% → combined 28.8% variance retained. Reaching 80% requires 16 components; 95% requires 24.
+- **Insight:** A 2D PCA projection loses over 70% of information — insufficient for clear cluster visualisation, though PC1 is driven by spend variables (interpretable axis).
+- **Possible Decision:** Use PCA at 24 components as ML preprocessing — not as the primary visualisation tool.
+
+### Finding 2 — t-SNE reveals compact, well-separated customer clusters
+- **Context:** Same 2,240 customers projected via t-SNE (perplexity=40, PCA pre-reduction to 24 components).
+- **Analysis:** KL divergence = **0.8887** — below the 1.0 quality threshold. Visually distinct cluster structures emerged that were invisible in PCA 2D.
+- **Insight:** t-SNE successfully reveals natural customer groupings — directly actionable for the marketing team without requiring statistical expertise to interpret.
+- **Possible Decision:** Use t-SNE 2D output as the basis for customer segment maps in marketing decks.
+
+### Finding 3 — The two techniques are complementary, not competing
+- **Context:** Marketing needs both executive visualisation and a preprocessing step for predictive models.
+- **Analysis:** t-SNE has no `transform()` method — cannot score new customers or integrate into sklearn pipelines. PCA does.
+- **Insight:** Each technique solves a different problem. A single-tool recommendation would create either an analytically limited or operationally incomplete solution.
+- **Possible Decision:** Adopt a two-track approach — t-SNE for exploration and presentation; PCA (24 components) for all ML pipeline preprocessing.
+
+---
+
+## 7. Business Recommendations
 
 | Priority | Recommendation | Expected Impact | Effort |
 |---|---|---|---|
-| 🔴 High | Adopt t-SNE for executive segment visualizations | Marketing gains actionable client maps for campaign design | Low |
-| 🔴 High | Implement PCA (80% variance threshold) as ML preprocessing standard | Reduces training time; improves model generalization | Low |
-| 🟡 Medium | Deploy hybrid PCA → t-SNE pipeline for production | Eliminates t-SNE bottleneck at scale (50,000+ clients) | Medium |
-| 🟢 Low | Evaluate UMAP as long-term t-SNE replacement | Faster O(n log n), reproducible, preserves local + global structure | Medium |
+| 🔴 High | Deploy t-SNE visualisation for marketing segment presentation | Enables differentiated campaign targeting across identified clusters | Low |
+| 🔴 High | Apply PCA (24 components) as preprocessing for all downstream ML models | Reduces dimensionality 30→24 retaining 95% variance; faster training | Low |
+| 🟡 Medium | Overlay KMeans cluster labels on t-SNE plot for actionable segment profiles | Quantifies segment size and behaviour for budget allocation | Medium |
+| 🟢 Low | Evaluate UMAP as long-term replacement for t-SNE | Faster at scale, supports `transform()`, better global structure preservation | Medium |
 
 ---
 
-## Limitations
+## 8. Limitations
 
-**Data:** Synthetic dataset — results are indicative, not confirmatory. Real survey data may have missing values, non-normal distributions, and categorical variables requiring additional preprocessing.
-
-**Model:** t-SNE is stochastic — results vary between runs without fixed seed. KL divergence of 1.89 indicates acceptable but imperfect preservation of high-dimensional structure. No silhouette score computed in this version.
-
-**Scope:** Segment labels derived from ground truth, not from unsupervised discovery. Next iteration should apply KMeans post-reduction and validate with silhouette analysis.
+- **Data:** Single snapshot — no temporal behaviour. Segments may shift seasonally.
+- **Model:** t-SNE axes carry no meaning — inter-cluster distances are not reliable. Cluster quality not formally validated (silhouette score is a recommended next step).
+- **Marital Status:** `YOLO` category present in raw data — retained as-is; may reflect data quality issues in the original survey.
+- **Scope:** Deployment phase out of scope — no production pipeline integration in this CBL case.
 
 ---
 
-## Next Steps
+## 9. Next Steps
 
 | Horizon | Action |
-|---|---|
-| **Immediate** | Present `fig_04_comparison_pca_tsne.png` to Marketing with dual-recommendation framing |
-| **Short-term** | Add silhouette score; test perplexity sensitivity (20, 30, 40, 50); implement hybrid PCA → t-SNE |
-| **Long-term** | Implement UMAP for production scalability; connect with KMeans clustering to complete the unsupervised segmentation arc |
+|---------|--------|
+| **Immediate** | Apply PCA (24 components) as preprocessing before KMeans — validate cluster quality with silhouette score |
+| **Short-term** | Overlay KMeans cluster labels on t-SNE plot — produce colour-coded segment map for marketing presentation |
+| **Long-term** | Evaluate UMAP for production scale (>50k customers) — supports `transform()` for real-time customer scoring |
 
 ---
 
-## How to Run
+## 10. How to Run
 
 ```powershell
 # From portfolio root — activate shared virtual environment
@@ -170,20 +182,25 @@ case-pca-tsne-dimensionality-reduction/
 cd cases\case-pca-tsne-dimensionality-reduction
 
 # Launch notebook
-jupyter lab notebooks\dimensionality_reduction_analysis.ipynb
+jupyter lab notebooks\case_pca_tsne_dimensionality_reduction.ipynb
 ```
 
-> No additional dependencies required — all libraries are available in the shared `.venv` at portfolio root.
+> **Dataset:** Download `marketing_campaign.csv` from [Kaggle](https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis) and place in `data/raw/`.
 
 ---
 
 *Framework: CRISP-DM + LEAN | Methodology: Case-Based Learning (CBL)*
 
 **Jose Marcel Lopez Pino**
-Data Scientist — Operations, Analytics & Process Optimization
+Data Scientist — Operations, Analytics & Process Optimization | Data Science & Business Analytics
 Bootcamp: Fundamentos de Ciencia de Datos — SENCE/Alkemy (2025–2026)
 
-*Industrial Engineering in Chile (Academic degree: Bachelor of Science in Industrial Engineering — 5.5-year program, comparable to a U.S. M.S.) encompasses business strategy, finance, marketing, economics, operations management, and technology management — backed by a rigorous scientific foundation in calculus, linear algebra, probability and statistics, physics, and optimization — enabling a unique business + analytics perspective.*
+*Industrial Engineering in Chile (Academic degree: Bachelor of Science in
+Industrial Engineering — 5.5-year program, comparable to a U.S. M.S.) encompasses
+business strategy, finance, marketing, economics, operations management, and
+technology management — backed by a rigorous scientific foundation in calculus,
+linear algebra, probability and statistics, physics, and optimization — enabling
+a unique business + analytics perspective.*
 
 [![GitHub](https://img.shields.io/badge/GitHub-joselopezp-181717?style=flat&logo=github)](https://github.com/joselopezp)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-jose--lopez--pino-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/jose-lopez-pino/)
