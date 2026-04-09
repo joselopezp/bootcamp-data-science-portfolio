@@ -94,8 +94,9 @@
 | Horizon | Action |
 |---|---|
 | **Immediate** | Deliver segment report to marketing team for Q2 2026 campaign design. |
-| **Short-term** | Validate pipeline on cloud environment (Google Colab or Databricks Community) to demonstrate scalability. |
-| **Long-term** | Integrate real clickstream data + implement BG/NBD model for customer lifetime value prediction. Connect with PequeShop prescriptive analytics arc. |
+| **Short-term** | Validate pipeline on Google Colab (cloud environment) by April 10, 2026. |
+| **Post-certification** | AWS EMR Serverless validation + Power BI interactive dashboard for marketing team. |
+| **Long-term** | Integrate real clickstream data + BG/NBD lifetime value model. Connect with PequeShop prescriptive analytics arc. |
 
 ---
 
