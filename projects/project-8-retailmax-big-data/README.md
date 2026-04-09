@@ -28,6 +28,8 @@
 - [Limitations](#limitations)
 - [Deliverables](#deliverables)
 - [Data Source](#data-source)
+- [Cloud Validation Roadmap](#cloud-validation-roadmap)
+- [BI Integration Roadmap](#bi-integration-roadmap)
 - [Next Steps](#next-steps)
 - [Credits](#credits)
 - [License](#license)
@@ -131,8 +133,9 @@ project-8-retailmax-big-data/
 ├── src/
 │   └── __init__.py
 ├── reports/
-│   ├── figures/              # Visualizations (PNG)
-│   └── executive_summary.md
+│   ├── figures/                      # Visualizations (PNG)
+│   ├── executive_summary.md          # Spanish version
+│   └── executive_summary_en.md       # English version
 └── docs/
     ├── architecture.md
     ├── decisions_log.md
@@ -248,7 +251,7 @@ jupyter lab notebooks\01_business_understanding.ipynb
 
 - **Data:** Olist dataset is from 2016–2018 — customer behavior may differ in 2026
 - **Model:** LogReg assumes linear feature-probability relationship — GBT could improve AUC
-- **Scope:** Clickstream is synthetic — real data would improve features. Local mode only — cloud validation pending
+- **Scope:** Clickstream is synthetic — real data would improve features. Local mode only — cloud validation roadmap below
 - **Target:** High Value threshold (median) should be validated against actual CLV data
 
 ---
@@ -287,13 +290,60 @@ Synthetic clickstream (500K events) is generated within NB 02 using `spark.range
 
 ---
 
+## Cloud Validation Roadmap
+
+The pipeline is designed for distributed execution. The local implementation
+is the baseline; cloud validation demonstrates production-ready scalability.
+
+| Platform | Status | Target Date | Purpose |
+|---|---|---|---|
+| 🟢 **Local (PySpark 4.1.1)** | ✅ Complete | April 2026 | Full pipeline development and testing |
+| 🟡 **Google Colab** | ⏳ Planned | April 10, 2026 | Free cloud validation — proof that pipeline runs outside local environment |
+| 🔵 **AWS EMR Serverless** | ⏳ Planned | Post-certification | Production-grade validation on industry-standard cloud platform (~$2–5 USD one-time cost) |
+| 🟣 **Databricks Community** | Optional | TBD | Alternative cloud validation — recognized Spark platform |
+
+**Why multiple platforms?** Different target markets value different cloud
+certifications. AWS EMR is the strongest signal for USA/Canada roles.
+Databricks is preferred for Data Engineering positions globally. Colab
+provides the fastest no-cost validation.
+
+---
+
+## BI Integration Roadmap
+
+The ML outputs (customer segments, classification predictions) are saved as
+Parquet files — ready for direct consumption by business intelligence tools.
+
+| Tool | Status | Purpose |
+|---|---|---|
+| 🟡 **Power BI** | ⏳ Planned (post-certification) | Interactive dashboard for marketing team — segment explorer, KPI tracker, campaign ROI simulator |
+| 🟣 **Tableau** | Optional | Alternative BI layer |
+
+**Planned Power BI dashboard:**
+- **Page 1 — Segment Overview:** Customer count per segment, avg ticket, avg review, revenue contribution
+- **Page 2 — High-Value Classifier:** Distribution of high-value predictions by state, category, payment method
+- **Page 3 — Marketing Action Tracker:** Priority matrix (effort vs impact), expected ROI per action
+- **Page 4 — What-If Analysis:** Slider controls to simulate reactivation rates, churn recovery scenarios
+
+**Data pipeline to Power BI:**
+```
+PySpark (MLlib output) → Parquet → Power BI Desktop (DirectQuery or Import)
+                                  OR
+                                  → CSV export → Power BI Service (scheduled refresh)
+```
+
+This completes the full analytical stack: **Big Data ingestion → ML modeling → BI visualization → business decision**.
+
+---
+
 ## Next Steps
 
 | Horizon | Action |
 |---|---|
 | **Immediate** | Deliver segment report to marketing for Q2 2026 campaign design |
-| **Short-term** | Validate pipeline on cloud (Google Colab or Databricks Community) |
-| **Long-term** | Integrate real clickstream + BG/NBD lifetime value model |
+| **Short-term** | Validate pipeline on Google Colab (cloud environment) by April 10, 2026 |
+| **Post-certification** | AWS EMR Serverless validation + Power BI interactive dashboard |
+| **Long-term** | Integrate real clickstream data + BG/NBD lifetime value model |
 
 > See [`docs/lean_retrospective.md`](docs/lean_retrospective.md) for full methodology retrospective.
 
