@@ -9,9 +9,8 @@
 ![Framework](https://img.shields.io/badge/Framework-CRISP--DM%20%2B%20LEAN-2E86AB)
 ![Tools](https://img.shields.io/badge/Tools-Git%20%7C%20Jupyter%20%7C%20Colab-black)
 ![Projects](https://img.shields.io/badge/Projects-Data%20Science-blue)
-![Status](https://img.shields.io/badge/Status-In%20Progress-orange)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
-
 
 [🇪🇸 Versión en Español](#portafolio-del-bootcamp-de-ciencia-de-datos)
 
@@ -20,7 +19,9 @@
 ## Table of Contents
 
 - [About This Portfolio](#about-this-portfolio)
-- [Projects](#projects)
+- [Learning Approach: PBL + CBL](#learning-approach-pbl--cbl)
+- [Projects (PBL)](#projects-pbl)
+- [Case Studies (CBL)](#case-studies-cbl)
 - [Methodology: CRISP-DM + Lean](#methodology-crisp-dm--lean)
 - [Skills](#skills)
 - [Author](#author)
@@ -30,35 +31,70 @@
 
 ## About This Portfolio
 
-This repository contains projects developed during the **Data Science Fundamentals**
+This repository contains projects and case studies developed during the **Data Science Fundamentals**
 bootcamp (SENCE/Alkemy, 2025–2026), applying a CRISP-DM + Lean methodology with
-a Project-Based Learning (PBL) approach.
+a dual learning approach: Project-Based Learning (PBL) and Case-Based Learning (CBL).
 
-Each project is designed to solve real business problems, combining technical
+Each deliverable is designed to solve real business problems, combining technical
 data science skills with business analytics thinking from an Industrial Engineering
 background.
 
 ---
 
-## Projects
+## Learning Approach: PBL + CBL
+
+This bootcamp integrated two complementary learning modalities:
+
+**Project-Based Learning (PBL)** — End-to-end data products built across the full
+CRISP-DM lifecycle, from business understanding to deployment-ready artifacts.
+Each project inherits validated outputs from the previous one (no-rework principle).
+
+**Case-Based Learning (CBL)** — Consulting-style analytical cases focused on applying
+specific techniques to real business problems. Shorter in scope, deeper in technical focus.
+Cases are documented in the [`cases/`](cases/) folder.
+
+---
+
+## Projects (PBL)
 
 | Module | Project | Description | Status |
 |:---|:---|:---|:---:|
 | 1 | *No project* | Orientation and Methodology | ✅ |
-| 2 | [Contact Management System](projects/project-1-oop-contact-system) | CRUD system with OOP and encapsulation | ✅ |
-| 3 | [PequeShop Analytics](projects/project-2-pequeshop-analytics) | E-commerce ETL pipeline with business KPIs | ✅ |
-| 4 | [PequeShop EDA](projects/project-3-eda-pequeshop) | Exploratory Data Analysis + OLS Regression | ✅ |
-| 5 | [Student Health Analytics](projects/project-4-student-health-analytics) | Statistical Inference over student habits | ✅ |
-|   | **Bonus:** [PequeShop Statistical Inference](projects/project-4b-pequeshop-statistical-inference) | Statistical Inference over customer data | ✅ |
-| 6 | [PequeShop Spend Prediction (ML)](projects/project-5-ecommerce-spend-prediction) | Supervised Machine Learning model to predict customer spend (avg_ticket) and drive data-driven marketing decisions in e-commerce. | ✅ |
-| 7 | Unsupervised Machine Learning | Under review ⭐ | 📤 |
-| 8 | Deep Learning Fundamentals | *Coming soon* | ⏳ |
-| 9 | Big Data Fundamentals | *Coming soon* | ⏳ |
-| 10 | *No project* | Portfolio Development | ⏳ |
-| 11 | *No project* | Employability Development | ⏳ |
+| 2 | [1. Contact Management System](projects/project-1-oop-contact-system) | CRUD system with OOP and encapsulation | ✅ |
+| 3 | [2. Ecommerce PequeShop Analytics](projects/project-2-pequeshop-analytics) | E-commerce ETL pipeline with business KPIs | ✅ |
+| 4 | [3. Ecommerce PequeShop EDA](projects/project-3-eda-pequeshop) | Exploratory Data Analysis + OLS Regression | ✅ |
+| 5 | [4. Student Health Analytics](projects/project-4-student-health-analytics) | Statistical Inference over student habits | ✅ |
+|   | **Bonus:** [Ecommerce PequeShop Statistical Inference](projects/project-4b-pequeshop-statistical-inference) | Statistical Inference over customer data | ✅ |
+| 6 | [5. Ecommerce PequeShop Spend Prediction (ML)](projects/project-5-ecommerce-spend-prediction) | Supervised ML model to predict customer spend (avg_ticket) and drive data-driven marketing decisions | ✅ |
+| 7 | [6. Ecommerce PequeShop Customer Segmentation](projects/project-6-unsupervised-ml) | Unsupervised ML: RFM + KMeans customer segmentation | ✅ |
+| 8 | [7. Deep Learning Fundamentals](projects/project-7-deep-learning) | Neural Networks and CNNs for business classification | ✅ |
+| 9 | [8. Ecommerce RetailMax — Retail Analytics Pipeline](projects/project-8-big-data-retailmax) | Big Data pipeline with PySpark, Spark SQL, MLlib + AWS EMR Serverless architecture | ✅ |
+| 10 & 11 | 9. Job Search Project | Portfolio curation, GitHub optimization, LinkedIn positioning & job search strategy — no coding deliverable | ✅ |
 
-> **Note:** In addition to synchronous classes, personal study and project development were required.
+> **Note:** In addition to synchronous classes, personal study and project development were required outside of scheduled sessions.
 
+---
+
+## Case Studies (CBL)
+
+Case-Based Learning cases apply specific technical techniques to focused business problems.
+Each case is documented with a consulting-style executive summary and follows CRISP-DM + Lean principles.
+
+| # | Case | Technology Focus | Business Context | Status |
+|:---:|:---|:---|:---|:---:|
+| 1 | [Data Wrangling — FinTech](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-data-wrangling-fintech) | Data Wrangling · ETL Quality | Systemic ETL failure diagnosis in financial transaction data (87.96% removal rate flagged) | ✅ |
+| 2 | [NumPy Financial Analysis](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-numpy-financial-analysis) | NumPy · Vectorized Computing | Mining sector stock returns — BHP, FCX, RIO, VALE, SCCO (426x speedup over pure Python) | ✅ |
+| 3 | [Pandas File Ingestion](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-pandas-file-ingestion) | Pandas · Multi-format Ingestion | Mining operations data consolidation from CSV, Excel, and HTML sources | ✅ |
+| 4 | [Regression Metrics — AutoPredict](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-regression-metrics-autopredict) | Scikit-learn · Regression Metrics | Used vehicle price prediction for dealership deployment — MAE, RMSE, R²=0.9541, MAPE=6.74% | ✅ |
+| 5 | [Preprocessing & Scaling — RetailData](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-preprocessing-scaling-retaildata) | Scikit-learn · Preprocessing | Full preprocessing pipeline (imputation, encoding, scaling) for supermarket customer classifier | ✅ |
+| 6 | [Dimensionality Reduction — DataMed](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-dimensionality-reduction-techniques) | Scikit-learn · PCA · t-SNE · Seaborn | PCA vs t-SNE for clinical early-diagnosis pipeline — Wisconsin dataset, 95% variance in 10 components | ✅ |
+| 7 | [PCA & t-SNE — VisionData](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-pca-tsne-dimensionality-reduction) | Scikit-learn · PCA · t-SNE · Matplotlib | Customer segment discovery for marketing campaigns — 2,240 customers, KL divergence = 0.8887 | ✅ |
+| 8 | [Census Adult Income — MLlib](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-census-adult-income) | PySpark 4.1.1 · MLlib · Spark SQL · Python 3.12 | Socioeconomic workforce segmentation using UCI 1994 US Census data. Replicable pipeline to classify high/low income profiles (>50K USD) and segment populations into 4 groups — applicable to retail, banking, insurance, public policy, and HR (AUC = 0.9005) | ✅ |
+| 9 | [Spark SQL Queries](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-spark-sql-queries) | PySpark · Spark SQL | Structured query analysis over large-scale datasets using Spark DataFrames | ✅ |
+| 10 | [Spark SQL — Fleet Transport](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-spark-sql-flota-transporte) | PySpark · Spark SQL | Operational analytics on a transport fleet dataset using distributed SQL queries | ✅ |
+
+> Cases follow the naming convention `case-[technology]-[context]` and live in the `cases/` folder.
+> Each case includes: `notebooks/`, `src/`, `data/`, `reports/`, and an executive summary in `reports/executive_summary.md`.
 
 ---
 
@@ -73,12 +109,13 @@ Complementarily, the approach incorporates **Lean principles**, prioritizing:
 - Short, progressive iterations
 - Early value delivery for business stakeholders
 - Scope adjustment as data understanding improves
+- No-rework: later projects inherit validated outputs from prior ones
 
 This hybrid approach (CRISP-DM + Lean) reflects how data projects develop in
 real contexts, where requirements evolve and decisions must balance analytical
 rigor with speed and pragmatism.
 
-## Limitations and Flexibility
+### Limitations and Flexibility
 
 CRISP-DM is not applied rigidly. Depending on the context, industry, or type of problem, projects may:
 
@@ -92,34 +129,36 @@ The goal is to demonstrate **structured thinking, analytical judgment, and adapt
 
 ## Skills
 
-**Programming**  
+**Programming**
 Python · SQL (self-study via DataCamp)
 
-**Data Analysis & Visualization**  
+**Data Analysis & Visualization**
 Pandas · NumPy · Matplotlib · Seaborn
 
-**Machine Learning**  
-Scikit-learn · Supervised Learning (Regression, Classification) ·  
+**Machine Learning**
+Scikit-learn · Supervised Learning (Regression, Classification) ·
 Feature Scaling · Cross Validation · Model Evaluation · Boosting
 
-**Statistical Methods**  
-Statistical Inference · OLS Regression · Hypothesis Testing
+**Statistical Methods**
+Statistical Inference · OLS Regression · Hypothesis Testing · GARCH Volatility Modeling
 
-**Unsupervised Learning**  
-Clustering · Dimensionality Reduction
+**Unsupervised Learning**
+Clustering (KMeans) · RFM Segmentation · Dimensionality Reduction
 
-**Deep Learning**  
-Neural Networks · Convolutional Neural Networks (CNN)
+**Deep Learning**
+Neural Networks · Convolutional Neural Networks (CNN) · TensorFlow · SciKeras
 
-**Data Engineering & Big Data**  
-ETL Pipelines · Data Wrangling · Big Data Fundamentals · Scalable Machine Learning
+**Data Engineering & Big Data**
+ETL Pipelines · Data Wrangling · PySpark · Spark SQL · RDDs · Parquet ·
+MLlib · AWS EMR Serverless · Scalable Machine Learning
 
-**Development Tools**  
-Git · GitHub · VS Code · Jupyter Notebook · Google Colab · Spyder ·  
+**Development Tools**
+Git · GitHub · VS Code · Jupyter Notebook · Google Colab · Spyder ·
 Python Virtual Environments · Markdown
 
-**Frameworks & Methodologies**  
-CRISP-DM · Lean Thinking · DMAIC · Customer Analytics · Business Analytics
+**Frameworks & Methodologies**
+CRISP-DM · Lean Thinking · DMAIC · Customer Analytics · Business Analytics ·
+Project-Based Learning (PBL) · Case-Based Learning (CBL)
 
 ---
 
@@ -153,7 +192,6 @@ This portfolio is licensed under the [MIT License](LICENSE).
 © 2026 Jose Marcel Lopez Pino
 
 ---
-
 ---
 
 # Portafolio del Bootcamp de Ciencia de Datos
@@ -163,7 +201,9 @@ This portfolio is licensed under the [MIT License](LICENSE).
 ## Tabla de Contenidos
 
 - [Acerca de este Portafolio](#acerca-de-este-portafolio)
-- [Proyectos](#proyectos)
+- [Enfoque de Aprendizaje: PBL + CBL](#enfoque-de-aprendizaje-pbl--cbl)
+- [Proyectos (PBL)](#proyectos-pbl)
+- [Casos de Estudio (CBL)](#casos-de-estudio-cbl)
 - [Metodología: CRISP-DM + Lean](#metodología-crisp-dm--lean)
 - [Habilidades](#habilidades)
 - [Autor](#autor)
@@ -173,35 +213,73 @@ This portfolio is licensed under the [MIT License](LICENSE).
 
 ## Acerca de este Portafolio
 
-Este repositorio contiene los proyectos desarrollados durante el bootcamp
+Este repositorio contiene los proyectos y casos de estudio desarrollados durante el bootcamp
 **Fundamentos de Ciencia de Datos** (SENCE/Alkemy, 2025–2026), aplicando una
-metodología CRISP-DM + Lean con enfoque de Aprendizaje Basado en Proyectos (ABP).
+metodología CRISP-DM + Lean con un enfoque de aprendizaje dual: Aprendizaje Basado en
+Proyectos (ABP/PBL) y Aprendizaje Basado en Casos (CBL).
 
-Cada proyecto está diseñado para resolver problemas reales de negocio, combinando
+Cada entregable está diseñado para resolver problemas reales de negocio, combinando
 habilidades técnicas de ciencia de datos con pensamiento analítico desde una
 perspectiva de Ingeniería Civil Industrial.
 
 ---
 
-## Proyectos
+## Enfoque de Aprendizaje: PBL + CBL
+
+Este bootcamp integró dos modalidades de aprendizaje complementarias:
+
+**Aprendizaje Basado en Proyectos (PBL)** — Productos de datos end-to-end construidos
+a lo largo del ciclo completo CRISP-DM, desde la comprensión del negocio hasta artefactos
+listos para despliegue. Cada proyecto hereda los outputs validados del anterior (principio
+de no retrabajo).
+
+**Aprendizaje Basado en Casos (CBL)** — Casos analíticos de estilo consulting, enfocados
+en aplicar técnicas específicas a problemas de negocio concretos. Más acotados en alcance,
+más profundos en enfoque técnico. Los casos están documentados en la carpeta [`cases/`](cases/).
+
+---
+
+## Proyectos (PBL)
 
 | Módulo | Proyecto | Descripción | Estado |
 |:---|:---|:---|:---:|
 | 1 | *Sin proyecto* | Orientación y metodología | ✅ |
-| 2 | [Contact Management System](projects/project-1-oop-contact-system) | Sistema CRUD con POO y encapsulación | ✅ |
-| 3 | [PequeShop Analytics](projects/project-2-pequeshop-analytics) | Pipeline ETL de e-commerce con KPIs de negocio | ✅ |
-| 4 | [PequeShop EDA](projects/project-3-eda-pequeshop) | Análisis Exploratorio de Datos + Regresión OLS | ✅ |
-| 5 | [Student Health Analytics](projects/project-4-student-health-analytics) | Inferencia estadística sobre hábitos de estudiantes | ✅ |
-|   | **Bonus:** [PequeShop Statistical Inference](projects/project-4b-pequeshop-statistical-inference) | Inferencia estadística sobre datos de clientes | ✅ |
-| 6 | [PequeShop Spend Prediction (ML)](projects/project-5-ecommerce-spend-prediction) | Modelo de Machine Learning supervisado para predecir el gasto por cliente (avg_ticket) y optimizar la toma de decisiones de marketing en e-commerce. | ✅ |
-| 7 | Machine Learning No Supervisado | Enviado para revisión ⭐  | 📤 |
-| 8 | Fundamentos de Deep Learning | *Próximamente* | ⏳ |
-| 9 | Fundamentos de Big Data | *Próximamente* | ⏳ |
-| 10 | *Sin proyecto* | Desarrollo de Portafolio | ⏳ |
-| 11 | *Sin proyecto* | Desarrollo de Empleabilidad | ⏳ |
+| 2 | [1. Contact Management System](projects/project-1-oop-contact-system) | Sistema CRUD con POO y encapsulación | ✅ |
+| 3 | [2. Ecommerce PequeShop Analytics](projects/project-2-pequeshop-analytics) | Pipeline ETL de e-commerce con KPIs de negocio | ✅ |
+| 4 | [3. Ecommerce PequeShop EDA](projects/project-3-eda-pequeshop) | Análisis Exploratorio de Datos + Regresión OLS | ✅ |
+| 5 | [4. Student Health Analytics](projects/project-4-student-health-analytics) | Inferencia estadística sobre hábitos de estudiantes | ✅ |
+|   | **Bonus:** [Ecommerce PequeShop Statistical Inference](projects/project-4b-pequeshop-statistical-inference) | Inferencia estadística sobre datos de clientes | ✅ |
+| 6 | [5. Ecommerce PequeShop Spend Prediction (ML)](projects/project-5-ecommerce-spend-prediction) | Modelo de ML supervisado para predecir gasto por cliente (avg_ticket) y optimizar decisiones de marketing | ✅ |
+| 7 | [6. Ecommerce PequeShop Customer Segmentation](projects/project-6-unsupervised-ml) | ML No Supervisado: segmentación de clientes con RFM + KMeans | ✅ |
+| 8 | [7. Deep Learning Fundamentals](projects/project-7-deep-learning) | Redes Neuronales y CNNs para clasificación aplicada a negocios | ✅ |
+| 9 | [8. Ecommerce RetailMax — Retail Analytics Pipeline](projects/project-8-big-data-retailmax) | Pipeline de Big Data con PySpark, Spark SQL, MLlib + arquitectura AWS EMR Serverless | ✅ |
+| 10 & 11 | 9. Proyecto Búsqueda Laboral | Curación de portafolio, optimización GitHub, posicionamiento LinkedIn & estrategia de búsqueda laboral — sin entregable de código | ✅ |
 
-> **Nota:** Además de las clases sincrónicas, ha sido necesario estudio personal y desarrollo de proyectos.
+> **Nota:** Además de las clases sincrónicas, fue necesario estudio personal y desarrollo de proyectos fuera de las sesiones programadas.
 
+---
+
+## Casos de Estudio (CBL)
+
+Los casos de Aprendizaje Basado en Casos aplican técnicas específicas a problemas de
+negocio focalizados. Cada caso está documentado con un resumen ejecutivo de estilo
+consulting y sigue los principios CRISP-DM + Lean.
+
+| # | Caso | Tecnología | Contexto de Negocio | Estado |
+|:---:|:---|:---|:---|:---:|
+| 1 | [Data Wrangling — FinTech](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-data-wrangling-fintech) | Data Wrangling · Calidad ETL | Diagnóstico de falla sistémica en datos de transacciones financieras (tasa de eliminación 87,96%) | ✅ |
+| 2 | [Análisis Financiero con NumPy](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-numpy-financial-analysis) | NumPy · Cómputo Vectorizado | Retornos de acciones mineras — BHP, FCX, RIO, VALE, SCCO (aceleración 426x vs Python puro) | ✅ |
+| 3 | [Ingesta de Archivos con Pandas](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-pandas-file-ingestion) | Pandas · Ingesta Multi-formato | Consolidación de datos operacionales mineros desde fuentes CSV, Excel y HTML | ✅ |
+| 4 | [Métricas de Regresión — AutoPredict](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-regression-metrics-autopredict) | Scikit-learn · Métricas de Regresión | Predicción de precios de vehículos usados para despliegue en concesionaria — R²=0,9541, MAPE=6,74% | ✅ |
+| 5 | [Preprocesamiento & Escalado — RetailData](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-preprocessing-scaling-retaildata) | Scikit-learn · Preprocesamiento | Pipeline completo de preprocesamiento (imputación, encoding, escalado) para clasificador de clientes | ✅ |
+| 6 | [Reducción de Dimensionalidad — DataMed](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-dimensionality-reduction-techniques) | Scikit-learn · PCA · t-SNE · Seaborn | PCA vs t-SNE para pipeline clínico de diagnóstico temprano — dataset Wisconsin, 95% varianza en 10 componentes | ✅ |
+| 7 | [PCA & t-SNE — VisionData](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-pca-tsne-dimensionality-reduction) | Scikit-learn · PCA · t-SNE · Matplotlib | Descubrimiento de segmentos de clientes para campañas de marketing — 2.240 clientes, KL divergence = 0,8887 | ✅ |
+| 8 | [Census Adult Income — MLlib](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-census-adult-income) | PySpark 4.1.1 · MLlib · Spark SQL · Python 3.12 | Segmentación socioeconómica de la fuerza laboral usando datos del Censo de EEUU (UCI 1994). Pipeline replicable para clasificar perfiles de ingreso alto/bajo (>50K USD) y segmentar poblaciones en 4 grupos — aplicable a retail, banca, seguros, políticas públicas y RRHH (AUC = 0,9005) | ✅ |
+| 9 | [Consultas Spark SQL](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-spark-sql-queries) | PySpark · Spark SQL | Análisis de consultas estructuradas sobre grandes volúmenes de datos con DataFrames Spark | ✅ |
+| 10 | [Spark SQL — Flota de Transporte](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-spark-sql-flota-transporte) | PySpark · Spark SQL | Analytics operacionales sobre dataset de flota de transporte con SQL distribuido | ✅ |
+
+> Los casos siguen la convención de nombres `case-[tecnología]-[contexto]` y están en la carpeta `cases/`.
+> Cada caso incluye: `notebooks/`, `src/`, `data/`, `reports/` y un resumen ejecutivo en `reports/executive_summary.md`.
 
 ---
 
@@ -217,12 +295,13 @@ De manera complementaria, el enfoque incorpora **principios Lean**, priorizando:
 - Iteraciones cortas y progresivas
 - Entregables con valor temprano para el negocio
 - Ajuste del alcance a medida que se obtiene mayor entendimiento de los datos
+- No retrabajo: los proyectos posteriores heredan los outputs validados de los anteriores
 
 Este enfoque híbrido (CRISP-DM + Lean) busca reflejar cómo se desarrollan los
 proyectos de datos en contextos reales, donde los requerimientos evolucionan y
 las decisiones deben balancear rigor analítico con velocidad y pragmatismo.
 
-## Limitaciones y Flexibilidad
+### Limitaciones y Flexibilidad
 
 CRISP-DM no se aplica de forma rígida. Dependiendo del contexto, la industria o el tipo de problema, los proyectos pueden:
 
@@ -236,34 +315,36 @@ El objetivo es demostrar **pensamiento estructurado, criterio analítico y capac
 
 ## Habilidades
 
-**Programación**  
+**Programación**
 Python · SQL (autoestudio en DataCamp)
 
-**Análisis y Visualización de Datos**  
+**Análisis y Visualización de Datos**
 Pandas · NumPy · Matplotlib · Seaborn
 
-**Machine Learning**  
-Scikit-learn · Aprendizaje Supervisado (Regresión, Clasificación) ·  
+**Machine Learning**
+Scikit-learn · Aprendizaje Supervisado (Regresión, Clasificación) ·
 Escalado de Variables · Validación Cruzada · Evaluación de Modelos · Boosting
 
-**Métodos Estadísticos**  
-Inferencia Estadística · Regresión OLS · Pruebas de Hipótesis
+**Métodos Estadísticos**
+Inferencia Estadística · Regresión OLS · Pruebas de Hipótesis · Modelos GARCH de Volatilidad
 
-**Aprendizaje No Supervisado**  
-Clustering · Reducción de Dimensionalidad
+**Aprendizaje No Supervisado**
+Clustering (KMeans) · Segmentación RFM · Reducción de Dimensionalidad
 
-**Deep Learning**  
-Redes Neuronales · Redes Neuronales Convolucionales (CNN)
+**Deep Learning**
+Redes Neuronales · Redes Neuronales Convolucionales (CNN) · TensorFlow · SciKeras
 
-**Ingeniería de Datos y Big Data**  
-Pipelines ETL · Preparación de Datos (Data Wrangling) · Fundamentos de Big Data · Machine Learning Escalable
+**Ingeniería de Datos y Big Data**
+Pipelines ETL · Data Wrangling · PySpark · Spark SQL · RDDs · Parquet ·
+MLlib · AWS EMR Serverless · Machine Learning Escalable
 
-**Herramientas de Desarrollo**  
-Git · GitHub · VS Code · Jupyter Notebook · Google Colab · Spyder ·  
+**Herramientas de Desarrollo**
+Git · GitHub · VS Code · Jupyter Notebook · Google Colab · Spyder ·
 Entornos Virtuales de Python · Markdown
 
-**Frameworks y Metodologías**  
-CRISP-DM · Lean Thinking · DMAIC · Customer Analytics · Business Analytics
+**Frameworks y Metodologías**
+CRISP-DM · Lean Thinking · DMAIC · Customer Analytics · Business Analytics ·
+Aprendizaje Basado en Proyectos (PBL) · Aprendizaje Basado en Casos (CBL)
 
 ---
 
