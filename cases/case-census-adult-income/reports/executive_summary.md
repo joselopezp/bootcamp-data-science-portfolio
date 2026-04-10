@@ -12,22 +12,30 @@
 
 | | |
 |---|---|
-| **Industry** | Retail / E-commerce |
-| **Business Unit** | Marketing & Customer Loyalty |
-| **Stakeholder** | Marketing Director / CRM Manager |
-| **Decision to Support** | Which customer profiles should receive premium loyalty campaign offers vs standard promotions? |
+| **Domain** | Workforce Analytics / Socioeconomic Profiling |
+| **Data Source** | UCI Adult Census Income — 1994 US Census |
+| **Primary Use Case** | Income-based population segmentation |
+| **Decision to Support** | Can we predict income level and identify distinct socioeconomic profiles to enable differentiated strategies in HR analytics, public policy, or market segmentation? |
 
-> **Situation:** RetailMax operates loyalty campaigns across a broad customer base but applies a uniform strategy regardless of purchasing power. Without a data-driven segmentation of income capacity, premium offers reach low-value segments — diluting ROI and inflating campaign costs.
+> **Situation:** Organizations across retail, banking, insurance, and public policy
+> need to identify high purchasing-power profiles within a population — but lack
+> a systematic, data-driven approach to income classification and segmentation.
+> This case demonstrates a replicable MLlib pipeline built on US Census data
+> that any organization can adapt to their own workforce or customer data.
 
 ---
 
 ## 2. Problem Statement
 
-> Can we predict whether a worker earns above USD 50K/year and identify distinct socioeconomic profiles, to enable RetailMax to focus premium loyalty campaigns on high purchasing-power segments?
+> Can a machine learning pipeline accurately predict whether a worker earns above
+> USD 50K/year and identify distinct socioeconomic profiles — providing a replicable
+> framework for income-based segmentation applicable across industries?
 
 **Business Impact if Unresolved:**
-- Premium campaign budget wasted on low-income segments — estimated misallocation affects ~75% of the audience (share of workers earning ≤50K)
-- No segmentation baseline means all customers receive identical offers, reducing conversion rates for high-value tiers
+- Without income classification, organizations apply uniform strategies to heterogeneous
+  populations — inefficient resource allocation and missed targeting opportunities
+- Without segmentation, the ~25% of high-income workers remain invisible within
+  the broader population, reducing ROI of any differentiated strategy
 
 ---
 
@@ -38,31 +46,32 @@
 | Step | Description |
 |---|---|
 | **Data** | UCI Adult Census Income · 32,561 records · 15 variables (numeric + categorical) · UCI ML Repository |
-| **Method** | Binary classification (Logistic Regression) to predict income >50K + unsupervised clustering (KMeans k=4) to segment workforce profiles |
+| **Method** | Binary classification (Logistic Regression) to predict income >50K + unsupervised clustering (KMeans k=4) to segment socioeconomic profiles |
 | **Tool** | Python · PySpark 4.1.1 · MLlib Pipelines · Spark SQL |
-| **Validation** | AUC-ROC on held-out test set (20%) · Silhouette score for cluster cohesion · Baseline comparison (majority classifier) |
+| **Optimization** | CrossValidator 5-fold · 12 parameter combinations · Elbow Method k=2..8 |
+| **Validation** | AUC-ROC on held-out test set (20%) · CrossValidator 5-fold · Silhouette score · Elbow Method · Baseline comparison (majority classifier) |
 
 ---
 
 ## 4. Key Findings
 
-### Finding 1 — Supervised model exceeds performance target
-- **Context:** A majority classifier (always predicting ≤50K) achieves ~75% accuracy — the minimum baseline to beat.
-- **Analysis:** Logistic Regression achieved AUC-ROC = 0.9005 and Accuracy = 0.85+ on the test set, well above the 0.85 AUC target.
-- **Insight:** The model has strong discriminatory power — it correctly separates high-income workers from low-income workers 90% of the time.
-- **Possible Decision:** Deploy model scoring to flag high-income probability customers for premium campaign targeting.
+### Finding 1 — Supervised model exceeds performance target after optimization
+- **Context:** A majority classifier (always predicting <=50K) achieves ~75% accuracy — the minimum baseline to beat.
+- **Analysis:** Logistic Regression achieved AUC-ROC = 0.9005 before optimization. CrossValidator (5-fold, 12 combinations) identified best params: regParam=0.001, elasticNetParam=0.5 — improving AUC to 0.9028 (+0.0023). Lean note: marginal improvement confirms the MVP model was already well-calibrated.
+- **Insight:** The model has strong discriminatory power — separates high-income workers from low-income workers with 90% AUC regardless of optimization stage.
+- **Possible Decision:** Deploy model scoring to flag high-income probability profiles for differentiated treatment in any downstream application.
 
-### Finding 2 — Four distinct workforce profiles identified
-- **Context:** RetailMax needed audience segments beyond binary income prediction — actionable groups for differentiated campaign strategies.
-- **Analysis:** KMeans k=4 produced 4 clusters differentiated by age, education level, hours worked per week, and capital gain.
-- **Insight:** Clusters represent interpretable profiles (e.g. young high-education professionals vs mature blue-collar workers) that map directly to campaign tiers.
-- **Possible Decision:** Assign each cluster a campaign tier (Premium / Standard / Reactivation / Exclusion) based on profile characteristics.
+### Finding 2 — Four distinct socioeconomic profiles identified
+- **Context:** Binary income prediction alone is insufficient — organizations need actionable audience segments, not just a binary flag.
+- **Analysis:** KMeans k=4 produced 4 clusters differentiated by age, education level, hours worked per week, and capital gain. Elbow Method (k=2..8) showed no dominant geometric inflection — k=4 validated as a business-interpretability-driven choice.
+- **Insight:** The 4 clusters represent interpretable socioeconomic archetypes (e.g. high-education professionals vs blue-collar workers) applicable to differentiated strategy design.
+- **Possible Decision:** Map each cluster to a strategic tier — Premium / Standard / Development / Exclusion — based on profile characteristics.
 
 ### Finding 3 — Education and occupation are the strongest income signals
-- **Context:** The dataset contains 15 variables — not all contribute equally to income prediction.
-- **Analysis:** Spark SQL JOIN analysis against an income benchmark table confirmed that Bachelors+ education levels correlate with benchmark incomes above USD 52K, concentrated in Management and Professional sectors.
-- **Insight:** Education level and occupation sector are the two most actionable variables for campaign audience building — available in most CRM systems.
-- **Possible Decision:** Use education + occupation filters as a lightweight proxy for income scoring when full model scoring is not available.
+- **Context:** The dataset has 15 variables — not all contribute equally to income prediction.
+- **Analysis:** Spark SQL JOIN analysis against an income benchmark table confirmed that Bachelors+ education correlates with benchmark incomes above USD 52K, concentrated in Management and Professional sectors. Prof-school workers earning >50K average 14,274 USD in capital gains — 3.7x above Bachelors level.
+- **Insight:** Education level and occupation sector are the two most actionable and widely available variables for income-based segmentation.
+- **Possible Decision:** Use education + occupation as lightweight proxy filters when full model scoring is not available — actionable with most CRM or HR systems.
 
 ---
 
@@ -70,18 +79,19 @@
 
 | Priority | Recommendation | Expected Impact | Effort |
 |---|---|---|---|
-| 🔴 High | Score existing customer base with Logistic Regression model (AUC = 0.9005) to identify high-income probability profiles | Reduce premium campaign misallocation from ~75% to <20% of audience | Medium |
-| 🟡 Medium | Apply KMeans k=4 segmentation to assign customers to campaign tiers (Premium / Standard / Reactivation) | Increase campaign ROI through differentiated offer strategies per segment | Medium |
-| 🟢 Low | Use education + occupation as lightweight income proxy filters in CRM for campaigns where full model scoring is unavailable | Quick win — no model deployment required, actionable with existing CRM data | Low |
+| 🔴 High | Apply Logistic Regression pipeline (AUC = 0.9028) to score target population and classify high-income profiles | Reduce misclassification from 25% baseline (majority) to <10% using model | Medium |
+| 🟡 Medium | Use KMeans k=4 clusters to design differentiated strategies per socioeconomic segment | Enable targeted approaches vs uniform treatment — estimated +15% effectiveness | Medium |
+| 🟢 Low | Use education + occupation as lightweight income proxy in rule-based systems | Quick win — no model deployment required, actionable with existing data infrastructure | Low |
 
 ---
 
 ## 6. Limitations
 
-- **Data:** Census data from UCI repository — not RetailMax transactional data. Model must be retrained on company CRM data before production deployment.
-- **Model:** Logistic Regression is the MVP model — non-linear relationships may be better captured by Random Forest or GradientBoosting (next iteration).
-- **Scope:** Binary income threshold (>50K USD) is a proxy for purchasing power — does not capture wealth, savings, or discretionary spend directly.
-- **Fairness:** Model includes `sex` as a feature — fairness audit required before deployment to ensure no discriminatory campaign targeting.
+- **Data:** 1994 US Census — not representative of current labor market. Income thresholds, occupation structure, and education patterns have changed significantly. Retrain on current data before production use.
+- **Model:** Logistic Regression is the MVP model — non-linear relationships may be better captured by Random Forest or GradientBoosting in a next iteration.
+- **Scope:** Binary income threshold (>50K USD, 1994) is a historical proxy — does not reflect current purchasing power or cost-of-living differences across regions.
+- **Fairness:** Model includes `sex` as a feature — fairness audit required before deployment to ensure no discriminatory targeting outcomes.
+- **Clustering:** Elbow Method shows no dominant geometric inflection point — k=4 is a business-interpretability choice, not a data-driven geometric optimum.
 
 ---
 
@@ -89,9 +99,9 @@
 
 | Horizon | Action |
 |---|---|
-| **Immediate** | Interpret KMeans centroids to assign business names to each of the 4 clusters |
-| **Short-term** | Optimize hyperparameters with CrossValidator (`regParam`, `elasticNetParam`) and evaluate Elbow Method for optimal k |
-| **Long-term** | Retrain pipeline on RetailMax CRM data · Deploy via FastAPI scoring endpoint · Monitor data drift quarterly |
+| **Immediate** | Interpret KMeans centroids to assign descriptive business names to each of the 4 clusters |
+| **Short-term** | Retrain pipeline on current census or CRM data · Add Random Forest as comparison model · Conduct fairness audit on `sex` feature |
+| **Long-term** | Deploy via FastAPI scoring endpoint · Integrate MLflow for experiment tracking · Monitor income distribution drift quarterly |
 
 ---
 

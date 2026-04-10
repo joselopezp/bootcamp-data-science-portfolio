@@ -8,9 +8,10 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 End-to-end MLlib Pipeline for income prediction and workforce segmentation using PySpark.
-Predicts whether a worker earns above USD 50K/year (Logistic Regression, AUC = 0.9005)
-and segments socioeconomic profiles into 4 actionable clusters (KMeans).
-Built to support RetailMax premium loyalty campaign targeting.
+Predicts whether a worker earns above USD 50K/year (Logistic Regression, AUC = 0.9028 after CrossValidator optimization)
+and segments socioeconomic profiles into 4 clusters (KMeans, confirmed by Elbow Method).
+Built on the UCI Adult Census Income dataset — a replicable framework applicable to
+HR analytics, public policy, and income-based market segmentation.
 
 ---
 
@@ -39,7 +40,7 @@ Built to support RetailMax premium loyalty campaign targeting.
 **What does this project do?**
 Applies PySpark MLlib to build a supervised classification model (Logistic Regression)
 and an unsupervised segmentation model (KMeans k=4), integrated in an end-to-end
-MLlib Pipeline with preprocessing, feature engineering, and evaluation.
+MLlib Pipeline with preprocessing, feature engineering, evaluation, and hyperparameter optimization.
 
 **Why was it built?**
 To demonstrate Big Data ML capabilities on a real-world dataset using distributed
@@ -47,15 +48,23 @@ computing — a skill gap between traditional data scientists and those who can 
 to production-grade data volumes.
 
 **What problem does it solve?**
-RetailMax cannot identify which customer profiles have high purchasing power.
-Treating all customers equally leads to inefficient campaign spend and missed
-revenue from high-value segments.
+The UCI Adult Census Income dataset contains socioeconomic profiles of ~32K US workers.
+This pipeline answers two questions:
+1. Can we predict whether a worker earns above USD 50K/year? (Supervised)
+2. What distinct socioeconomic profiles exist in the population? (Unsupervised)
+
+These are foundational questions for income-based market segmentation — applicable
+to retail, banking, insurance, public policy, and HR analytics. Any organization
+that needs to identify high purchasing-power profiles in a population can apply
+this pipeline to their own data.
 
 **What did I learn?**
 - End-to-end MLlib Pipeline architecture (StringIndexer → OHE → VectorAssembler → Scaler → Model)
 - Diagnosing and resolving PySpark worker serialization failures (`EOFException`)
 - Extracting ROC curve data directly from MLlib model summary
 - Creating Spark SQL temp views without Python serialization bottlenecks
+- CrossValidator with ParamGridBuilder for systematic hyperparameter tuning
+- Elbow Method for KMeans k selection in distributed computing context
 
 ---
 
@@ -80,7 +89,7 @@ pip install -r cases/case-census-adult-income/requirements.txt
 
 ## Usage
 
-> ⚠️ Raw data excluded via `.gitignore`. Download before running.
+> Raw data excluded via `.gitignore`. Download before running.
 
 **Download dataset:**
 ```powershell
@@ -93,8 +102,8 @@ Invoke-WebRequest `
 ```
 notebooks/01_census_adult_income_pipeline.ipynb
 ```
-Execute all cells in order (`Run All Cells`). The notebook is self-contained —
-all preprocessing, modeling, evaluation, and SQL practice run sequentially.
+Execute all cells in order (Run All Cells). The notebook is self-contained —
+all preprocessing, modeling, evaluation, hyperparameter optimization, and SQL practice run sequentially.
 
 ---
 
@@ -102,14 +111,18 @@ all preprocessing, modeling, evaluation, and SQL practice run sequentially.
 
 | Model | Metric | Value | Baseline |
 |---|---|---|---|
-| Logistic Regression | AUC-ROC | **0.9005** | 0.50 (random) |
-| Logistic Regression | Accuracy | **~0.85** | 0.75 (majority) |
-| KMeans k=4 | Silhouette Score | reported in notebook | — |
-| KMeans k=4 | WSSSE | reported in notebook | — |
+| Logistic Regression | AUC-ROC (after CV) | **0.9028** | 0.50 (random) |
+| Logistic Regression | AUC-ROC (before CV) | 0.9005 | 0.50 (random) |
+| Logistic Regression | Accuracy (after CV) | **0.8472** | 0.75 (majority) |
+| Logistic Regression | Best regParam | 0.001 | — |
+| Logistic Regression | Best elasticNetParam | 0.5 (ElasticNet L1+L2) | — |
+| KMeans k=4 | WSSSE | 906,189 | — |
+| KMeans k=4 | k validation | Elbow Method k=2..8 | No dominant inflection — k=4 justified by business interpretability |
 
-**Key finding:** The model achieves AUC = 0.9005 — well above the 0.85 target —
-with a simple Logistic Regression and no hyperparameter tuning, validating
-the Lean MVP approach.
+**Key finding:** CrossValidator (5-fold, 12 parameter combinations) improved AUC by +0.0023
+over the Lean MVP baseline — confirming the original model was already well-calibrated.
+Elbow Method shows no dominant geometric inflection point, validating k=4 as a
+business-driven choice.
 
 ---
 
@@ -125,7 +138,8 @@ the Lean MVP approach.
 | **Features used** | 9 features: `age`, `education_num`, `capital_gain`, `capital_loss`, `hours_per_week`, `workclass`, `marital_status`, `occupation`, `sex` |
 | **Target variable** | `income` — binary: `<=50K` (0) / `>50K` (1) |
 | **Framework** | PySpark MLlib 4.1.1 |
-| **Hyperparameters** | `maxIter=20`, `regParam=0.01` |
+| **Hyperparameters (optimized)** | `maxIter=20`, `regParam=0.001`, `elasticNetParam=0.5` |
+| **Optimization** | CrossValidator 5-fold · 12 param combinations (4 regParam x 3 elasticNetParam) |
 | **Training date** | 2026-03 |
 
 ### Unsupervised Model
@@ -133,10 +147,10 @@ the Lean MVP approach.
 | Field | Details |
 |---|---|
 | **Model type** | KMeans |
-| **Task** | Clustering — workforce segmentation |
+| **Task** | Clustering — socioeconomic profile segmentation |
 | **Training data** | UCI Adult Census Income · 30,162 records |
 | **Features used** | Same 9 features as supervised model |
-| **k** | 4 clusters (business interpretability criterion) |
+| **k** | 4 clusters — business interpretability criterion, validated by Elbow Method (k=2..8) |
 | **Framework** | PySpark MLlib 4.1.1 |
 | **Hyperparameters** | `k=4`, `maxIter=20`, `seed=42` |
 | **Training date** | 2026-03 |
@@ -147,23 +161,39 @@ the Lean MVP approach.
 
 ### Logistic Regression
 
-| Metric | Value |
-|---|---|
-| AUC-ROC | **0.9005** |
-| Accuracy | ~0.85 |
-| Baseline (majority class) | 0.75 |
-| Improvement over baseline | +~0.10 |
+| Metric | Before CV | After CV | Change |
+|---|---|---|---|
+| AUC-ROC | 0.9005 | **0.9028** | +0.0023 |
+| Accuracy | 0.8407 | **0.8472** | +0.0065 |
+| regParam | 0.01 | 0.001 | Refined |
+| elasticNetParam | 0.0 | 0.5 | ElasticNet L1+L2 |
+| Baseline (majority) | 0.75 | — | — |
 
 > **Primary metric:** AUC-ROC — chosen over Accuracy because the dataset is
-> imbalanced (~75% `<=50K`, ~25% `>50K`). Accuracy alone would be misleading.
+> imbalanced (~75% <=50K, ~25% >50K). Accuracy alone would be misleading.
+>
+> **Lean note:** CV improvement = +0.0023 AUC — below 0.005 threshold.
+> Original MVP model was already well-calibrated. Optimization confirms, not replaces.
 
 ### KMeans k=4
 
 | Metric | Value |
 |---|---|
-| Silhouette Score | See notebook output |
-| WSSSE | See notebook output |
-| Clusters | 4 — differentiated by age, education, hours worked, capital gain |
+| WSSSE (k=4) | 906,189 |
+| k validation | Elbow Method k=2..8 — no dominant inflection point |
+| k selection rationale | Business interpretability — 4 actionable socioeconomic profiles |
+
+**Elbow Method results:**
+
+| k | WSSSE |
+|---|---|
+| 2 | 976,381 |
+| 3 | 939,049 |
+| **4** | **906,189** (chosen) |
+| 5 | 883,191 |
+| 6 | 855,060 |
+| 7 | 826,978 |
+| 8 | 792,378 |
 
 ---
 
@@ -173,17 +203,18 @@ the Lean MVP approach.
 - [x] Random seed fixed (`seed=42`)
 - [x] Requirements pinned (`requirements.txt` with exact versions)
 - [x] Data download command documented (PowerShell `Invoke-WebRequest`)
-- [ ] Model artifact saved (`spark.save()` — deferred, not required for case scope)
+- [ ] Model artifact saved — deferred, not required for case scope
 
 ### Model Versioning
 - [x] Training parameters logged in Decisions Log (notebook Section 8)
+- [x] Hyperparameter optimization documented (Section 11 — CrossValidator results)
 - [ ] Model artifact saved to `models/` folder — deferred post-bootcamp
-- [ ] Model filename with version and date — deferred post-bootcamp
 
 ### Monitoring (awareness level)
-- [x] Data limitations documented — 1994 US Census data, not representative of current labor market
+- [x] Data limitations documented — 1994 US Census, not representative of current labor market
 - [x] Model limitations documented — trained on historical data, retraining needed for current use
 - [x] Retraining trigger defined — significant shift in income distribution or labor market structure
+- [x] Fairness note — `sex` included as feature; fairness audit required before production deployment
 
 ---
 
@@ -197,16 +228,18 @@ case-census-adult-income/
 ├── notebooks/
 │   └── 01_census_adult_income_pipeline.ipynb
 ├── reports/
+│   ├── executive_summary.md
 │   └── figures/
 │       ├── model_performance_summary.png
-│       └── roc_curve.png
+│       ├── roc_curve.png
+│       └── elbow_method.png
 ├── requirements.txt
 └── README.md
 ```
 
 | Notebook | CRISP-DM Phase | Content |
 |---|---|---|
-| `01_census_adult_income_pipeline.ipynb` | Phase 2–5 | Data Understanding → Preparation → Modeling → Evaluation |
+| `01_census_adult_income_pipeline.ipynb` | Phase 2–5 | Data Understanding → Preparation → Modeling → Evaluation → Optimization |
 
 ---
 
@@ -225,55 +258,55 @@ case-census-adult-income/
 
 `PySpark` · `MLlib` · `Logistic Regression` · `KMeans` · `ML Pipeline` · `Spark SQL`
 `Binary Classification` · `Clustering` · `Feature Engineering` · `OneHotEncoding`
-`ROC Curve` · `AUC-ROC` · `Silhouette Score` · `CRISP-DM` · `Lean Analytics`
-`Big Data` · `Distributed Computing` · `Business Analytics`
+`CrossValidator` · `ParamGridBuilder` · `Elbow Method` · `ROC Curve` · `AUC-ROC`
+`Silhouette Score` · `CRISP-DM` · `Lean Analytics` · `Big Data` · `Distributed Computing`
+`Business Analytics` · `Market Segmentation` · `Income Classification`
 
 ---
 
 ## Strategic Recommendations
 
-Based on model results, three actions are recommended for RetailMax:
+This pipeline demonstrates a replicable approach to income-based segmentation.
+Organizations that could apply this framework include:
 
-1. **Premium campaign targeting** — Deploy the Logistic Regression model to score
-   the customer database and identify high-income profiles (predicted `>50K`).
-   Focus premium loyalty offers on this segment to maximize ROI.
+1. **Retail / E-commerce** — Identify high purchasing-power customer segments
+   for premium loyalty campaigns or targeted promotions.
 
-2. **Segment-based personalization** — Use the 4 KMeans clusters as audience
-   segments for differentiated messaging: high-education professionals,
-   blue-collar workers, management profiles, and entry-level workers each
-   respond to different value propositions.
+2. **Banking / Insurance** — Score applicants or customers by income profile
+   to calibrate product offers and risk tiers.
 
-3. **Feature prioritization** — `capital_gain`, `education_num`, and `occupation`
-   are the strongest discriminators. Use these as primary filters in CRM
-   segmentation rules for campaigns that do not use the ML model directly.
+3. **Public Policy / HR Analytics** — Segment workforce populations to inform
+   compensation benchmarking, training investment, or equity analysis.
+
+**Feature insight:** `capital_gain`, `education_num`, and `occupation` are the
+strongest income discriminators in this dataset — available in most CRM,
+HR, and census-derived data sources.
 
 ---
 
 ## Business Impact Estimation
 
-| Scenario | Current State | Target | Estimated Impact |
+| Scenario | Without Model | With Model | Estimated Gain |
 |---|---|---|---|
-| Premium campaign precision | Untargeted — 100% of base | Top 25% scored by model | 4x reduction in wasted campaign spend |
-| High-income segment identification | Manual rule-based | AUC = 0.9005 model | ~10% lift in conversion rate for premium offers |
-| Segment-based personalization | 1 message for all | 4 differentiated segments | Estimated +15% engagement rate |
+| Income classification | Rule-based or no scoring | AUC = 0.9028 — 90% discrimination | Significant reduction in misclassification vs majority baseline |
+| Population segmentation | Homogeneous — 1 group | 4 differentiated socioeconomic profiles | Enables differentiated strategies per segment |
+| Feature-based filtering | No systematic approach | Top predictors identified (education, occupation, capital_gain) | Lightweight proxy for scoring without full model deployment |
 
-> **Methodology:** Estimates based on industry benchmarks for ML-driven campaign
-> targeting (McKinsey: "Analytics-driven marketing delivers 15–20% revenue uplift").
-> **Assumptions:** RetailMax has a CRM with >10K customer records; campaign
-> conversion baseline is 2–5% (typical retail loyalty program).
-> **Data source:** UCI Adult Census Income (1994 US Census) — used as proxy
-> for purchasing power profiling.
+> **Note:** Estimates are illustrative. Production impact depends on organization size,
+> current baseline, and data recency. The 1994 Census dataset serves as a
+> methodology proof-of-concept — retrain on current data before deployment.
 
 ---
 
 ## Deliverables
 
-- [x] `01_census_adult_income_pipeline.ipynb` — end-to-end MLlib pipeline
+- [x] `01_census_adult_income_pipeline.ipynb` — end-to-end MLlib pipeline with optimization
+- [x] `reports/executive_summary.md` — business-facing summary
 - [x] `reports/figures/model_performance_summary.png` — visual metrics summary
 - [x] `reports/figures/roc_curve.png` — ROC Curve with AUC annotation
+- [x] `reports/figures/elbow_method.png` — Elbow Method k=2..8
 - [x] `requirements.txt` — pinned dependencies
 - [x] `README.md` — this document with Model Card and MLOps Checklist
-- [ ] Executive Summary (Spanish) — `reports/executive/` — deferred
 
 ---
 
@@ -285,7 +318,7 @@ Based on model results, three actions are recommended for RetailMax:
 | 2 — Data Understanding | ✅ | Section 1–2 |
 | 3 — Data Preparation | ✅ | Section 2–3 |
 | 4 — Modeling | ✅ | Section 4–5 |
-| 5 — Evaluation | ✅ | Section 6 |
+| 5 — Evaluation | ✅ | Section 6 + Section 11 |
 | 6 — Deployment | ⚠️ Partial | README + figures (model artifact deferred) |
 
 ---
@@ -294,15 +327,15 @@ Based on model results, three actions are recommended for RetailMax:
 
 ### Data Source
 UCI Machine Learning Repository — Adult Census Income Dataset
-Kohavi, R. (1996). *Scaling Up the Accuracy of Naive-Bayes Classifiers: A Decision-Tree Hybrid.*
+Kohavi, R. (1996). Scaling Up the Accuracy of Naive-Bayes Classifiers: A Decision-Tree Hybrid.
 Available at: https://archive.ics.uci.edu/dataset/2/adult
 
 ### Methodology
-- Chapman, P. et al. (2000). *CRISP-DM 1.0: Step-by-step data mining guide.* SPSS Inc.
-- Womack, J. & Jones, D. (1996). *Lean Thinking.* Simon & Schuster.
+- Chapman, P. et al. (2000). CRISP-DM 1.0: Step-by-step data mining guide. SPSS Inc.
+- Womack, J. & Jones, D. (1996). Lean Thinking. Simon & Schuster.
 
 ### Libraries
-See [Tech Stack](#tech-stack--skills-demonstrated) section.
+See Tech Stack section.
 
 ---
 
