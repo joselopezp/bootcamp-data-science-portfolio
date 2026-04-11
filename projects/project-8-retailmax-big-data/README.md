@@ -298,7 +298,7 @@ is the baseline; cloud validation demonstrates production-ready scalability.
 | Platform | Status | Target Date | Purpose |
 |---|---|---|---|
 | 🟢 **Local (PySpark 4.1.1)** | ✅ Complete | April 2026 | Full pipeline development and testing |
-| 🟡 **Google Colab** | ⏳ Planned | April 10, 2026 | Free cloud validation — proof that pipeline runs outside local environment |
+| 🟡 **Google Colab** | ⏳ Planned | April 15, 2026 | Free cloud validation — proof that pipeline runs outside local environment |
 | 🔵 **AWS EMR Serverless** | ⏳ Planned | Post-certification | Production-grade validation on industry-standard cloud platform (~$2–5 USD one-time cost) |
 | 🟣 **Databricks Community** | Optional | TBD | Alternative cloud validation — recognized Spark platform |
 
@@ -341,7 +341,7 @@ This completes the full analytical stack: **Big Data ingestion → ML modeling �
 | Horizon | Action |
 |---|---|
 | **Immediate** | Deliver segment report to marketing for Q2 2026 campaign design |
-| **Short-term** | Validate pipeline on Google Colab (cloud environment) by April 10, 2026 |
+| **Short-term** | Validate pipeline on Google Colab (cloud environment) by April 15, 2026 |
 | **Post-certification** | AWS EMR Serverless validation + Power BI interactive dashboard |
 | **Long-term** | Integrate real clickstream data + BG/NBD lifetime value model |
 

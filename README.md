@@ -68,7 +68,7 @@ Cases are documented in the [`cases/`](cases/) folder.
 | 6 | [5. Ecommerce PequeShop Spend Prediction (ML)](projects/project-5-ecommerce-spend-prediction) | Supervised ML model to predict customer spend (avg_ticket) and drive data-driven marketing decisions | ✅ |
 | 7 | [6. Ecommerce PequeShop Customer Segmentation](projects/project-6-unsupervised-ml) | Unsupervised ML: RFM + KMeans customer segmentation | ✅ |
 | 8 | [7. Deep Learning Fundamentals](projects/project-7-deep-learning) | Neural Networks and CNNs for business classification | ✅ |
-| 9 | [8. Ecommerce RetailMax — Retail Analytics Pipeline](projects/project-8-big-data-retailmax) | Big Data pipeline with PySpark, Spark SQL, MLlib + AWS EMR Serverless architecture | ✅ |
+| 9 | [8. Ecommerce RetailMax — Retail Analytics Pipeline](projects/project-8-big-data-retailmax) | Pipeline de Big Data con PySpark, Spark SQL, MLlib + arquitectura AWS EMR Serverless (roadmap) | ✅ |
 | 10 & 11 | 9. Job Search Project | Portfolio curation, GitHub optimization, LinkedIn positioning & job search strategy — no coding deliverable | ✅ |
 
 > **Note:** In addition to synchronous classes, personal study and project development were required outside of scheduled sessions.
@@ -90,7 +90,7 @@ Each case is documented with a consulting-style executive summary and follows CR
 | 6 | [Dimensionality Reduction — DataMed](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-dimensionality-reduction-techniques) | Scikit-learn · PCA · t-SNE · Seaborn | PCA vs t-SNE for clinical early-diagnosis pipeline — Wisconsin dataset, 95% variance in 10 components | ✅ |
 | 7 | [PCA & t-SNE — VisionData](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-pca-tsne-dimensionality-reduction) | Scikit-learn · PCA · t-SNE · Matplotlib | Customer segment discovery for marketing campaigns — 2,240 customers, KL divergence = 0.8887 | ✅ |
 | 8 | [Census Adult Income — MLlib](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-census-adult-income) | PySpark 4.1.1 · MLlib · Spark SQL · Python 3.12 | Socioeconomic workforce segmentation using UCI 1994 US Census data. Replicable pipeline to classify high/low income profiles (>50K USD) and segment populations into 4 groups — applicable to retail, banking, insurance, public policy, and HR (AUC = 0.9005) | ✅ |
-| 9 | [Spark SQL Queries](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-spark-sql-queries) | PySpark · Spark SQL | Structured query analysis over large-scale datasets using Spark DataFrames | ✅ |
+| 9 | [8. Ecommerce RetailMax — Retail Analytics Pipeline](projects/project-8-big-data-retailmax) | Pipeline de Big Data con PySpark, Spark SQL, MLlib + arquitectura AWS EMR Serverless (roadmap) | ✅ |
 | 10 | [Spark SQL — Fleet Transport](https://github.com/joselopezp/bootcamp-data-science-portfolio/tree/main/cases/case-spark-sql-flota-transporte) | PySpark · Spark SQL | Operational analytics on a transport fleet dataset using distributed SQL queries | ✅ |
 
 > Cases follow the naming convention `case-[technology]-[context]` and live in the `cases/` folder.

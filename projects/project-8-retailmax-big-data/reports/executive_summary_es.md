@@ -94,7 +94,7 @@
 | Horizon | Action |
 |---|---|
 | **Immediate** | Entregar reporte de segmentos al equipo de marketing para diseño de campañas Q2 2026. |
-| **Short-term** | Validar pipeline en Google Colab (entorno cloud) antes del 10 de abril de 2026. |
+| **Short-term** | Validar pipeline en Google Colab (entorno cloud) a más tardar el 15 de abril de 2026. |
 | **Post-certification** | Validación en AWS EMR Serverless + dashboard interactivo en Power BI para el equipo de marketing. |
 | **Long-term** | Integrar datos reales de clickstream + modelo BG/NBD de lifetime value. Conectar con el arco prescriptivo de PequeShop. |
 
