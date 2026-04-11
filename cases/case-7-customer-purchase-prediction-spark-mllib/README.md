@@ -52,10 +52,9 @@ This project uses the UCI Adult Census dataset as a proxy to simulate customer v
 
 The pipeline answers two key business questions:
 1. Can we identify high-value customer profiles using income classification as a proxy? (Supervised)
-2. What distinct behavioral segments exist within the population? (Unsupervised)
+2. What distinct behavioral segments exist within the customer base? (Unsupervised)
 
 These are core problems in customer analytics:
-
 - Identifying high-value customers for targeted campaigns
 - Segmenting users into actionable groups for personalization
 - Prioritizing marketing spend based on predicted customer value
@@ -84,7 +83,7 @@ cd bootcamp-data-science-portfolio
 source .venv/bin/activate       # macOS / Linux
 
 # Install case dependencies
-pip install -r cases/case-census-adult-income/requirements.txt
+pip install -r cases/case-7-customer-purchase-prediction-spark-mllib/requirements.txt
 ```
 
 **Java requirement:** Java 17 (Temurin recommended) must be installed and `JAVA_HOME` set.
@@ -99,12 +98,12 @@ pip install -r cases/case-census-adult-income/requirements.txt
 ```powershell
 Invoke-WebRequest `
     -Uri "https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data" `
-    -OutFile "cases\case-census-adult-income\data\raw\adult.data"
+    -OutFile "cases\case-7-customer-purchase-prediction-spark-mllib\data\raw\adult.data"
 ```
 
 **Run notebook:**
 ```
-notebooks/01_census_adult_income_pipeline.ipynb
+notebooks/01_customer_purchase_prediction_pipeline.ipynb
 ```
 Execute all cells in order (Run All Cells). The notebook is self-contained —
 all preprocessing, modeling, evaluation, hyperparameter optimization, and SQL practice run sequentially.
@@ -140,7 +139,7 @@ business-driven choice.
 | **Task** | Binary Classification |
 | **Training data** | UCI Adult Census Income · 30,162 records (after cleaning) · 1994 US Census |
 | **Features used** | 9 features: `age`, `education_num`, `capital_gain`, `capital_loss`, `hours_per_week`, `workclass`, `marital_status`, `occupation`, `sex` |
-| **Target variable** | `income` — binary: `<=50K` (0) / `>50K` (1) |
+| **Target variable** | `income` — binary: `<=50K` (0) / `>50K` (1) — used as proxy for customer value |
 | **Framework** | PySpark MLlib 4.1.1 |
 | **Hyperparameters (optimized)** | `maxIter=20`, `regParam=0.001`, `elasticNetParam=0.5` |
 | **Optimization** | CrossValidator 5-fold · 12 param combinations (4 regParam x 3 elasticNetParam) |
@@ -151,7 +150,7 @@ business-driven choice.
 | Field | Details |
 |---|---|
 | **Model type** | KMeans |
-| **Task** | Clustering — socioeconomic profile segmentation |
+| **Task** | Clustering — customer behavioral segmentation |
 | **Training data** | UCI Adult Census Income · 30,162 records |
 | **Features used** | Same 9 features as supervised model |
 | **k** | 4 clusters — business interpretability criterion, validated by Elbow Method (k=2..8) |
@@ -173,8 +172,8 @@ business-driven choice.
 | elasticNetParam | 0.0 | 0.5 | ElasticNet L1+L2 |
 | Baseline (majority) | 0.75 | — | — |
 
-> **Primary metric:** AUC-ROC — chosen over Accuracy because the dataset is
-> imbalanced (~75% <=50K, ~25% >50K). Accuracy alone would be misleading.
+> **Primary metric:** AUC-ROC — chosen over Accuracy because the customer base is
+> imbalanced (~75% low-value, ~25% high-value profiles). Accuracy alone would be misleading.
 >
 > **Lean note:** CV improvement = +0.0023 AUC — below 0.005 threshold.
 > Original MVP model was already well-calibrated. Optimization confirms, not replaces.
@@ -185,7 +184,7 @@ business-driven choice.
 |---|---|
 | WSSSE (k=4) | 906,189 |
 | k validation | Elbow Method k=2..8 — no dominant inflection point |
-| k selection rationale | Business interpretability — 4 actionable socioeconomic profiles |
+| k selection rationale | Business interpretability — 4 actionable customer segments |
 
 **Elbow Method results:**
 
@@ -215,9 +214,9 @@ business-driven choice.
 - [ ] Model artifact saved to `models/` folder — deferred post-bootcamp
 
 ### Monitoring (awareness level)
-- [x] Data limitations documented — 1994 US Census, not representative of current labor market
+- [x] Data limitations documented — 1994 US Census, not representative of current customer behavior
 - [x] Model limitations documented — trained on historical data, retraining needed for current use
-- [x] Retraining trigger defined — significant shift in income distribution or labor market structure
+- [x] Retraining trigger defined — significant shift in income distribution or customer behavior patterns
 - [x] Fairness note — `sex` included as feature; fairness audit required before production deployment
 
 ---
@@ -225,12 +224,12 @@ business-driven choice.
 ## Project Structure
 
 ```
-case-census-adult-income/
+case-7-customer-purchase-prediction-spark-mllib/
 ├── data/
 │   └── raw/
 │       └── adult.data              # UCI Adult Census Income (excluded from Git)
 ├── notebooks/
-│   └── 01_census_adult_income_pipeline.ipynb
+│   └── 01_customer_purchase_prediction_pipeline.ipynb
 ├── reports/
 │   ├── executive_summary.md
 │   └── figures/
@@ -243,7 +242,7 @@ case-census-adult-income/
 
 | Notebook | CRISP-DM Phase | Content |
 |---|---|---|
-| `01_census_adult_income_pipeline.ipynb` | Phase 2–5 | Data Understanding → Preparation → Modeling → Evaluation → Optimization |
+| `01_customer_purchase_prediction_pipeline.ipynb` | Phase 2–5 | Data Understanding → Preparation → Modeling → Evaluation → Optimization |
 
 ---
 
@@ -264,7 +263,7 @@ case-census-adult-income/
 `Binary Classification` · `Clustering` · `Feature Engineering` · `OneHotEncoding`
 `CrossValidator` · `ParamGridBuilder` · `Elbow Method` · `ROC Curve` · `AUC-ROC`
 `Silhouette Score` · `CRISP-DM` · `Lean Analytics` · `Big Data` · `Distributed Computing`
-`Business Analytics` · `Market Segmentation` · `Income Classification`
+`Business Analytics` · `Customer Segmentation` · `Customer Value Modeling`
 
 ---
 
@@ -281,7 +280,7 @@ Organizations that could apply this framework include:
 3. **Public Policy / HR Analytics** — Segment workforce populations to improve compensation strategies, target training investments, and support data-driven equity decisions.
 
 **Feature insight:** `capital_gain`, `education_num`, and `occupation` are the
-strongest income discriminators in this dataset — available in most CRM,
+strongest value discriminators in this dataset — available in most CRM,
 HR, and census-derived data sources.
 
 ---
@@ -290,10 +289,10 @@ HR, and census-derived data sources.
 
 | Scenario | Without Model | With Model | Estimated Gain |
 |---|---|---|---|
-| Income classification | Rule-based or no scoring | AUC = 0.9028 — 90% discrimination | Significant reduction in misclassification vs majority baseline |
-| Population segmentation | Homogeneous — 1 group | 4 differentiated socioeconomic profiles | Enables differentiated strategies per segment |
+| Customer value classification | Rule-based or no scoring | AUC = 0.9028 — 90% discrimination | Significant reduction in misclassification vs majority baseline |
+| Customer base segmentation | Homogeneous — 1 group | 4 differentiated customer segments | Enables differentiated strategies per segment |
 | Feature-based filtering | No systematic approach | Top predictors identified (education, occupation, capital_gain) | Lightweight proxy for scoring without full model deployment |
-| Decision workflow | Manual spreadsheet-based analysis (e.g., Excel), static reporting | Automated, scalable ML pipeline with continuous scoring and segmentation | Shorter decision cycles, reduced manual effort, and improved scalability for large datasets |
+| Decision workflow | Manual spreadsheet-based analysis, static reporting | Automated, scalable ML pipeline with continuous scoring and segmentation | Shorter decision cycles, reduced manual effort, improved scalability |
 
 > **Note:** Estimates are illustrative. Production impact depends on organization size,
 > current baseline, and data recency. The 1994 Census dataset serves as a
@@ -303,7 +302,7 @@ HR, and census-derived data sources.
 
 ## Deliverables
 
-- [x] `01_census_adult_income_pipeline.ipynb` — end-to-end MLlib pipeline with optimization
+- [x] `01_customer_purchase_prediction_pipeline.ipynb` — end-to-end MLlib pipeline with optimization
 - [x] `reports/executive_summary.md` — business-facing summary
 - [x] `reports/figures/model_performance_summary.png` — visual metrics summary
 - [x] `reports/figures/roc_curve.png` — ROC Curve with AUC annotation

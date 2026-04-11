@@ -29,7 +29,8 @@
 **Business Impact if Unresolved:**
 - Without income classification, organizations apply uniform strategies to heterogeneous
   populations — inefficient resource allocation and missed targeting opportunities
-- Without segmentation, the ~25% of high-value profiles remain unidentified within the broader population within the broader population, reducing ROI of any differentiated strategy
+- Without segmentation, the ~25% of high-value profiles remain unidentified 
+within the broader population, reducing ROI of any differentiated strategy
 
 ---
 
