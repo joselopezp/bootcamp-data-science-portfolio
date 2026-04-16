@@ -64,7 +64,7 @@ Cases are documented in the [`cases/`](cases/) folder.
 | 3 | [2. Ecommerce PequeShop Analytics](projects/project-2-pequeshop-analytics) | E-commerce ETL pipeline with business KPIs | ✅ |
 | 4 | [3. Ecommerce PequeShop EDA](projects/project-3-eda-pequeshop) | Exploratory Data Analysis + OLS Regression | ✅ |
 | 5 | [4. Student Health Analytics](projects/project-4-student-health-analytics) | Statistical Inference over student habits | ✅ |
-|   | **Bonus:** [Ecommerce PequeShop Statistical Inference](projects/project-4b-pequeshop-statistical-inference) | Statistical Inference over customer data | ✅ |
+|   | ⭐ **Bonus:** [Ecommerce PequeShop Statistical Inference](projects/project-4b-pequeshop-statistical-inference) | Statistical Inference over customer data | ✅ |
 | 6 | [5. Ecommerce PequeShop Spend Prediction (ML)](projects/project-5-ecommerce-spend-prediction) | Supervised ML model to predict customer spend (avg_ticket) and drive data-driven marketing decisions | ✅ |
 | 7 | [6. Ecommerce PequeShop Customer Segmentation](projects/project-6-unsupervised-ml) | Unsupervised ML: RFM + KMeans customer segmentation | ✅ |
 | 8 | [7. Deep Learning Fundamentals](projects/project-7-deep-learning) | Neural Networks and CNNs for business classification | ✅ |
@@ -72,6 +72,8 @@ Cases are documented in the [`cases/`](cases/) folder.
 | 10 & 11 | 9. Job Search Project | Portfolio curation, GitHub optimization, LinkedIn positioning & job search strategy — no coding deliverable | ✅ |
 
 > **Note:** In addition to synchronous classes, personal study and project development were required outside of scheduled sessions.
+
+> ⭐ **Bonus** projects are self-initiated extensions developed beyond bootcamp requirements to deepen business understanding.
 
 ---
 
@@ -247,7 +249,7 @@ más profundos en enfoque técnico. Los casos están documentados en la carpeta 
 | 3 | [2. Ecommerce PequeShop Analytics](projects/project-2-pequeshop-analytics) | Pipeline ETL de e-commerce con KPIs de negocio | ✅ |
 | 4 | [3. Ecommerce PequeShop EDA](projects/project-3-eda-pequeshop) | Análisis Exploratorio de Datos + Regresión OLS | ✅ |
 | 5 | [4. Student Health Analytics](projects/project-4-student-health-analytics) | Inferencia estadística sobre hábitos de estudiantes | ✅ |
-|   | **Bonus:** [Ecommerce PequeShop Statistical Inference](projects/project-4b-pequeshop-statistical-inference) | Inferencia estadística sobre datos de clientes | ✅ |
+|   | ⭐ **Bonus:** [Ecommerce PequeShop Statistical Inference](projects/project-4b-pequeshop-statistical-inference) | Inferencia estadística sobre datos de clientes | ✅ |
 | 6 | [5. Ecommerce PequeShop Spend Prediction (ML)](projects/project-5-ecommerce-spend-prediction) | Modelo de ML supervisado para predecir gasto por cliente (avg_ticket) y optimizar decisiones de marketing | ✅ |
 | 7 | [6. Ecommerce PequeShop Customer Segmentation](projects/project-6-unsupervised-ml) | ML No Supervisado: segmentación de clientes con RFM + KMeans | ✅ |
 | 8 | [7. Deep Learning Fundamentals](projects/project-7-deep-learning) | Redes Neuronales y CNNs para clasificación aplicada a negocios | ✅ |
@@ -255,6 +257,8 @@ más profundos en enfoque técnico. Los casos están documentados en la carpeta 
 | 10 & 11 | 9. Proyecto Búsqueda Laboral | Curación de portafolio, optimización GitHub, posicionamiento LinkedIn & estrategia de búsqueda laboral — sin entregable de código | ✅ |
 
 > **Nota:** Además de las clases sincrónicas, fue necesario estudio personal y desarrollo de proyectos fuera de las sesiones programadas.
+
+> ⭐ Los proyectos **Bonus** son extensiones de iniciativa propia desarrolladas más allá de los requisitos del bootcamp para profundizar el entendimiento del negocio.
 
 ---
 
