@@ -172,7 +172,7 @@ This portfolio is licensed under the [MIT License](LICENSE).
 
 # Portafolio del Bootcamp de Ciencia de Datos
 
-> **Jose Lopez Pino** | Ingeniero Industrial → Científico de Datos | Enfoque en Negocios
+> **Jose Lopez Pino** | Ingeniero Civil Industrial → Científico de Datos | Enfoque en Negocios
 > Bootcamp SENCE / Alkemy · 2025–2026
 
 ## Tabla de Contenidos
@@ -308,7 +308,7 @@ CRISP-DM · Lean Thinking · DMAIC · Business Analytics · Customer Analytics �
 ## Autor
 
 **Jose Lopez Pino**
-Ingeniero Industrial → Científico de Datos | Enfoque en Negocios
+Ingeniero Civil Industrial → Científico de Datos | Enfoque en Negocios
 
 *La Ingeniería Civil Industrial en Chile (programa de 5,5 años, comparable a un M.S. en EE.UU.) abarca gestión estratégica, finanzas, marketing, economía, gestión de operaciones y tecnología — respaldada por una sólida base científica en cálculo, álgebra lineal, probabilidades, estadística, física y optimización. Esta formación impulsa un enfoque business-first en cada problema analítico.*
 
