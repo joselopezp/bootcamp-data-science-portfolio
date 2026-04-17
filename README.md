@@ -167,12 +167,7 @@ Project-Based Learning (PBL) · Case-Based Learning (CBL)
 Industrial Engineer (Business + Operations) | Data Science & Business Analytics
 Bootcamp: Fundamentos de Ciencia de Datos - SENCE/Alkemy (2025–2026)
 
-*Industrial Engineering in Chile (Academic degree: Bachelor of Science in
-Industrial Engineering — 5.5-year program, comparable to a U.S. M.S.) encompasses
-business strategy, finance, marketing, economics, operations management, and
-technology management — backed by a rigorous scientific foundation in calculus,
-linear algebra, probability and statistics, physics, and optimization — enabling
-a unique business + analytics perspective.*
+*Industrial Engineering in Chile is a 5.5-year professional degree that combines business disciplines such as strategy, finance, operations, marketing, and technology management with rigorous quantitative training in statistics, optimization, and linear algebra. This foundation drives a business-first approach: start with the business problem, then use data to design solutions and make high-impact decisions.*
 
 *Thesis: Volatility Forecasting of
 IPSA Stock Returns (Chilean Stock Exchange) using a GJR-GARCH Model.*
@@ -352,12 +347,7 @@ Aprendizaje Basado en Proyectos (PBL) · Aprendizaje Basado en Casos (CBL)
 Ingeniero Civil Industrial (Negocios + Operaciones) | Data Science & Business Analytics
 Bootcamp: Fundamentos de Ciencia de Datos - SENCE/Alkemy (2025–2026)
 
-*La Ingeniería Civil Industrial en Chile (Grado académico: Licenciado en Ciencias
-de la Ingeniería Industrial — programa de 5,5 años, comparable a un M.S. en EE.UU.)
-abarca la gestión estratégica, finanzas, marketing, economía, gestión de operaciones
-y gestión tecnológica — respaldada por una sólida base científica en cálculo,
-álgebra lineal, probabilidades y estadística, física y optimización — habilitando
-una perspectiva única de negocios + analytics.*
+*La Ingeniería Civil Industrial en Chile es una carrera profesional de 5,5 años que combina disciplinas de negocio como estrategia, finanzas, operaciones, marketing y gestión tecnológica con una rigurosa formación cuantitativa en estadística, optimización y álgebra lineal. Esta base impulsa un enfoque business-first: comenzar por el problema de negocio y luego utilizar datos para diseñar soluciones y tomar decisiones de alto impacto.*
 
 *Memoria de Título: Pronóstico de
 Volatilidad de las acciones del IPSA con un modelo GJR-GARCH.*
