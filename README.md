@@ -29,15 +29,42 @@
 
 ## About This Portfolio
 
-> *"My Industrial Engineering background taught me to start with the business problem, not the data. Every project here follows that principle."*
+My Industrial Engineering background shaped a principle I've applied ever since —
+in engineering, in business, and now in Data Science:
 
-This repository documents end-to-end data science work developed during the **Data Science Fundamentals** bootcamp (SENCE/Alkemy, 2025–2026). Projects apply a CRISP-DM + Lean methodology across a dual learning structure: Project-Based Learning (PBL) and Case-Based Learning (CBL).
+**Start with the problem. Not the data.**
 
-Each deliverable is designed to support a real business decision — not just demonstrate a technique. The analytical chain always runs: business problem → decision to improve → data → model → actionable insight.
+---
 
-**Thesis background:** Volatility Forecasting of IPSA Stock Returns (Chilean Stock Exchange) using a GJR-GARCH model — statistical rigor applied to real financial markets before the bootcamp.
+Industrial Civil Engineering in Chile is a 5.5-year professional degree combining
+business disciplines — strategy, finance, marketing, economics, operations, and
+technology management — with rigorous quantitative training in statistics,
+probability, optimization, linear algebra, and operations research.
 
-> 📂 **Post-bootcamp applied projects:** [applied-data-science-portfolio](https://github.com/joselopezp/applied-data-science-portfolio)
+That foundation developed one thing above all: a structured analytical mindset
+focused on real decisions, not academic exercises.
+
+My thesis put that to the test early. I built a **GJR-GARCH model to forecast
+volatility of IPSA stock returns** (Bolsa de Santiago) — applying statistical
+rigor to live financial markets before Data Science was part of my vocabulary.
+
+---
+
+The **Data Science Fundamentals Bootcamp** (SENCE / Alkemy, 2025–2026) modernized
+and deepened that analytical base. Its value wasn't just theory — it was execution:
+building real projects in Python and applying modern tools across the full analytics
+stack.
+
+Every project here follows the same chain of reasoning:
+
+```
+Business Problem → Decision to Support → Data → Model → Actionable Insight
+```
+
+Projects that start at "Model" look junior.  
+Projects that start at "Business Problem" look senior.
+
+> 📂 Post-bootcamp applied projects: [applied-data-science-portfolio](https://github.com/joselopezp/applied-data-science-portfolio)
 
 ---
 
@@ -147,17 +174,19 @@ CRISP-DM · Lean Thinking · DMAIC · Business Analytics · Customer Analytics �
 ## Author
 
 **Jose Lopez Pino**
-Industrial Engineer → Data Scientist | Business Focus
+Industrial Engineer → Data Scientist | Business-First Approach
 
-*Industrial Engineering in Chile is a 5.5-year professional degree that combines business disciplines such as strategy, finance, operations, marketing, and technology management with rigorous quantitative training in statistics, optimization, and linear algebra. This foundation drives a business-first approach: start with the business problem, then use data to design solutions and make high-impact decisions.*
+I combine engineering problem-solving discipline, business understanding,
+quantitative reasoning, and modern Data Science tools to turn data into
+decisions with measurable impact.
 
-*Thesis: Volatility Forecasting of IPSA Stock Returns (Chilean Stock Exchange) using a GJR-GARCH model.*
+*Thesis: Volatility Forecasting of IPSA Stock Returns (Bolsa de Santiago) using a GJR-GARCH model.*
 
 [![GitHub](https://img.shields.io/badge/GitHub-joselopezp-181717?style=flat&logo=github)](https://github.com/joselopezp)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-jose--lopez--pino-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/jose-lopez-pino/)
 [![Portfolio](https://img.shields.io/badge/Portfolio-applied--ds--portfolio-4CAF50?style=flat&logo=github)](https://github.com/joselopezp/applied-data-science-portfolio)
 
-📧 jose.lopez.pino@gmail.com
+📧 jose.lopezpino@gmail.com
 
 ---
 
@@ -190,15 +219,44 @@ This portfolio is licensed under the [MIT License](LICENSE).
 
 ## Acerca de este Portafolio
 
-> *"Mi formación en Ingeniería me enseñó a empezar por el problema de negocio, no por los datos. Cada proyecto aquí sigue ese principio."*
+Mi formación en Ingeniería Civil Industrial me enseñó un principio que aplico
+desde entonces — en ingeniería, en negocios, y ahora en Ciencia de Datos:
 
-Este repositorio documenta trabajo de ciencia de datos end-to-end desarrollado durante el bootcamp **Fundamentos de Ciencia de Datos** (SENCE/Alkemy, 2025–2026), aplicando una metodología CRISP-DM + Lean con un enfoque de aprendizaje dual: Aprendizaje Basado en Proyectos (PBL) y Aprendizaje Basado en Casos (CBL).
+**Empieza por el problema. No por los datos.**
 
-Cada entregable está diseñado para apoyar una decisión de negocio real — no solo demostrar una técnica. La cadena analítica siempre sigue: problema de negocio → decisión a mejorar → datos → modelo → insight accionable.
+---
 
-**Memoria de Título:** Pronóstico de Volatilidad de acciones del IPSA (Bolsa de Santiago) usando un modelo GJR-GARCH — rigor estadístico aplicado a mercados financieros reales antes del bootcamp.
+La Ingeniería Civil Industrial en Chile es una carrera profesional de 5,5 años
+que combina disciplinas de negocio — estrategia, finanzas, marketing, economía,
+operaciones y gestión tecnológica — con una rigurosa formación cuantitativa en
+estadística, probabilidad, optimización, álgebra lineal e investigación de
+operaciones.
 
-> 📂 **Proyectos aplicados post-bootcamp:** [applied-data-science-portfolio](https://github.com/joselopezp/applied-data-science-portfolio)
+Esa base desarrolló principalmente una cosa: un pensamiento analítico estructurado,
+enfocado en decisiones reales, no en ejercicios académicos.
+
+Mi Memoria de Título lo puso a prueba temprano. Construí un **modelo GJR-GARCH
+para pronosticar la volatilidad de acciones del IPSA** (Bolsa de Santiago) —
+aplicando rigor estadístico a mercados financieros reales antes de que Ciencia
+de Datos fuera parte de mi vocabulario.
+
+---
+
+El **Bootcamp de Fundamentos de Ciencia de Datos** (SENCE / Alkemy, 2025–2026)
+modernizó y profundizó esa base analítica. Su valor no fue solo teoría — fue
+ejecución: construir proyectos reales en Python y aplicar herramientas modernas
+a lo largo del stack completo de analytics.
+
+Cada proyecto aquí sigue la misma cadena de razonamiento:
+
+```
+Problema de Negocio → Decisión a Apoyar → Datos → Modelo → Insight Accionable
+```
+
+Los proyectos que empiezan en "Modelo" se ven junior.  
+Los que empiezan en "Problema de Negocio" se ven senior.
+
+> 📂 Proyectos aplicados post-bootcamp: [applied-data-science-portfolio](https://github.com/joselopezp/applied-data-science-portfolio)
 
 ---
 
@@ -308,9 +366,11 @@ CRISP-DM · Lean Thinking · DMAIC · Business Analytics · Customer Analytics �
 ## Autor
 
 **Jose Lopez Pino**
-Ingeniero Civil Industrial → Científico de Datos | Enfoque en Negocios
+Ingeniero Civil Industrial → Científico de Datos | Enfoque Business-First
 
-*La Ingeniería Civil Industrial en Chile es una carrera profesional de 5,5 años que combina disciplinas de negocio como estrategia, finanzas, operaciones, marketing y gestión tecnológica con una rigurosa formación cuantitativa en estadística, optimización y álgebra lineal. Esta base impulsa un enfoque business-first: comenzar por el problema de negocio y luego utilizar datos para diseñar soluciones y tomar decisiones de alto impacto.*
+Combino disciplina de ingeniería, comprensión de negocios, razonamiento
+cuantitativo y herramientas modernas de Ciencia de Datos para convertir
+datos en decisiones con impacto medible.
 
 *Memoria de Título: Pronóstico de Volatilidad de acciones del IPSA (Bolsa de Santiago) usando un modelo GJR-GARCH.*
 
@@ -318,7 +378,7 @@ Ingeniero Civil Industrial → Científico de Datos | Enfoque en Negocios
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-jose--lopez--pino-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/jose-lopez-pino/)
 [![Portafolio](https://img.shields.io/badge/Portafolio-applied--ds--portfolio-4CAF50?style=flat&logo=github)](https://github.com/joselopezp/applied-data-science-portfolio)
 
-📧 jose.lopez.pino@gmail.com
+📧 jose.lopezpino@gmail.com
 
 ---
 
