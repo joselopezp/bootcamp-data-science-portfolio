@@ -36,7 +36,7 @@ in engineering, in business, and now in Data Science:
 
 ---
 
-Industrial Civil Engineering in Chile is a 5.5-year professional degree combining
+Industrial Engineering in Chile is a 5.5-year professional degree combining
 business disciplines — strategy, finance, marketing, economics, operations, and
 technology management — with rigorous quantitative training in statistics,
 probability, optimization, linear algebra, and operations research.
