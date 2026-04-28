@@ -89,9 +89,9 @@ This bootcamp integrated two complementary learning modalities:
 | 5 | [4. Student Health Analytics](projects/project-4-student-health-analytics) | Hypothesis Testing | Statistical inference over student habits data | ✅ |
 |   | ⭐ **Bonus:** [PequeShop Statistical Inference](projects/project-4b-pequeshop-statistical-inference) | Inference · Effect Size | Statistical inference over customer data with effect sizes and CIs | ✅ |
 | 6 | [5. Ecommerce PequeShop Spend Prediction](projects/project-5-ecommerce-spend-prediction) | Supervised ML · XGBoost | ML model to predict customer avg_ticket and drive marketing decisions | ✅ |
-| 7 | [6. Ecommerce PequeShop Customer Segmentation](projects/project-6-unsupervised-ml) | KMeans · RFM | Unsupervised ML: RFM + KMeans customer segmentation | ✅ |
-| 8 | [7. Deep Learning Fundamentals](projects/project-7-deep-learning) | CNN · TensorFlow | Neural Networks and CNNs for business classification | ✅ |
-| 9 | [8. RetailMax — Retail Analytics Pipeline](projects/project-8-big-data-retailmax) | PySpark · AWS EMR | Big Data pipeline with PySpark, Spark SQL, MLlib + AWS EMR Serverless | ✅ |
+| 7 | [6. Ecommerce PequeShop Customer Segmentation](projects/project-6-unsupervised-ml-customer-segmentation) | KMeans · RFM | Unsupervised ML: RFM + KMeans customer segmentation | ✅ |
+| 8 | [7. Deep Learning Fundamentals](projects/project-7-iris-rna) | CNN · TensorFlow | Neural Networks and CNNs for business classification | ✅ |
+| 9 | [8. RetailMax — Retail Analytics Pipeline](projects/project-8-retailmax-big-data) | PySpark · AWS EMR | Big Data pipeline with PySpark, Spark SQL, MLlib + AWS EMR Serverless | ✅ |
 | 10 & 11 | 9. Job Search Project | — | Portfolio curation, GitHub optimization, LinkedIn positioning | ✅ |
 
 > **Note:** In addition to synchronous classes, personal study and project development were required outside scheduled sessions.
@@ -281,9 +281,9 @@ Este bootcamp integró dos modalidades de aprendizaje complementarias:
 | 5 | [4. Student Health Analytics](projects/project-4-student-health-analytics) | Pruebas de Hipótesis | Inferencia estadística sobre hábitos de estudiantes | ✅ |
 |   | ⭐ **Bonus:** [PequeShop Statistical Inference](projects/project-4b-pequeshop-statistical-inference) | Inferencia · Tamaño de Efecto | Inferencia estadística sobre clientes con tamaños de efecto e IC | ✅ |
 | 6 | [5. Ecommerce PequeShop Spend Prediction](projects/project-5-ecommerce-spend-prediction) | ML Supervisado · XGBoost | Modelo ML para predecir avg_ticket y optimizar decisiones de marketing | ✅ |
-| 7 | [6. Ecommerce PequeShop Customer Segmentation](projects/project-6-unsupervised-ml) | KMeans · RFM | ML No Supervisado: segmentación RFM + KMeans | ✅ |
-| 8 | [7. Deep Learning Fundamentals](projects/project-7-deep-learning) | CNN · TensorFlow | Redes Neuronales y CNNs para clasificación aplicada a negocios | ✅ |
-| 9 | [8. RetailMax — Retail Analytics Pipeline](projects/project-8-big-data-retailmax) | PySpark · AWS EMR | Pipeline Big Data con PySpark, Spark SQL, MLlib + AWS EMR Serverless | ✅ |
+| 7 | [6. Ecommerce PequeShop Customer Segmentation](projects/project-6-unsupervised-ml-customer-segmentation) | KMeans · RFM | ML No Supervisado: segmentación RFM + KMeans | ✅ |
+| 8 | [7. Deep Learning Fundamentals](projects/project-7-iris-rna) | CNN · TensorFlow | Redes Neuronales y CNNs para clasificación aplicada a negocios | ✅ |
+| 9 | [8. RetailMax — Retail Analytics Pipeline](projects/project-8-retailmax-big-data) | PySpark · AWS EMR | Pipeline Big Data con PySpark, Spark SQL, MLlib + AWS EMR Serverless | ✅ |
 | 10 & 11 | 9. Proyecto Búsqueda Laboral | — | Curación de portafolio, optimización GitHub, posicionamiento LinkedIn | ✅ |
 
 > **Nota:** Además de las clases sincrónicas, fue necesario estudio personal y desarrollo de proyectos fuera de las sesiones programadas.
