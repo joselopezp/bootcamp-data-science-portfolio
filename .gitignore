@@ -90,3 +90,7 @@ projects/project-3-eda-pequeshop/reports/technical/
 CLAUDE.md
 # Project 2: final datasets are published (see README, data provenance)
 !projects/project-2-pequeshop-analytics/data/processed/*
+
+# Working documents (not for GitHub)
+CLAUDE*.md
+PORTFOLIO_FIXES.md
