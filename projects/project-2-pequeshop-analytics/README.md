@@ -145,16 +145,25 @@ excessive complexity.
 | Category | Metric | Value |
 |----------|--------|-------|
 | 📊 Customer Health | NPS Score | 30.2 |
-| 📊 Customer Health | Churn Rate | 41.4% |
-| 📊 Customer Health | At-Risk Rate | 17.6% |
-| 💰 Revenue | Total Revenue | $37.8M CLP (~$44K USD) |
+| 📊 Customer Health | Active Rate (buyers only) | 24.7% (97 of 392) |
+| 📊 Customer Health | At-Risk Rate (buyers only) | 22.4% (88 of 392) |
+| 📊 Customer Health | Dormant Rate, 180+ days (buyers only) | 52.8% (207 of 392) |
+| 💰 Revenue | Total Revenue | $37.55M CLP (~$44K USD) |
 | 💰 Revenue | Transactions | 1,192 |
-| 💰 Revenue | Average Ticket | $31,689 CLP (~$37 USD) |
+| 💰 Revenue | Average Ticket | $31,499 CLP (~$37 USD) |
 | 🎯 Customers | Registered | 500 |
 | 🎯 Customers | Active (with purchases) | 392 |
-| 🎯 Acquisition | Overall CAC | $23,771 CLP (~$28 USD) |
+| 🎯 Acquisition | Paid-media CAC (419 customers from 4 paid channels) | $23,771 CLP (~$28 USD) |
+| 🎯 Acquisition | Blended CAC (all 500 customers, incl. 81 organic) | $19,920 CLP (~$23 USD) |
 
 *Exchange rate: 1 USD ≈ 860 CLP (Feb 2026)*
+
+**Notes on the KPI figures**
+- Customer-health rates use the 392 customers with purchases as denominator. The 108 registered customers without purchases have no retargeting segment, so they are excluded.
+- "Dormant" means 180+ days without a purchase, measured from the last transaction date in the data (January 2025). It is a proxy: in a non-contractual business, a customer who stopped buying is never observed leaving.
+- Revenue and average ticket are computed from the published `transactions_final.csv`.
+- CAC counts paid media spend only (no team or tool costs) and assigns each customer a single acquisition channel, so it does not model multi-touch attribution. Organic customers have no spend and are excluded from the paid-media CAC.
+- The data covers January 2023 to January 2025. 2025-Q1 contains only January 1–30, so its quarter-over-quarter revenue change (−83.8% in the notebook) compares one month with a full quarter. Per month the drop is about −51%, and it comes from MercadoLibre transactions ending in 2024: Shopify stays flat at about 25 transactions per month.
 
 ---
 
@@ -376,6 +385,7 @@ enhancements (improvements) or corrections (errors or documentation gaps fixed).
 | Correction | Final datasets restored | Restored from the `post-evaluation-enhancements` branch and published in `data/processed/` | Notebook outputs can be audited |
 | Correction | Customer count clarified | 500 registered, 392 with purchases | Removes README/data mismatch |
 | Correction | Provenance documented | Reproducibility limits stated in How to Run | Reader knows what can and cannot be re-run |
+| Correction | KPI definitions | Customer-health rates recalculated over the 392 buyers (dormant 52.8%, previously 41.4% over 500); revenue and ticket taken from the published file ($37.55M and $31,499; the notebook KPI cell used a different in-memory table); CAC scope stated | KPIs can be reproduced from the published CSV files and the CAC sheet |
 
 ### Future Roadmap
 
@@ -414,6 +424,7 @@ jupyter notebook notebooks/data_preparation.ipynb
 > - Lesson 3 reads `shopify_orders_2024.xlsx` and `marketing_metrics.html`, which were created outside the notebook and were not preserved. The notebook therefore cannot be run end-to-end from Lesson 3 onward, and the intermediate files `transactions_consolidated.csv` and `transactions_cleaned.csv` cannot be regenerated.
 > - The final datasets from the original run are published in `data/processed/` and are the official input for Projects 3, 4b and 5.
 > - Shopify rows receive a `customer_id` drawn at random (seed 789) from the existing customer pool; it is not derived from the order's customer email.
+> - The outputs saved in the notebook show the original KPI figures (for example 41.4% churn and $37.77M revenue). The KPI Summary above replaces them with figures recalculated from the published files.
 
 ---
 
