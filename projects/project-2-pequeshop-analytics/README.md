@@ -25,7 +25,7 @@
 - [Lessons / Pipeline Stages](#lessons--pipeline-stages)
 - [Data Quality Report](#data-quality-report)
 - [Key Outputs](#key-outputs)
-- [Post-Evaluation Enhancements](#post-evaluation-enhancements)
+- [Post-Evaluation Enhancements and Corrections](#post-evaluation-enhancements-and-corrections)
 - [How to Run](#how-to-run)
 - [Credits](#credits)
 - [License](#license)
@@ -255,14 +255,7 @@ See [KPI Framework](docs/kpi_framework.md) for complete metrics documentation.
 ```
 project-2-pequeshop-analytics/
 ├── data/
-│   ├── raw/                        # Original & intermediate data
-│   │   ├── *.npy                   # NumPy arrays (synthetic generation)
-│   │   ├── shopify_orders_2024.xlsx
-│   │   ├── marketing_metrics.html
-│   │   ├── marketing_metrics.csv
-│   │   ├── transactions_*.csv      # Pipeline stages
-│   │   ├── customers_*.csv
-│   │   └── nps_surveys.csv
+│   ├── raw/                        # Intermediate files (not versioned; see data/raw/README.md)
 │   └── processed/                  # Final clean datasets
 │       ├── transactions_final.csv
 │       ├── customers_final.csv
@@ -274,7 +267,8 @@ project-2-pequeshop-analytics/
 │   ├── kpi_framework.md
 │   └── lean_retrospective.md
 ├── LICENSE
-└── README.md
+├── README.md
+└── requirements.txt
 ```
 
 ---
@@ -350,7 +344,7 @@ project-2-pequeshop-analytics/
 | File | Records | Purpose |
 |------|---------|---------|
 | transactions_final.csv | 1,192 | Clean transaction data with time features |
-| customers_final.csv | 392 | Active customers with NPS, metrics, segments |
+| customers_final.csv | 500 | All registered customers: 392 with purchases plus 108 without (purchase metrics are empty for those 108) |
 | nps_surveys.csv | ~235 | NPS survey responses (60% of active customers) |
 | pequeshop_analytics.xlsx | 6 sheets | Business-ready workbook |
 
@@ -367,17 +361,21 @@ project-2-pequeshop-analytics/
 
 ---
 
-## Post-Evaluation Enhancements
+## Post-Evaluation Enhancements and Corrections
 
-After initial project evaluation, the following improvements were implemented
-in the `post-evaluation-enhancements` branch:
+After initial project evaluation, the following changes were made in the
+`enhancements/project-2-pequeshop-analytics` branch. Items are labeled as
+enhancements (improvements) or corrections (errors or documentation gaps fixed).
 
-| Enhancement | Description | Impact |
-|-------------|-------------|--------|
-| Customer ID consistency | Shopify transactions now use existing customer IDs from pool | Data integrity improved |
-| Retargeting thresholds | Adjusted from 60/90 to 90/180 days | More realistic for children's clothing retail |
-| Variable naming | Standardized `df_treated` throughout L5–L6 | Code consistency |
-| KPI accuracy | Recalculated with corrected data | More reliable metrics |
+| Type | Enhancement | Description | Impact |
+|------|-------------|-------------|--------|
+| Correction | Customer ID consistency | Shopify transactions now use existing customer IDs from pool | Every transaction maps to a registered customer (assignment is random, see note in How to Run) |
+| Enhancement | Retargeting thresholds | Adjusted from 60/90 to 90/180 days | More realistic for children's clothing retail |
+| Enhancement | Variable naming | Standardized `df_treated` throughout L5–L6 | Code consistency |
+| Correction | KPI accuracy | Recalculated with corrected data | More reliable metrics |
+| Correction | Final datasets restored | Restored from the `post-evaluation-enhancements` branch and published in `data/processed/` | Notebook outputs can be audited |
+| Correction | Customer count clarified | 500 registered, 392 with purchases | Removes README/data mismatch |
+| Correction | Provenance documented | Reproducibility limits stated in How to Run | Reader knows what can and cannot be re-run |
 
 ### Future Roadmap
 
@@ -411,8 +409,11 @@ pip install -r requirements.txt
 jupyter notebook notebooks/data_preparation.ipynb
 ```
 
-> ⚠️ Raw data is generated synthetically in L1 of the notebook —
-> no external dataset download required.
+> ⚠️ **Data provenance and reproducibility**
+> - Lessons 1–2 regenerate the synthetic NumPy arrays and preliminary CSVs (seeded).
+> - Lesson 3 reads `shopify_orders_2024.xlsx` and `marketing_metrics.html`, which were created outside the notebook and were not preserved. The notebook therefore cannot be run end-to-end from Lesson 3 onward, and the intermediate files `transactions_consolidated.csv` and `transactions_cleaned.csv` cannot be regenerated.
+> - The final datasets from the original run are published in `data/processed/` and are the official input for Projects 3, 4b and 5.
+> - Shopify rows receive a `customer_id` drawn at random (seed 789) from the existing customer pool; it is not derived from the order's customer email.
 
 ---
 
@@ -420,8 +421,10 @@ jupyter notebook notebooks/data_preparation.ipynb
 
 **Data:** PequeShop is a fictional Chilean e-commerce business created for
 educational purposes within the Alkemy / SENCE Data Science Bootcamp (2025–2026).
-The dataset was designed and generated synthetically by Jose Marcel Lopez Pino
-using NumPy to simulate realistic multi-platform e-commerce operations.
+The customer and transaction base data were designed and generated synthetically by Jose Marcel Lopez Pino
+using NumPy (seeded) to simulate realistic multi-platform e-commerce operations. The Shopify orders file
+and the marketing table were prepared outside the notebook and were not preserved (see the data provenance
+note in How to Run).
 
 **Methodology References:**
 - CRISP-DM: [Chapman et al. (2000)](https://www.the-modeling-agency.com/crisp-dm.pdf) — Cross-Industry Standard Process for Data Mining
@@ -447,12 +450,7 @@ This project is licensed under the [MIT License](LICENSE).
 Industrial Engineer (Business + Operations) | Data Science & Business Analytics
 Bootcamp: Fundamentos de Ciencia de Datos - SENCE/Alkemy (2025–2026)
 
-*Industrial Engineering in Chile (Academic degree: Bachelor of Science in
-Industrial Engineering — 5.5-year program, comparable to a U.S. M.S.) encompasses
-business strategy, finance, marketing, economics, operations management, and
-technology management — backed by a rigorous scientific foundation in calculus,
-linear algebra, probability and statistics, physics, and optimization — enabling
-a unique business + analytics perspective.*
+*Industrial Engineering in Chile is a 5.5-year professional degree combining business disciplines — strategy, finance, marketing, economics, operations, and technology management — with rigorous quantitative training in statistics, probability, optimization, linear algebra, and operations research.*
 
 *Thesis: Volatility Forecasting of IPSA Stock Returns (Chilean Stock Exchange)
 using a GJR-GARCH Model.*
