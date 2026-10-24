@@ -25,7 +25,7 @@
 - [Lessons / Pipeline Stages](#lessons--pipeline-stages)
 - [Data Quality Report](#data-quality-report)
 - [Key Outputs](#key-outputs)
-- [Post-Evaluation Enhancements and Corrections](#post-evaluation-enhancements-and-corrections)
+- [Post-Evaluation Enhancements and Corrections](#post-evaluation-enhancements-and-corrections) — updated 2026-10-21
 - [How to Run](#how-to-run)
 - [Credits](#credits)
 - [License](#license)
@@ -371,6 +371,8 @@ project-2-pequeshop-analytics/
 ---
 
 ## Post-Evaluation Enhancements and Corrections
+
+> **Latest update 2026-10-21** — Final datasets published and customer-health KPIs recalculated over the 392 buyers (see the last rows of the table).
 
 After initial project evaluation, the following changes were made in the
 `enhancements/project-2-pequeshop-analytics` branch. Items are labeled as
