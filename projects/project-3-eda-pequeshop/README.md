@@ -69,7 +69,7 @@ Cycle 5 (Future, Post):   BG/NBD probabilistic models (CLV)
 | KPI | Value | Context |
 |-----|-------|---------|
 | Total Revenue | $37.5M CLP | 1,192 transactions |
-| Active Customers | 392 | Out of 500 registered (108 never purchased) |
+| Buyers | 392 | Out of 500 registered (108 never purchased) |
 | Average Ticket | $31,500 CLP | Right-skewed: Pareto pattern |
 | NPS Score | 30.2 | 60% response rate among buyers (235 of 392); margin of error ±6.3 points at 95% confidence. Simulated survey: responses were assigned at random, so NPS carries no information about behavior in this dataset |
 | Dormant Rate (180+ days) | 52.8% | 207 Dormant / 392 buyers |
@@ -231,6 +231,7 @@ After initial project evaluation, the following corrections and enhancements wer
 | Correction | Unsourced target removed | The "<30%" churn target had no verified source. Replaced by a success metric (share of Dormant customers who purchase within 90 days of contact, against a random control group) and a labeled scenario | Target to be set after a pilot |
 | Correction | Regression metrics | Multiple regression reported R² 0.992, RMSE $1,856 and MAE $1,295; the executed notebook gives R² 0.772, RMSE $10,378 and MAE $6,160. Simple regression RMSE and MAE aligned too ($17,352 and $12,041) | README now matches the executed notebook |
 | Correction | File dimensions | `customers_final.csv` has 500 rows × 16 columns and `transactions_final.csv` 1,192 × 19 (previously 392 × 12 and 1,192 × 15) | Project structure matches the data |
+| Correction | KPI panel labels | The KPI panel in notebook 05 labelled 392 as "Active Customers" and 52.8% as "Churn Rate"; the setup cell and the key insights also called all buyers "active". 392 is the number of buyers (the Active segment has 97) and 52.8% is the Dormant rate, a churn proxy. Labels and wording corrected and the figure regenerated; the README KPI table uses the same terms | Panel, segmentation table, insights and README now use the same definitions |
 | Enhancement | Business Understanding | Notebook 01 now documents the Problem Statement Canvas, the KPI definitions (with denominators) and a decisions log for this cycle | Success criteria are defined in phase 1, before the recommendations that use them |
 
 ---
