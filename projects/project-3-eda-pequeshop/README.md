@@ -221,7 +221,7 @@ jupyter notebook notebooks/04_modeling.ipynb
 
 ## Post-Evaluation Enhancements and Corrections
 
-After initial project evaluation, the following figures in this project were corrected.
+After initial project evaluation, the following corrections and enhancements were made to this project.
 
 | Type | Change | Description | Impact |
 |------|--------|-------------|--------|
@@ -231,6 +231,7 @@ After initial project evaluation, the following figures in this project were cor
 | Correction | Unsourced target removed | The "<30%" churn target had no verified source. Replaced by a success metric (share of Dormant customers who purchase within 90 days of contact, against a random control group) and a labeled scenario | Target to be set after a pilot |
 | Correction | Regression metrics | Multiple regression reported R² 0.992, RMSE $1,856 and MAE $1,295; the executed notebook gives R² 0.772, RMSE $10,378 and MAE $6,160. Simple regression RMSE and MAE aligned too ($17,352 and $12,041) | README now matches the executed notebook |
 | Correction | File dimensions | `customers_final.csv` has 500 rows × 16 columns and `transactions_final.csv` 1,192 × 19 (previously 392 × 12 and 1,192 × 15) | Project structure matches the data |
+| Enhancement | Business Understanding | Notebook 01 now documents the Problem Statement Canvas, the KPI definitions (with denominators) and a decisions log for this cycle | Success criteria are defined in phase 1, before the recommendations that use them |
 
 ---
 
