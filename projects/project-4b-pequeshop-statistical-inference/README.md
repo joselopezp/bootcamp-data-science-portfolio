@@ -24,6 +24,7 @@
 - [CRISP-DM Roadmap](#crisp-dm-roadmap)
 - [Data Source](#data-source)
 - [Credits](#credits)
+- [Post-Evaluation Enhancements and Corrections](#post-evaluation-enhancements-and-corrections)
 - [License](#license)
 
 ---
@@ -50,7 +51,7 @@ statistical results into prioritized business recommendations.
 ## Business Context
 
 **PequeShop** is a synthetic children's clothing e-commerce operation selling
-across MercadoLibre and Shopify in Chile. The dataset contains 392 customers
+across MercadoLibre and Shopify in Chile. The dataset contains 500 registered customers (392 buyers)
 and 1,192 transactions generated to simulate realistic retail behavior.
 
 **Key Business Questions:**
@@ -58,7 +59,7 @@ and 1,192 transactions generated to simulate realistic retail behavior.
 - Is PequeShop's average ticket aligned with the Chilean e-commerce benchmark
   of $25,000 CLP?
 - Do customers spend differently on MercadoLibre vs Shopify?
-- Is PequeShop's churn rate statistically above the 30% industry benchmark?
+- Is PequeShop's churn rate statistically above the 30% reference value (assumed, no verified source)?
 - Does NPS segment (Promoter / Passive / Detractor) predict spending behavior?
 
 ---
@@ -69,13 +70,13 @@ and 1,192 transactions generated to simulate realistic retail behavior.
 |------------|------|-----------|---------|-------------|----------|
 | H1 — avg_ticket vs $25,000 CLP | One-sample t | t = 7.80 | < 0.001 | Cohen's d = 0.394 | **Reject H0** |
 | H2 — MercadoLibre vs Shopify | Welch t | t = 2.27 | 0.024 | Cohen's d = 0.262 | **Reject H0** |
-| H3 — Churn rate vs 30% | Proportion z | z = 5.18 | < 0.001 | Cohen's h = 0.239 | **Reject H0** |
+| H3 — Dormant rate (churn proxy) vs 30% (assumed) | Proportion z | z = 9.05 | < 0.001 | Cohen's h = 0.468 | **Reject H0** |
 | H4 — avg_ticket by NPS segment | One-way ANOVA | F = 0.25 | 0.780 | eta-sq = 0.002 | **Fail to reject H0** |
 
 > All tests: α = 0.05
 
 **Summary:** Three of four hypotheses rejected. PequeShop's avg_ticket,
-platform difference, and churn rate all deviate significantly from benchmarks.
+platform difference, and Dormant rate all deviate significantly from their reference values (the 30% Dormant reference is an assumption with no verified source).
 NPS segment does not predict spending — pricing segmentation by NPS is not
 statistically justified.
 
@@ -90,7 +91,7 @@ statistically justified.
 
 | Priority | Hypothesis | Finding | Recommended Action |
 |----------|-----------|---------|-------------------|
-| **HIGH** | H3 — Churn | Churn significantly exceeds 30% benchmark (z=5.18, p<0.001) | Launch retention campaign targeting Dormant segment immediately |
+| **HIGH** | H3 — Churn | Dormant rate (52.8%, 207 of 392 buyers) exceeds the assumed 30% reference value (z=9.05, p<0.001) | Launch retention campaign targeting Dormant segment immediately |
 | **HIGH** | H1 — Pricing | avg_ticket significantly differs from $25,000 CLP benchmark (t=7.80, p<0.001) | Review pricing strategy vs Chilean e-commerce market |
 | **MEDIUM** | H2 — Channel | MercadoLibre and Shopify tickets differ significantly (t=2.27, p=0.024) | Develop differentiated pricing and promotion strategy per channel |
 | **LOW / HOLD** | H4 — NPS | No significant relationship between NPS and spending (F=0.25, p=0.780) | Do not invest in NPS-based pricing segmentation — no statistical justification |
@@ -100,7 +101,7 @@ statistically justified.
 
 > **Catalog expansion note:** Expanding the product catalog (more SKUs, categories)
 > may increase avg_ticket and reduce churn by giving customers more reasons to return.
-> However, H3 results show churn already exceeds the 30% benchmark significantly.
+> However, H3 results show the Dormant rate already exceeds the assumed 30% reference value significantly.
 > Lean logic applies: retain existing customers before investing in catalog growth.
 > A retained customer generates more lifetime value than a new customer acquired
 > through a broader catalog without solving the underlying retention problem.
@@ -111,7 +112,7 @@ statistically justified.
 
 | Scenario | Current State | Target | Estimated Impact |
 |----------|--------------|--------|-----------------|
-| Churn reduction (H3) | ~41% churn rate | Reduce to 30% benchmark | ~45 customers retained per cycle |
+| Churn reduction (H3) | 52.8% Dormant rate (207 of 392 buyers) | Reduce toward the assumed 30% reference value | Not estimated (the 30% target has no verified source) |
 | Channel optimization (H2) | Undifferentiated pricing | Platform-specific promotions | Potential avg_ticket uplift on lower-performing channel |
 | Pricing alignment (H1) | Significant deviation from $25k benchmark | Align or justify deviation | Informed pricing decision vs market |
 
@@ -192,7 +193,7 @@ jupyter notebook notebooks/01_business_understanding.ipynb
 ```
 
 > ⚠️ Dataset is synthetic — `customers_final.csv` and `transactions_final.csv`
-> are included in `data/processed/`. No external download required.
+> are not stored in this repository; copy them from `projects/project-2-pequeshop-analytics/data/processed/` into `data/processed/`.
 > Run notebooks in order: 01 → 02 → 03 → 04 → 05 → 06.
 
 ---
@@ -226,8 +227,8 @@ jupyter notebook notebooks/01_business_understanding.ipynb
 |-------|---------|
 | **Dataset** | PequeShop synthetic e-commerce dataset |
 | **Origin** | Generated via project-2-pequeshop-analytics (CRISP-DM Cycle 1) |
-| **Records** | 392 customers · 1,192 transactions |
-| **Columns** | customers: 15 · transactions: 19 |
+| **Records** | 500 customers (392 buyers) · 1,192 transactions |
+| **Columns** | customers: 16 · transactions: 19 |
 | **Accessed** | March 2026 |
 
 ### How to Reproduce
@@ -254,9 +255,21 @@ as part of the PequeShop Analytics continuous case study.
 
 ---
 
+## Post-Evaluation Enhancements and Corrections
+
+| # | Type | Where | What changed | Reason |
+|---|------|-------|--------------|--------|
+| 1 | Correction | Notebooks 03, 05, 06 + 3 figures | Dormant rate computed over the 392 buyers (207/392 = 52.8%) instead of the 500 registered customers (41.4%). H3: z 5.18 → 9.05, Cohen's h 0.239 → 0.468, 95% CI (0.4786, 0.5775). H1 and H4 unchanged. | The 108 customers who never purchased have no segment and cannot be Dormant |
+| 2 | Correction | README, notebooks 01, 02, 03 | Figures aligned with notebooks 03/05/06 (e.g. Binomial p = 0.414 → 0.528 in notebook 03); "active customers" → "buyers"; "At-Risk" → "At Risk" (the label in the data); customers columns 15 → 16 | Text and labels did not match the data |
+| 2b | Correction | Notebook 02 | Sample space restricted to the 392 buyers (`dropna` on `retargeting_segment`); previously 500 rows, and the `'At-Risk'` filter matched nothing | Probabilities were computed over the wrong denominator. **Notebook 02 outputs are regenerated in a later commit.** |
+| 3 | Correction | README, notebooks 01, 02, 05, 06 | 30% benchmark relabelled as assumed reference value (no verified source); "statistically confirmed emergency" and "~45 customers retained" claims removed | Not supported by any notebook or source |
+| 4 | Correction | README | License link fixed (`../../LICENSE`); How to Run no longer says the CSVs are included (they are not versioned: copy them from project-2) | Link was broken; instruction was false |
+| 5 | Correction | `notebooks/README.md` | Duplicate, older README removed | Two READMEs disagreed |
+| 6 | Enhancement | `requirements.txt` | Added (versions used to run notebooks 01-06, Python 3.12) | Notebooks could not run without installing libraries by trial and error |
+
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](../../LICENSE).
 
 © 2026 Jose Marcel Lopez Pino
 
