@@ -21,6 +21,7 @@
 - [How to Run](#how-to-run)
 - [Strategic Recommendations](#strategic-recommendations)
 - [Deliverables](#deliverables)
+- [Post-Evaluation Enhancements and Corrections](#post-evaluation-enhancements-and-corrections)
 - [CRISP-DM Evolution Roadmap](#crisp-dm-evolution-roadmap)
 - [Credits](#credits)
 - [License](#license)
@@ -70,16 +71,16 @@ Cycle 5 (Future, Post):   BG/NBD probabilistic models (CLV)
 | Total Revenue | $37.5M CLP | 1,192 transactions |
 | Active Customers | 392 | Out of 500 registered (108 never purchased) |
 | Average Ticket | $31,500 CLP | Right-skewed: Pareto pattern |
-| NPS Score | 30.2 | 47% response rate (53% no response — bias) |
-| Churn Rate | 41.4% | 207 Dormant / 500 total customers |
+| NPS Score | 30.2 | 60% response rate among buyers (235 of 392); margin of error ±6.3 points at 95% confidence. Simulated survey: responses were assigned at random, so NPS carries no information about behavior in this dataset |
+| Dormant Rate (180+ days) | 52.8% | 207 Dormant / 392 buyers |
 
 ### Regression Models (statsmodels OLS)
 
 | Metric | Simple Regression | Multiple Regression |
 |--------|-------------------|---------------------|
-| R² | 0.362 | **0.992** |
-| RMSE | $16,845 | **$1,856** |
-| MAE | $12,334 | **$1,295** |
+| R² | 0.362 | **0.772** |
+| RMSE | $17,352 | **$10,378** |
+| MAE | $12,041 | **$6,160** |
 | Predictors | quantity | quantity + unit_price |
 
 ### Key Correlations (Pearson)
@@ -90,7 +91,7 @@ Cycle 5 (Future, Post):   BG/NBD probabilistic models (CLV)
 | unit_price → total_amount | 0.610 | Meaningful |
 | subtotal → total_amount | 0.997 | Spurious (structural) |
 | shipping → total_amount | -0.548 | Investigate |
-| NPS → revenue | 0.12 | Weak (53% non-response bias) |
+| NPS → revenue | 0.12 | Weak (simulated survey, independent of behavior by design) |
 
 ---
 
@@ -101,8 +102,8 @@ project-3-eda-pequeshop/
 ├── data/
 │   ├── raw/                         # Symlink to Project 2 outputs
 │   ├── processed/                   # Datasets from Project 2 ETL
-│   │   ├── transactions_final.csv   # 1,192 rows × 15 columns
-│   │   └── customers_final.csv      # 392 rows × 12 columns
+│   │   ├── transactions_final.csv   # 1,192 rows × 19 columns
+│   │   └── customers_final.csv      # 500 rows × 16 columns
 │   └── final/                       # Analysis outputs
 ├── notebooks/
 │   ├── 01_business_understanding.ipynb   # → Links to Project 2 (M3 L1-L2)
@@ -199,9 +200,9 @@ jupyter notebook notebooks/04_modeling.ipynb
 
 | Priority | Action | Expected Impact |
 |----------|--------|-----------------|
-| **HIGH** | Reactivation campaign for 207 Dormant customers | Reduce churn from 41.4% to <30% |
+| **HIGH** | Reactivation campaign for 207 Dormant customers. Success metric: share of the 207 who purchase within 90 days of contact, measured against a randomly held-out control group (target to be set after a pilot) | Scenario, not a forecast: each 10% reactivated ≈ 21 customers ≈ $0.68M CLP (one purchase each at the average Dormant ticket of $32,413). The 10% is illustrative, not an industry benchmark |
 | **HIGH** | Cross-sell/upsell strategy (dual levers: quantity + unit_price) | Increase avg ticket by 15-20% |
-| MEDIUM | Improve NPS response rate (current: 47%) | Reliable satisfaction data |
+| MEDIUM | Survey all buyers and improve the NPS response rate (current: 60% of buyers, assuming all 392 were invited) | Reliable satisfaction data: about 277 responses (71% of buyers) give a ±5-point margin at 95% confidence, assuming a 50/30/20 promoter/passive/detractor mix |
 | MEDIUM | Investigate Shopify underperformance (25% vs MercadoLibre 75%) | Optimize channel investment |
 | LOW | Analyze negative shipping correlation → free shipping threshold | Revenue uplift |
 
@@ -215,6 +216,21 @@ jupyter notebook notebooks/04_modeling.ipynb
 - [x] Commented source code (PEP 8, Google-style docstrings)
 - [x] Final document with insights and recommendations
 - [x] GitHub repository
+
+---
+
+## Post-Evaluation Enhancements and Corrections
+
+After initial project evaluation, the following figures in this project were corrected.
+
+| Type | Change | Description | Impact |
+|------|--------|-------------|--------|
+| Correction | Churn denominator | Dormant rate recalculated over the 392 customers with purchases (207 of 392 = 52.8%); previously 41.4% over 500 registered customers, which included 108 who never purchased | Rate now matches the segmentation in notebook 05 |
+| Correction | NPS response rate | 235 responses over the 392 buyers (60%); previously 47% over 500 registered. The survey is simulated: responses were assigned at random among buyers | Buyers are the correct base; NPS carries no information about behavior in this dataset |
+| Correction | NPS text in notebooks | Notebooks 04–06 stated 53% non-response over 500 registered customers; corrected to 40% non-response over the 392 buyers. One saved output in notebook 04 was edited to match its hard-coded print | Text now matches the README; no code or calculation changed |
+| Correction | Unsourced target removed | The "<30%" churn target had no verified source. Replaced by a success metric (share of Dormant customers who purchase within 90 days of contact, against a random control group) and a labeled scenario | Target to be set after a pilot |
+| Correction | Regression metrics | Multiple regression reported R² 0.992, RMSE $1,856 and MAE $1,295; the executed notebook gives R² 0.772, RMSE $10,378 and MAE $6,160. Simple regression RMSE and MAE aligned too ($17,352 and $12,041) | README now matches the executed notebook |
+| Correction | File dimensions | `customers_final.csv` has 500 rows × 16 columns and `transactions_final.csv` 1,192 × 19 (previously 392 × 12 and 1,192 × 15) | Project structure matches the data |
 
 ---
 
