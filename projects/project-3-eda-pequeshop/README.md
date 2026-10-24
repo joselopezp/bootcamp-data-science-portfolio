@@ -21,7 +21,7 @@
 - [How to Run](#how-to-run)
 - [Strategic Recommendations](#strategic-recommendations)
 - [Deliverables](#deliverables)
-- [Post-Evaluation Enhancements and Corrections](#post-evaluation-enhancements-and-corrections)
+- [Post-Evaluation Enhancements and Corrections](#post-evaluation-enhancements-and-corrections) — updated 2026-10-23
 - [CRISP-DM Evolution Roadmap](#crisp-dm-evolution-roadmap)
 - [Credits](#credits)
 - [License](#license)
@@ -222,6 +222,8 @@ jupyter notebook notebooks/04_modeling.ipynb
 ## Post-Evaluation Enhancements and Corrections
 
 After initial project evaluation, the following corrections and enhancements were made to this project.
+
+> **Update 2026-10-23** — Minimal corrections after evaluation: figures, labels and wording aligned with the 392 buyers and with the executed notebooks (Dormant rate, NPS response rate, regression metrics, KPI labels), the unsourced churn target removed, and Business Understanding documented in notebook 01 (the only Enhancement). No new analysis was added. Details in the table below.
 
 | Type | Change | Description | Impact |
 |------|--------|-------------|--------|
