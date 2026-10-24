@@ -1,0 +1,11 @@
+# Project 4b - PequeShop Statistical Inference
+# Versions used to run notebooks 01-06 (Python 3.12), recorded on 24-10-2026.
+# Install: pip install -r requirements.txt
+
+pandas==3.0.2
+numpy==2.4.4
+scipy==1.17.1
+statsmodels==0.14.6
+matplotlib==3.10.8
+seaborn==0.13.2
+jupyter==1.1.1
