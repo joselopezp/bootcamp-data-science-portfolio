@@ -24,7 +24,7 @@
 - [CRISP-DM Roadmap](#crisp-dm-roadmap)
 - [Data Source](#data-source)
 - [Credits](#credits)
-- [Post-Evaluation Enhancements and Corrections](#post-evaluation-enhancements-and-corrections)
+- [Post-Evaluation Enhancements and Corrections](#post-evaluation-enhancements-and-corrections) — updated 2026-10-24
 - [License](#license)
 
 ---
@@ -256,6 +256,8 @@ as part of the PequeShop Analytics continuous case study.
 ---
 
 ## Post-Evaluation Enhancements and Corrections
+
+> **Update 2026-10-24** — Corrections after evaluation: Dormant rate computed over the 392 buyers (H3 recalculated), README and notebook text aligned with the data, and executed outputs saved for notebooks 01-06. Each row of the table carries its date.
 
 | # | Date | Type | Where | What changed | Reason |
 |---|------|------|-------|--------------|--------|
