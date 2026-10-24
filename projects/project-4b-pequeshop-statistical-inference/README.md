@@ -257,15 +257,17 @@ as part of the PequeShop Analytics continuous case study.
 
 ## Post-Evaluation Enhancements and Corrections
 
-| # | Type | Where | What changed | Reason |
-|---|------|-------|--------------|--------|
-| 1 | Correction | Notebooks 03, 05, 06 + 3 figures | Dormant rate computed over the 392 buyers (207/392 = 52.8%) instead of the 500 registered customers (41.4%). H3: z 5.18 → 9.05, Cohen's h 0.239 → 0.468, 95% CI (0.4786, 0.5775). H1 and H4 unchanged. | The 108 customers who never purchased have no segment and cannot be Dormant |
-| 2 | Correction | README, notebooks 01, 02, 03 | Figures aligned with notebooks 03/05/06 (e.g. Binomial p = 0.414 → 0.528 in notebook 03); "active customers" → "buyers"; "At-Risk" → "At Risk" (the label in the data); customers columns 15 → 16 | Text and labels did not match the data |
-| 2b | Correction | Notebook 02 | Sample space restricted to the 392 buyers (`dropna` on `retargeting_segment`); previously 500 rows, and the `'At-Risk'` filter matched nothing | Probabilities were computed over the wrong denominator. **Notebook 02 outputs are regenerated in a later commit.** |
-| 3 | Correction | README, notebooks 01, 02, 05, 06 | 30% benchmark relabelled as assumed reference value (no verified source); "statistically confirmed emergency" and "~45 customers retained" claims removed | Not supported by any notebook or source |
-| 4 | Correction | README | License link fixed (`../../LICENSE`); How to Run no longer says the CSVs are included (they are not versioned: copy them from project-2) | Link was broken; instruction was false |
-| 5 | Correction | `notebooks/README.md` | Duplicate, older README removed | Two READMEs disagreed |
-| 6 | Enhancement | `requirements.txt` | Added (versions used to run notebooks 01-06, Python 3.12) | Notebooks could not run without installing libraries by trial and error |
+| # | Date | Type | Where | What changed | Reason |
+|---|------|------|-------|--------------|--------|
+| 1 | 2026-10-24 | Correction | Notebooks 03, 05, 06 + 3 figures | Dormant rate computed over the 392 buyers (207/392 = 52.8%) instead of the 500 registered customers (41.4%). H3: z 5.18 → 9.05, Cohen's h 0.239 → 0.468, 95% CI (0.4786, 0.5775). H1 and H4 unchanged. | The 108 customers who never purchased have no segment and cannot be Dormant |
+| 2 | 2026-10-24 | Correction | README, notebooks 01, 02, 03 | Figures aligned with notebooks 03/05/06 (e.g. Binomial p = 0.414 → 0.528 in notebook 03); "active customers" → "buyers"; "At-Risk" → "At Risk" (the label in the data); customers columns 15 → 16 | Text and labels did not match the data |
+| 2b | 2026-10-24 | Correction | Notebook 02 | Sample space restricted to the 392 buyers (`dropna` on `retargeting_segment`); previously 500 rows, and the `'At-Risk'` filter matched nothing | Probabilities were computed over the wrong denominator. Saved outputs of notebook 02 now show Omega = 392 (Active 97, At Risk 88, Dormant 207). |
+| 3 | 2026-10-24 | Correction | README, notebooks 01, 02, 05, 06 | 30% benchmark relabelled as assumed reference value (no verified source); "statistically confirmed emergency" and "~45 customers retained" claims removed | Not supported by any notebook or source |
+| 4 | 2026-10-24 | Correction | README | License link fixed (`../../LICENSE`); How to Run no longer says the CSVs are included (they are not versioned: copy them from project-2) | Link was broken; instruction was false |
+| 5 | 2026-10-24 | Correction | `notebooks/README.md` | Duplicate, older README removed | Two READMEs disagreed |
+| 6 | 2026-10-24 | Enhancement | `requirements.txt` | Added (versions used to run notebooks 01-06, Python 3.12) | Notebooks could not run without installing libraries by trial and error |
+| 7 | 2026-10-24 | Enhancement | Notebooks 01-06 | Executed end to end (Restart & Run All) with `requirements.txt` and saved with outputs; notebook 02 had none | Every figure in this README can be traced to a saved cell output |
+| 8 | 2026-10-24 | Enhancement | README | Date column added to this table | Shows when each change was made after the original delivery (2026-03) |
 
 ## License
 
